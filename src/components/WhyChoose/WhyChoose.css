@@ -1,0 +1,102 @@
+.why-choose {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.why-choose-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.why-choose-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; 
+}
+
+.why-choose-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(15, 18, 27, 0.7), rgba(15, 18, 27, 0.4));
+  z-index: 2;
+}
+
+.why-choose-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-choose-title {
+  margin-bottom: 40px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.why-choose-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.why-choose-pill {
+  background-color: var(--bg-white);
+  padding: 12px 24px;
+  border-radius: var(--border-radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed);
+  cursor: default;
+}
+
+.why-choose-pill:hover {
+  transform: translateY(-3px);
+}
+
+.pill-icon {
+  color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+}
+
+.pill-text {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 80px 0;
+  }
+  
+  .why-choose-title {
+    font-size: 2rem;
+  }
+  
+  .why-choose-pills {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 300px;
+  }
+}
