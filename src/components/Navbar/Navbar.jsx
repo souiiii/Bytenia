@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -28,8 +29,8 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="navbar-menu desktop-menu">
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">About</a>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/enterprise" className="nav-link">Enterprise</Link>
           <a href="#" className="nav-link">Features</a>
           
           <div className="navbar-actions">
@@ -50,8 +51,8 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
         <div className="mobile-menu-container">
-          <a href="#" className="mobile-link" onClick={toggleMenu}>Home</a>
-          <a href="#" className="mobile-link" onClick={toggleMenu}>About</a>
+          <Link to="/" className="mobile-link" onClick={toggleMenu}>Home</Link>
+          <Link to="/enterprise" className="mobile-link" onClick={toggleMenu}>Enterprise</Link>
           <a href="#" className="mobile-link" onClick={toggleMenu}>Features</a>
           
           <div className="mobile-actions">

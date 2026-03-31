@@ -1,0 +1,106 @@
+.enterprise-features-wrapper {
+  background-color: var(--bg-primary);
+}
+
+.built-for .section-header {
+  margin-bottom: 60px;
+}
+
+.built-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.built-card {
+  background-color: var(--bg-white);
+  padding: 40px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: box-shadow var(--transition-speed);
+}
+
+.built-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.built-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-dark);
+  margin-bottom: 24px;
+}
+
+.built-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--bg-dark);
+  margin-bottom: 12px;
+}
+
+.built-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Why Trust Section */
+.why-trust {
+  background: linear-gradient(180deg, var(--bg-primary) 0%, #e2e8f0 100%);
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.trust-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-white);
+  padding: 16px 24px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  border: 1px solid var(--border-light);
+}
+
+.trust-icon {
+  color: var(--bg-dark);
+  display: flex;
+}
+
+.trust-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+@media (max-width: 900px) {
+  .built-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-pill {
+    padding: 16px;
+  }
+}
