@@ -1,0 +1,205 @@
+.co-servers {
+  background-color: #f9fafb;
+}
+
+.co-locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.co-loc-pill {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-pill);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.co-loc-pill:hover {
+  border-color: var(--bg-dark-light);
+}
+
+.co-loc-pill.active {
+  background-color: var(--bg-dark);
+  color: var(--bg-white);
+  border-color: var(--bg-dark);
+}
+
+.co-filters-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 16px;
+}
+
+.co-inline-filters {
+  display: flex;
+  gap: 24px;
+}
+
+.co-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.co-filter-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.co-filter-group select {
+  padding: 8px 32px 8px 0;
+  border: none;
+  background-color: transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--bg-dark);
+  border-bottom: 2px solid var(--bg-dark-light);
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.co-filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.co-server-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.co-server-card {
+  display: grid;
+  grid-template-columns: 140px 1fr 200px 160px auto;
+  align-items: center;
+  background-color: var(--bg-white);
+  border-radius: var(--border-radius-md);
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border-light);
+  gap: 20px;
+}
+
+.co-col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.co-icon {
+  color: var(--text-muted-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.co-col-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.co-val-primary {
+  font-weight: 700;
+  color: var(--bg-dark);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.co-val-secondary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.co-action-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.co-price {
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: var(--bg-dark);
+  background-color: var(--bg-primary);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--border-light);
+}
+
+.co-deploy-btn {
+  padding: 12px 24px;
+  border-radius: var(--border-radius-pill);
+}
+
+@media (max-width: 1024px) {
+  .co-filters-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .co-filter-toggle {
+    align-self: flex-start;
+  }
+
+  .co-server-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .co-action-col {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .co-inline-filters {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+  .co-filter-group select {
+    width: 100%;
+  }
+  .co-action-col {
+    flex-direction: column;
+  }
+  .co-deploy-btn {
+    width: 100%;
+  }
+}

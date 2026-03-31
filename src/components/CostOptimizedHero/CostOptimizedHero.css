@@ -1,0 +1,39 @@
+.co-hero {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.co-hero-card {
+  background-color: var(--bg-dark);
+  border-radius: var(--border-radius-lg);
+  padding: 80px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.co-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.co-hero-card .hero-title {
+  font-size: 2.75rem;
+  margin-bottom: 24px;
+}
+
+.co-hero-card .hero-description {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .co-hero-card {
+    padding: 60px 20px;
+  }
+}

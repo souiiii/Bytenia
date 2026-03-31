@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="navbar-menu desktop-menu">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/enterprise" className="nav-link">Enterprise</Link>
-          <a href="#" className="nav-link">Features</a>
+          <Link to="/cost-optimized" className="nav-link">Cost-Optimized</Link>
           
           <div className="navbar-actions">
             <button className="lang-btn">
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="mobile-menu-container">
           <Link to="/" className="mobile-link" onClick={toggleMenu}>Home</Link>
           <Link to="/enterprise" className="mobile-link" onClick={toggleMenu}>Enterprise</Link>
-          <a href="#" className="mobile-link" onClick={toggleMenu}>Features</a>
+          <Link to="/cost-optimized" className="mobile-link" onClick={toggleMenu}>Cost-Optimized</Link>
           
           <div className="mobile-actions">
              <button className="lang-btn">
