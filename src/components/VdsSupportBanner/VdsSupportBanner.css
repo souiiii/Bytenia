@@ -1,0 +1,62 @@
+.vds-contact-banner {
+  background-color: var(--bg-primary);
+  padding-bottom: 80px;
+}
+
+.vds-contact-card {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.vds-contact-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.vds-contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(15, 18, 27, 0.9), rgba(15, 18, 27, 0.6));
+  z-index: 2;
+}
+
+.vds-contact-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vds-contact-title {
+  margin-bottom: 24px;
+}
+
+.vds-contact-desc {
+  max-width: 600px;
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .vds-contact-card {
+    padding: 60px 20px;
+  }
+}

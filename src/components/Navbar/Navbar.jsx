@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -29,21 +29,24 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="navbar-menu desktop-menu">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/enterprise" className="nav-link">Enterprise</Link>
-          <Link to="/cost-optimized" className="nav-link">Cost-Optimized</Link>
+          <div className="nav-dropdown">
+            <span className="nav-link">PRODUCTS <ChevronDown size={14} /></span>
+          </div>
+          <div className="nav-dropdown">
+            <span className="nav-link">COMPANY <ChevronDown size={14} /></span>
+          </div>
+          <div className="nav-dropdown">
+            <span className="nav-link">LOCATIONS <ChevronDown size={14} /></span>
+          </div>
           
           <div className="navbar-actions">
-            <button className="lang-btn">
-              <Globe size={18} />
-              <span>EN</span>
-            </button>
-            <button className="btn-primary sign-in-btn">Sign In</button>
+            <button className="btn-outline login-btn" style={{padding: '6px 16px', borderRadius: '50px', fontSize: '0.875rem'}}>Login</button>
+            <button className="btn-primary start-btn" style={{padding: '8px 20px', borderRadius: '50px', fontSize: '0.875rem'}}>Get Started</button>
           </div>
         </div>
 
-        {/* Mobile Toggle */}
-        <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+        {/* Mobile Menu Toggle */}
+        <button className="mobile-toggle" onClick={toggleMenu}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -51,16 +54,13 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
         <div className="mobile-menu-container">
-          <Link to="/" className="mobile-link" onClick={toggleMenu}>Home</Link>
-          <Link to="/enterprise" className="mobile-link" onClick={toggleMenu}>Enterprise</Link>
-          <Link to="/cost-optimized" className="mobile-link" onClick={toggleMenu}>Cost-Optimized</Link>
+          <span className="mobile-link">PRODUCTS <ChevronDown size={16} /></span>
+          <span className="mobile-link">COMPANY <ChevronDown size={16} /></span>
+          <span className="mobile-link">LOCATIONS <ChevronDown size={16} /></span>
           
           <div className="mobile-actions">
-             <button className="lang-btn">
-              <Globe size={20} />
-              <span>EN</span>
-            </button>
-            <button className="btn-primary mobile-sign-in-btn" onClick={toggleMenu}>Sign In</button>
+            <button className="btn-outline" style={{width: '100%', marginBottom: '12px', padding: '12px'}}>Login</button>
+            <button className="btn-primary" style={{width: '100%', padding: '12px'}}>Get Started</button>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import EnterprisePage from './pages/EnterprisePage';
 import CostOptimizedPage from './pages/CostOptimizedPage';
+import VdsPage from './pages/VdsPage';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/enterprise" element={<EnterprisePage />} />
           <Route path="/cost-optimized" element={<CostOptimizedPage />} />
+          <Route path="/vds" element={<VdsPage />} />
         </Routes>
       </div>
     </Router>

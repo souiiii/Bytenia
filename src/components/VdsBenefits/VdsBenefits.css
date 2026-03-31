@@ -1,0 +1,75 @@
+.vds-benefits {
+  background-color: #f1f5f9;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.vds-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.vds-benefit-card {
+  background-color: var(--bg-white);
+  padding: 32px 24px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-light);
+}
+
+.vds-benefit-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--bg-dark);
+  margin-bottom: 12px;
+}
+
+.vds-benefit-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.vds-use-cases-label {
+  font-size: 0.825rem;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: var(--bg-dark);
+}
+
+.vds-use-cases-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.vds-uc-pill {
+  background-color: var(--bg-white);
+  padding: 10px 20px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--bg-dark);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-light);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .vds-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .vds-use-cases-pills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vds-uc-pill {
+    width: 100%;
+    text-align: center;
+  }
+}
