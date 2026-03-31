@@ -77,8 +77,12 @@
   color: var(--bg-dark);
 }
 
-.desktop-only { display: flex; }
-.mobile-only { display: none; }
+.desktop-only {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
 
 .footer-bottom {
   text-align: center;
@@ -114,13 +118,17 @@
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .footer-links-wrapper {
     flex-direction: column;
     gap: 40px;
     width: 100%;
   }
 
-  .desktop-only { display: none; }
-  .mobile-only { display: flex; }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: flex;
+  }
 }
