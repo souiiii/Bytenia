@@ -1,0 +1,73 @@
+.workloads-card {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.workloads-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.workloads-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(15, 18, 27, 0.9), rgba(15, 18, 27, 0.75));
+  z-index: 2;
+}
+
+.workloads-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workloads-title {
+  margin-bottom: 40px;
+}
+
+.workloads-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.workload-pill {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted-light);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-pill);
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.workloads-desc {
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .workloads-card {
+    padding: 60px 20px;
+  }
+}
