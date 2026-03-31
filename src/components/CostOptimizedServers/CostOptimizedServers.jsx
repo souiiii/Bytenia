@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import Flag from 'react-world-flags';
+import FlagModule from 'react-world-flags';
 import { Cpu, HardDrive, Activity, SlidersHorizontal } from 'lucide-react';
 import './CostOptimizedServers.css';
+
+const Flag = FlagModule.default || FlagModule;
 
 const locations = [
   { id: 'all', name: 'Global', code: null },
