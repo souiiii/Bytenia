@@ -1,0 +1,39 @@
+.global-highlights-section {
+  background-color: #f8fafc;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.highlight-card {
+  background-color: var(--bg-white);
+  padding: 32px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+}
+
+.highlight-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--bg-dark);
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
+}
+
+.highlight-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
