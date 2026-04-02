@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ComposableMap,
   Geographies,
@@ -20,10 +20,8 @@ const markers = [
 ];
 
 const LocationsHero = () => {
-  const [activePin, setActivePin] = useState(null);
 
   const handlePinClick = (id) => {
-    setActivePin(id);
     console.log(`Pin clicked for popup foundation: ${id}`);
     // Popup logic will go here per user direction later.
   };
