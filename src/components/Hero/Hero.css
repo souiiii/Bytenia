@@ -27,10 +27,17 @@
 
 .hero-subtitle {
   color: var(--text-muted-light);
-  font-size: 0.875rem;
-  letter-spacing: 2px;
-  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  font-weight: 300;
   margin-bottom: 24px;
+}
+
+.hero-divider {
+  width: 140px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 32px;
 }
 
 .hero-description {
@@ -57,10 +64,12 @@
 
 .hero-graphic {
   position: relative;
-  margin-top: -20px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   opacity: 0.8;
+  margin-top: 30px;
+  margin-bottom: -150px; /* pull down exactly like the mockup */
   transform: translateY(20px);
 }
 
