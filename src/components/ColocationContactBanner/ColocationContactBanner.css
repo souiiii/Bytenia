@@ -1,0 +1,53 @@
+.colocation-contact-banner {
+  padding-bottom: 100px;
+}
+
+.choice-card {
+  background-color: var(--bg-dark);
+  border-radius: var(--border-radius-lg);
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.choice-graphic {
+  flex: 0 0 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-content {
+  flex: 1;
+}
+
+.choice-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.choice-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .choice-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .choice-card {
+    padding: 40px 24px;
+  }
+}
