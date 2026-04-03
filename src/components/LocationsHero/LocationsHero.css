@@ -28,7 +28,7 @@
 }
 
 .map-marker-group:hover .marker-bg {
-  fill: #f1f5f9;
+  fill: var(--bg-secondary);
 }
 
 .map-marker-group:hover .marker-dot {

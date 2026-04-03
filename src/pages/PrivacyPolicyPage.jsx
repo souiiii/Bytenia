@@ -7,7 +7,7 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <Navbar />
-      <main className="page-content privacy-policy-page" style={{ backgroundColor: '#fcfcfc' }}>
+      <main className="page-content privacy-policy-page" style={{ backgroundColor: '#F8F8FA' }}>
         
         <div className="container privacy-hero-container">
           <div className="privacy-hero-card">

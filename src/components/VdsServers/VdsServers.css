@@ -1,5 +1,5 @@
 .vds-servers {
-  background-color: #f9fafb;
+  background-color: var(--bg-primary);
 }
 
 .vds-locations {
@@ -109,7 +109,7 @@
   display: grid;
   grid-template-columns: 2fr 1.2fr 1fr 1.5fr 1.2fr 1.2fr 140px;
   padding: 16px 24px;
-  background-color: #f1f5f9;
+  background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -135,7 +135,7 @@
 }
 
 .vds-server-row:hover {
-  background-color: #f8fafc;
+  background-color: var(--bg-primary);
 }
 
 .vds-server-row:last-child {

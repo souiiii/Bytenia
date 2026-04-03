@@ -1,5 +1,5 @@
 .co-servers {
-  background-color: #f9fafb;
+  background-color: var(--bg-primary);
 }
 
 .co-locations {

@@ -7,7 +7,7 @@ const TermsOfServicePage = () => {
   return (
     <>
       <Navbar />
-      <main className="page-content tos-page" style={{ backgroundColor: '#fcfcfc' }}>
+      <main className="page-content tos-page" style={{ backgroundColor: '#F8F8FA' }}>
         
         <div className="container tos-hero-container">
           <div className="tos-hero-card">

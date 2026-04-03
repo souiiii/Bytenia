@@ -10,7 +10,7 @@ const CompanyPage = () => {
   return (
     <>
       <Navbar />
-      <main className="page-content" style={{ backgroundColor: '#fcfcfc' }}>
+      <main className="page-content" style={{ backgroundColor: '#F8F8FA' }}>
         <CompanyHero />
         <WhoWeAre />
         {/* Leadership Team is built but hidden for MVP per requirements */}

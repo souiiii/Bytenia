@@ -1,6 +1,6 @@
 .why-location-section {
   position: relative;
-  background-color: #e2e8f0; /* Default solid fallback */
+  background-color: var(--bg-secondary); /* Default solid fallback */
   padding-top: 100px;
   padding-bottom: 120px;
 }
@@ -15,7 +15,7 @@
   background: 
     radial-gradient(circle at 20% 50%, rgba(255,255,255,0.4) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(255,255,255,0.3) 0%, transparent 40%),
-    linear-gradient(to bottom right, #e2e8f0, #cbd5e1);
+    linear-gradient(to bottom right, var(--bg-secondary), var(--border-light));
   opacity: 0.8;
   z-index: 1;
 }

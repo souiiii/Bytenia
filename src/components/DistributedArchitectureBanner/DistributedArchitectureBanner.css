@@ -1,6 +1,6 @@
 .architecture-banner {
   padding-bottom: 100px;
-  background-color: #f8fafc; /* match global highlights background to blend */
+  background-color: var(--bg-primary); /* match global highlights background to blend */
 }
 
 .architecture-card {

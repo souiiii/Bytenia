@@ -9,7 +9,7 @@ const ColocationPage = () => {
   return (
     <>
       <Navbar />
-      <main className="page-content" style={{ backgroundColor: '#fcfcfc' }}>
+      <main className="page-content" style={{ backgroundColor: '#F8F8FA' }}>
         <ColocationHero />
         <ColocationPricing />
         <ColocationContactBanner />

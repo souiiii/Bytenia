@@ -1,5 +1,5 @@
 .leadership-section {
-  background-color: #f1f5f9;
+  background-color: var(--bg-secondary);
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -21,7 +21,7 @@
 }
 
 .team-image-placeholder {
-  background-color: #cbd5e1;
+  background-color: var(--border-light);
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius-md);
