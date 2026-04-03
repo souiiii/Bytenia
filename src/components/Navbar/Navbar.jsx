@@ -37,9 +37,9 @@ const Navbar = () => {
             </span>
           </div>
           <div className="nav-dropdown">
-            <span className="nav-link">
-              LOCATIONS <ChevronDown size={14} />
-            </span>
+            <Link to="/looking-glass" className="nav-link">
+              LOOKING GLASS <ChevronDown size={14} />
+            </Link>
           </div>
 
           <div className="navbar-actions">
@@ -61,7 +61,7 @@ const Navbar = () => {
                 fontSize: "0.875rem",
               }}
             >
-              Get Started
+              Talk to Sales
             </button>
           </div>
         </div>
@@ -81,9 +81,9 @@ const Navbar = () => {
           <span className="mobile-link">
             COMPANY <ChevronDown size={16} />
           </span>
-          <span className="mobile-link">
-            LOCATIONS <ChevronDown size={16} />
-          </span>
+          <Link to="/looking-glass" className="mobile-link">
+            LOOKING GLASS <ChevronDown size={16} />
+          </Link>
 
           <div className="mobile-actions">
             <button
@@ -96,7 +96,7 @@ const Navbar = () => {
               className="btn-primary"
               style={{ width: "100%", padding: "12px" }}
             >
-              Get Started
+              Talk to Sales
             </button>
           </div>
         </div>

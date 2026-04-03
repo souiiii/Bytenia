@@ -10,6 +10,7 @@ import PartnershipPage from './pages/PartnershipPage';
 import ColocationPage from './pages/ColocationPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
+import LookingGlassPage from './pages/LookingGlassPage';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/colocation" element={<ColocationPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/looking-glass" element={<LookingGlassPage />} />
         </Routes>
       </div>
     </Router>
