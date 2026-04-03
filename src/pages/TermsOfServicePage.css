@@ -1,0 +1,72 @@
+.tos-page {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.tos-hero-container {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+}
+
+.tos-hero-card {
+  background-color: var(--bg-dark);
+  border-radius: var(--border-radius-lg);
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.tos-content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.tos-intro {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+}
+
+.tos-intro-p {
+  margin-bottom: 16px;
+}
+
+.tos-section {
+  margin-bottom: 40px;
+}
+
+.tos-section h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--bg-dark);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.tos-section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.tos-section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.tos-section li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .tos-hero-card {
+    padding: 50px 20px;
+  }
+}

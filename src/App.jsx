@@ -8,6 +8,8 @@ import LocationsPage from './pages/LocationsPage';
 import CompanyPage from './pages/CompanyPage';
 import PartnershipPage from './pages/PartnershipPage';
 import ColocationPage from './pages/ColocationPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 import './App.css';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route path="/company" element={<CompanyPage />} />
           <Route path="/partnership-program" element={<PartnershipPage />} />
           <Route path="/colocation" element={<ColocationPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         </Routes>
       </div>
     </Router>
