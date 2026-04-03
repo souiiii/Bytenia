@@ -22,15 +22,15 @@ const PrivacyPolicyPage = () => {
 
         <div className="privacy-content-container">
           <p className="privacy-intro">
-            Welcome to Bytenia ("Byteania", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at privacy@bytenia.com.
+            Welcome to Byteania ("Byteania", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at privacy@byteania.com.
           </p>
 
           <section className="privacy-section">
             <h3>1. SCOPE</h3>
             <p>This privacy policy applies to all information collected through:</p>
             <ul>
-              <li>Our website (https://www.bytenia.com/)</li>
-              <li>Bytenia routing protocols</li>
+              <li>Our website (https://www.byteania.com/)</li>
+              <li>Byteania routing protocols</li>
               <li>As well as any related services, sales, marketing, or events (we refer to them collectively in this privacy policy as the "Services").</li>
             </ul>
             <p>Please read this privacy policy carefully as it will help you make informed decisions about sharing your personal information with us.</p>
@@ -160,7 +160,7 @@ const PrivacyPolicyPage = () => {
 
           <section className="privacy-section">
             <h3>14. CONTACT</h3>
-            <p>If you have questions or comments about this policy, you may email us at privacy@bytenia.com.</p>
+            <p>If you have questions or comments about this policy, you may email us at privacy@byteania.com.</p>
           </section>
 
         </div>

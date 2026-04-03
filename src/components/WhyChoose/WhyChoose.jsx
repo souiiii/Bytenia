@@ -23,7 +23,7 @@ const WhyChoose = () => {
       
       <div className="container why-choose-content">
         <h2 className="h2 text-white text-center why-choose-title">
-          Why Choose<br/>Bytenia Dedicated Servers
+          Why Choose<br/>Byteania Dedicated Servers
         </h2>
         
         <div className="why-choose-pills">

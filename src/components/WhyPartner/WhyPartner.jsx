@@ -25,7 +25,7 @@ const WhyPartner = () => {
     <section className="why-partner section text-center">
       <div className="container" style={{ maxWidth: '1000px' }}>
         <h2 className="why-title">
-          Why <strong>Partner</strong> With Bytenia?
+          Why <strong>Partner</strong> With Byteania?
         </h2>
         
         <div className="why-grid">
