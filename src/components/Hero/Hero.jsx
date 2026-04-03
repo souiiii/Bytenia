@@ -1,4 +1,5 @@
 import React from 'react';
+import ShapeGraphic from '../../assets/shape.svg';
 import './Hero.css';
 
 const Hero = () => {
@@ -19,17 +20,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-graphic">
-            <svg width="340" height="340" viewBox="0 0 100 100" fill="none" stroke="url(#hero-grad)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className="hero-logo-graphic">
-              <defs>
-                <linearGradient id="hero-grad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#ffffff" />
-                  <stop offset="60%" stopColor="transparent" />
-                </linearGradient>
-              </defs>
-              <polygon points="50,10 85,30 85,70 50,90 15,70 15,30" />
-              <polyline points="15,30 50,50 85,30" />
-              <polyline points="15,50 50,70 85,50" />
-            </svg>
+            <img src={ShapeGraphic} alt="Byteania Shape" className="hero-logo-graphic" style={{ width: '300px', height: 'auto', display: 'block' }} />
           </div>
         </div>
       </div>
