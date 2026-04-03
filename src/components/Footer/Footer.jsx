@@ -10,19 +10,10 @@ const Footer = () => {
         {/* Top Header Row */}
         <div className="footer-top">
           <div className="footer-logo">
-            <svg
-              width="50"
-              height="50"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polygon points="12 2 2 7 12 12 22 7 12 2" />
-              <polyline points="2 17 12 22 22 17" />
-              <polyline points="2 12 12 17 22 12" />
+            <svg width="50" height="50" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="50,10 85,30 85,70 50,90 15,70 15,30" />
+              <polyline points="15,30 50,50 85,30" />
+              <polyline points="15,50 50,70 85,50" />
             </svg>
             <span className="footer-logo-text">BYTEANIA</span>
           </div>
