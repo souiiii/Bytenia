@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/Logo.svg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -15,17 +16,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container container">
-        <div className="navbar-logo">
-          <div className="logo-icon">
-            {/* Simple geometric logo placeholder resembling Byteania's layered logo */}
-            <svg className="logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round">
-            <polygon points="50,10 85,30 85,70 50,90 15,70 15,30" />
-            <polyline points="15,30 50,50 85,30" />
-            <polyline points="15,50 50,70 85,50" />
-          </svg>
-          </div>
-          <span className="logo-text">BYTEANIA</span>
-        </div>
+        <Link to="/" className="navbar-logo">
+          <img src={Logo} alt="Byteania Logo" style={{ height: '32px', width: 'auto' }} />
+        </Link>
 
         {/* Desktop Menu */}
         <div className="navbar-menu desktop-menu">
