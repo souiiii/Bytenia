@@ -1,0 +1,23 @@
+.company-hero {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.company-hero-card {
+  background-color: var(--bg-dark);
+  border-radius: var(--border-radius-lg);
+  padding: 80px 40px;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.company-hero-card .h1 {
+  font-size: 2.75rem;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .company-hero-card {
+    padding: 60px 20px;
+  }
+}

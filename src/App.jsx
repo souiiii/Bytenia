@@ -5,6 +5,7 @@ import EnterprisePage from './pages/EnterprisePage';
 import CostOptimizedPage from './pages/CostOptimizedPage';
 import VdsPage from './pages/VdsPage';
 import LocationsPage from './pages/LocationsPage';
+import CompanyPage from './pages/CompanyPage';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/cost-optimized" element={<CostOptimizedPage />} />
           <Route path="/vds" element={<VdsPage />} />
           <Route path="/locations" element={<LocationsPage />} />
+          <Route path="/company" element={<CompanyPage />} />
         </Routes>
       </div>
     </Router>
