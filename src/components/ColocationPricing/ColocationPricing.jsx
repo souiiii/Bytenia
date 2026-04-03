@@ -9,28 +9,28 @@ const pricingPlans = [
       {
         icon: <HardDrives size={24} weight="regular" />,
         main: "1U Rackspace",
-        sub: "($12/mo for each extra U)"
+        sub: "+$15/mo for each extra U"
       },
       {
         icon: <Plug size={24} weight="regular" />,
         main: "1A @ 208V (up to 200W usable)",
-        sub: "($75/mo for each extra amp)"
+        sub: "+$15/mo for each extra amp"
       },
       {
         icon: <Globe size={24} weight="regular" />,
-        main: "Unmetered 1Gbps port + IPv4 port",
+        main: "Unmetered 1Gbps port + IPMI port",
         sub: null
       },
       {
         icon: <CursorClick size={24} weight="regular" />,
-        main: "1 IPv4 address included - additional IPs only $2/mo each",
+        main: "1 IPv4 address included - additional IPs only $1/mo each",
         sub: null
       }
     ],
     locations: [
-      { flag: "🇬🇧", city: "London", country: "United Kingdom", price: "From $125/ month" },
-      { flag: "🇦🇺", city: "Sydney", country: "Australia", price: "From $160/ month" },
-      { flag: "🇺🇸", city: "Dallas", country: "USA", price: "From $100/ month" }
+      { flag: "gb", city: "London", country: "United Kingdom", price: "From $ 125 / month" },
+      { flag: "au", city: "Sydney", country: "Australia", price: "From $ 100 / month" },
+      { flag: "us", city: "Dallas", country: "USA", price: "From $ 130 / month" }
     ]
   },
   {
@@ -48,19 +48,19 @@ const pricingPlans = [
       },
       {
         icon: <Globe size={24} weight="regular" />,
-        main: "Unmetered 10Gbps port + IPv4 port (Switch/psu included)",
+        main: "Unmetered 1Gbps port + IPMI port (Switch(es) included)",
         sub: null
       },
       {
         icon: <CursorClick size={24} weight="regular" />,
-        main: "32 IPv4 addresses included - additional IPs only $2/mo each",
+        main: "32 IPv4 addresses included - additional IPs only $1/mo each",
         sub: null
       }
     ],
     locations: [
-      { flag: "🇬🇧", city: "London", country: "United Kingdom", price: "From $2200/ month" },
-      { flag: "🇦🇺", city: "Sydney", country: "Australia", price: "From $2200/ month" },
-      { flag: "🇺🇸", city: "Dallas", country: "USA", price: "From $2000/ month" }
+      { flag: "gb", city: "London", country: "United Kingdom", price: "From $ 2200 / month" },
+      { flag: "au", city: "Sydney", country: "Australia", price: "From $ 2200 / month" },
+      { flag: "us", city: "Dallas", country: "USA", price: "From $ 2200 / month" }
     ]
   }
 ];
@@ -96,7 +96,11 @@ const ColocationPricing = () => {
                 {plan.locations.map((loc, i) => (
                   <div key={i} className="colo-loc-pill">
                     <div className="colo-loc-left">
-                      <span className="colo-flag">{loc.flag}</span>
+                      <img 
+                        src={`https://flagcdn.com/w40/${loc.flag}.png`} 
+                        alt={loc.country} 
+                        className="colo-flag-img"
+                      />
                       <div className="colo-loc-info">
                         <span className="colo-city">{loc.city}</span>
                         <span className="colo-country">{loc.country}</span>

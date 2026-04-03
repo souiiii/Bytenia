@@ -90,8 +90,12 @@
   gap: 12px;
 }
 
-.colo-flag {
-  font-size: 1.5rem;
+.colo-flag-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,0.05);
 }
 
 .colo-loc-info {
