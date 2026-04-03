@@ -6,6 +6,7 @@ import CostOptimizedPage from './pages/CostOptimizedPage';
 import VdsPage from './pages/VdsPage';
 import LocationsPage from './pages/LocationsPage';
 import CompanyPage from './pages/CompanyPage';
+import PartnershipPage from './pages/PartnershipPage';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/vds" element={<VdsPage />} />
           <Route path="/locations" element={<LocationsPage />} />
           <Route path="/company" element={<CompanyPage />} />
+          <Route path="/partnership-program" element={<PartnershipPage />} />
         </Routes>
       </div>
     </Router>
