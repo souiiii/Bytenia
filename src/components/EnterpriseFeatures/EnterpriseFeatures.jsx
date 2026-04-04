@@ -63,7 +63,7 @@ const EnterpriseFeatures = () => {
       {/* 2. Why Trust */}
       <section className="why-trust section">
         <img 
-          src="/server_racks_bg.png" 
+          src="/server_room_bg.png" 
           alt="Server Background" 
           className="why-trust-bg" 
         />
