@@ -26,23 +26,31 @@ const filterLocations = [
 
 const EnterpriseServersList = () => {
   const [activeLoc, setActiveLoc] = useState("all");
+  const [isExpanded, setIsExpanded] = useState(false);
   const [cpuFilter, setCpuFilter] = useState("Show All");
   const [ramFilter, setRamFilter] = useState("Show All");
   const [storageFilter, setStorageFilter] = useState("Show All");
+  const [sortOrder, setSortOrder] = useState("asc");
 
   // Extract unique options dynamically
   const uniqueCPUs = ["Show All", ...new Set(serversData.map(s => s.cpuModel))];
   const uniqueRAMs = ["Show All", ...new Set(serversData.map(s => s.ram))];
   const uniqueStorages = ["Show All", ...new Set(serversData.map(s => s.storage))];
 
-  // Apply filters
-  const filteredServers = serversData.filter(server => {
-    if (activeLoc !== "all" && server.city.toLowerCase() !== activeLoc) return false;
-    if (cpuFilter !== "Show All" && server.cpuModel !== cpuFilter) return false;
-    if (ramFilter !== "Show All" && server.ram !== ramFilter) return false;
-    if (storageFilter !== "Show All" && server.storage !== storageFilter) return false;
-    return true;
-  });
+  // Apply filters and sort computationally
+  const filteredServers = serversData
+    .filter(server => {
+      if (activeLoc !== "all" && server.city.toLowerCase() !== activeLoc) return false;
+      if (cpuFilter !== "Show All" && server.cpuModel !== cpuFilter) return false;
+      if (ramFilter !== "Show All" && server.ram !== ramFilter) return false;
+      if (storageFilter !== "Show All" && server.storage !== storageFilter) return false;
+      return true;
+    })
+    .sort((a, b) => {
+      const priceA = parseFloat(a.price.replace(/[^0-9.]/g, ''));
+      const priceB = parseFloat(b.price.replace(/[^0-9.]/g, ''));
+      return sortOrder === 'asc' ? priceA - priceB : priceB - priceA;
+    });
 
   return (
     <section className="ent-servers section">
@@ -110,9 +118,12 @@ const EnterpriseServersList = () => {
             </div>
           </div>
 
-          <div className="ent-sort-box">
+          <div 
+            className="ent-sort-box" 
+            onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
+          >
             <span>Sort by:</span>
-            <strong>Low Price</strong>
+            <strong>{sortOrder === 'asc' ? 'Low Price' : 'High Price'}</strong>
             <ArrowUpDown size={16} strokeWidth={2.5} />
           </div>
         </div>
@@ -124,7 +135,7 @@ const EnterpriseServersList = () => {
               No servers match your current filter criteria.
             </div>
           ) : (
-            filteredServers.map((server) => (
+            (isExpanded ? filteredServers : filteredServers.slice(0, 5)).map((server) => (
               <div key={server.id} className="ent-server-card">
               <div className="ent-card-left">
                 {/* Top Inner Grid Row */}
@@ -205,9 +216,16 @@ const EnterpriseServersList = () => {
         )}
         </div>
 
-        <div className="text-center" style={{ marginTop: "40px" }}>
-          <button className="btn-outline ent-show-more">Show More</button>
-        </div>
+        {filteredServers.length > 5 && (
+          <div className="text-center" style={{ marginTop: "40px" }}>
+            <button 
+              className="btn-outline ent-show-more"
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {isExpanded ? "Hide Servers" : "Show More"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
