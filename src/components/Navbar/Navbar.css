@@ -189,12 +189,24 @@
 }
 
 /* Submenu dark band styles */
-.navbar-submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+.navbar-submenu-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   background-color: var(--bg-dark);
+}
+
+.navbar-submenu-wrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.navbar-submenu-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.navbar-submenu {
+  width: 100%;
   padding: 16px 0;
   border-bottom: 1px solid var(--border-dark);
 }

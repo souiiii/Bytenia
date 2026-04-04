@@ -5,7 +5,9 @@
 
 .partner-hero-card {
   background-color: var(--bg-dark);
-  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('../../assets/partner_hero_bg.png');
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)),
+    url("../../assets/partner_hero_bg.png");
   background-size: cover;
   background-position: center;
   border-radius: var(--border-radius-lg);

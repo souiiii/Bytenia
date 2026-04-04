@@ -35,6 +35,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [activeMenu, setActiveMenu] = useState(null);
+  const [displayMenu, setDisplayMenu] = useState(null);
+
+  React.useEffect(() => {
+    if (activeMenu) {
+      setDisplayMenu(activeMenu);
+    }
+  }, [activeMenu]);
 
   React.useEffect(() => {
     if (PRODUCTS_ROUTES.includes(location.pathname)) {
@@ -154,26 +161,27 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Submenu Dark Band */}
-      {activeMenu && (
-        <div className="navbar-submenu">
-          <div className="container submenu-container">
-            {SUBMENU_DATA[activeMenu].map((item, index) => (
-              <React.Fragment key={index}>
-                <Link 
-                  to={item.path} 
-                  className="submenu-link" 
-                  /* Removed onClick clear so state persists properly */
-                >
-                  {item.label}
-                </Link>
-                {index < SUBMENU_DATA[activeMenu].length - 1 && (
-                  <span className="submenu-separator">|</span>
-                )}
-              </React.Fragment>
-            ))}
+      <div className={`navbar-submenu-wrapper ${activeMenu ? 'open' : ''}`}>
+        <div className="navbar-submenu-inner">
+          <div className="navbar-submenu">
+            <div className="container submenu-container">
+              {displayMenu && SUBMENU_DATA[displayMenu].map((item, index) => (
+                <React.Fragment key={index}>
+                  <Link 
+                    to={item.path} 
+                    className="submenu-link" 
+                  >
+                    {item.label}
+                  </Link>
+                  {index < SUBMENU_DATA[displayMenu].length - 1 && (
+                    <span className="submenu-separator">|</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
