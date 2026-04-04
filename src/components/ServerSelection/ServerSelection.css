@@ -68,9 +68,15 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .expanded-header {
@@ -158,28 +164,28 @@
     flex-direction: column;
     height: auto;
   }
-  
+
   .server-card {
     min-height: 100px;
     flex: none;
   }
-  
+
   .server-card-collapsed {
     flex-direction: row;
     align-items: center;
     padding: 20px 24px;
   }
-  
+
   .expanded-features {
     grid-template-columns: 1fr;
   }
-  
+
   .expanded-footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
   }
-  
+
   .pricing-box {
     align-items: flex-start;
     width: 100%;

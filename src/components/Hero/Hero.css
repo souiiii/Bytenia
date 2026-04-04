@@ -5,12 +5,15 @@
 
 .hero-card {
   background-color: var(--bg-dark);
-  border-radius: var(--border-radius-lg);
+  border-top-left-radius: var(--border-radius-lg);
+  border-top-right-radius: var(--border-radius-lg);
   padding: 80px 40px 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .hero-content {
@@ -22,7 +25,9 @@
 
 .hero-title {
   color: var(--text-light);
-  margin-bottom: 16px;
+  font-size: 4.5rem; /* ~72px, overriding the base .h1 */
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -59,8 +64,12 @@
   padding: 14px 32px;
 }
 
-.text-white { color: var(--text-light); }
-.text-gray { color: var(--text-muted-light); }
+.text-white {
+  color: var(--text-light);
+}
+.text-gray {
+  color: var(--text-muted-light);
+}
 
 .hero-graphic {
   position: relative;
@@ -69,20 +78,24 @@
   align-items: flex-end;
   opacity: 0.8;
   margin-top: 30px;
-  margin-bottom: -150px; /* pull down exactly like the mockup */
+  margin-bottom: -200px;
   transform: translateY(20px);
 }
 
 @media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
   .hero-card {
     padding: 60px 20px 0;
   }
-  
+
   .hero-actions {
     flex-direction: column;
     padding: 0 20px;
   }
-  
+
   .hero-btn {
     width: 100%;
   }
