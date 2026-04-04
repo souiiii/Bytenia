@@ -60,6 +60,12 @@
   letter-spacing: normal;
 }
 
+.below-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+
 .why-choose-pills {
   display: flex;
   flex-wrap: wrap;
@@ -105,6 +111,11 @@
     font-size: 2rem; /* Smoother step down from 3.5rem */
   }
 
+  .below-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
   .why-choose-pills {
     flex-direction: column;
     align-items: stretch;
@@ -116,5 +127,11 @@
 @media (max-width: 547px) {
   .why-choose-title {
     font-size: 1.5rem;
+  }
+
+  .below-title {
+    font-size: 2rem !important;
+    font-weight: 700;
+    margin-bottom: 2rem;
   }
 }

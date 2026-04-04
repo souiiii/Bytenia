@@ -78,7 +78,7 @@
   align-items: flex-end;
   opacity: 0.8;
   margin-top: 10px;
-  margin-bottom: -140px; /* Restrict overhang from destroying ServerSelection native padding gap */
+  margin-bottom: -200px; /* Restrict overhang from destroying ServerSelection native padding gap */
   transform: translateY(20px);
 }
 

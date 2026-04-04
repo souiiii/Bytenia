@@ -1,8 +1,7 @@
-
 .choice-card {
   background-color: var(--bg-dark);
   border-radius: 36px; /* Heavy pill-like bounds mapped to reference */
-  padding: 50px 70px;
+  padding: 70px 70px;
   display: flex;
   align-items: center;
   justify-content: center; /* Horizontally bounds the inner items */
