@@ -41,7 +41,36 @@
 .desktop-menu {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 8px; /* Slight gap between active states */
+  height: 100%;
+}
+
+.nav-dropdown {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-top: 4px solid transparent; /* Allows border alignment dynamically */
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.nav-dropdown.active {
+  background-color: var(--bg-primary); 
+  border-top-color: var(--bg-dark); 
+}
+
+.nav-dropdown.active .nav-link {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.nav-dropdown.looking-glass {
+  cursor: default;
+}
+
+.nav-dropdown.looking-glass .nav-link {
+  cursor: pointer;
 }
 
 .nav-link {
@@ -53,7 +82,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  cursor: pointer;
+  cursor: inherit;
   letter-spacing: 0.5px;
 }
 
@@ -158,3 +187,45 @@
     display: block;
   }
 }
+
+/* Submenu dark band styles */
+.navbar-submenu {
+  width: 100%;
+  background-color: var(--bg-dark);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.submenu-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Flow from the left to match visual */
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 100px; /* Aligned roughly below the tabs */
+}
+
+@media (max-width: 1200px) {
+  .submenu-container {
+    padding-left: 20px;
+    justify-content: center;
+  }
+}
+
+.submenu-link {
+  color: var(--text-muted-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.submenu-link:hover {
+  color: var(--text-light);
+}
+
+.submenu-separator {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+}
+

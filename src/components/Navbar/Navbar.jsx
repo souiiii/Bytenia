@@ -1,11 +1,26 @@
 import React, { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
 import "./Navbar.css";
 
+const SUBMENU_DATA = {
+  PRODUCTS: [
+    { label: "Enterprise Dedicated Servers", path: "/enterprise" },
+    { label: "Cost-Optimized Dedicated Servers", path: "/cost-optimized" },
+    { label: "Virtual Dedicated Servers", path: "/vds" },
+    { label: "Colocation", path: "/colocation" },
+    { label: "Infrastructure Locations", path: "/locations" },
+  ],
+  COMPANY: [
+    { label: "About Us", path: "/company" },
+    { label: "Partnership Program", path: "/partnership-program" },
+  ]
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,19 +41,25 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="navbar-menu desktop-menu">
-          <div className="nav-dropdown">
+          <div 
+            className={`nav-dropdown ${activeMenu === 'PRODUCTS' ? 'active' : ''}`}
+            onClick={() => setActiveMenu(activeMenu === 'PRODUCTS' ? null : 'PRODUCTS')}
+          >
             <span className="nav-link">
-              PRODUCTS <ChevronDown size={14} />
+              PRODUCTS {activeMenu === 'PRODUCTS' ? '-' : '+'}
             </span>
           </div>
-          <div className="nav-dropdown">
+          <div 
+            className={`nav-dropdown ${activeMenu === 'COMPANY' ? 'active' : ''}`}
+            onClick={() => setActiveMenu(activeMenu === 'COMPANY' ? null : 'COMPANY')}
+          >
             <span className="nav-link">
-              COMPANY <ChevronDown size={14} />
+              COMPANY {activeMenu === 'COMPANY' ? '-' : '+'}
             </span>
           </div>
-          <div className="nav-dropdown">
-            <Link to="/looking-glass" className="nav-link">
-              LOOKING GLASS <ChevronDown size={14} />
+          <div className="nav-dropdown looking-glass">
+            <Link to="/looking-glass" className="nav-link" onClick={() => setActiveMenu(null)}>
+              LOOKING GLASS
             </Link>
           </div>
 
@@ -75,14 +96,20 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       <div className={`mobile-menu ${isOpen ? "active" : ""}`}>
         <div className="mobile-menu-container">
-          <span className="mobile-link">
-            PRODUCTS <ChevronDown size={16} />
+          <span 
+            className="mobile-link"
+            onClick={() => setActiveMenu(activeMenu === 'PRODUCTS' ? null : 'PRODUCTS')}
+          >
+            PRODUCTS {activeMenu === 'PRODUCTS' ? '-' : '+'}
           </span>
-          <span className="mobile-link">
-            COMPANY <ChevronDown size={16} />
+          <span 
+            className="mobile-link"
+            onClick={() => setActiveMenu(activeMenu === 'COMPANY' ? null : 'COMPANY')}
+          >
+            COMPANY {activeMenu === 'COMPANY' ? '-' : '+'}
           </span>
-          <Link to="/looking-glass" className="mobile-link">
-            LOOKING GLASS <ChevronDown size={16} />
+          <Link to="/looking-glass" className="mobile-link" onClick={() => { setActiveMenu(null); setIsOpen(false); }}>
+            LOOKING GLASS
           </Link>
 
           <div className="mobile-actions">
@@ -101,6 +128,28 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Desktop Submenu Dark Band */}
+      {activeMenu && (
+        <div className="navbar-submenu">
+          <div className="container submenu-container">
+            {SUBMENU_DATA[activeMenu].map((item, index) => (
+              <React.Fragment key={index}>
+                <Link 
+                  to={item.path} 
+                  className="submenu-link" 
+                  onClick={() => setActiveMenu(null)}
+                >
+                  {item.label}
+                </Link>
+                {index < SUBMENU_DATA[activeMenu].length - 1 && (
+                  <span className="submenu-separator">|</span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
