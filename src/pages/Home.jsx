@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import ServerSelection from '../components/ServerSelection/ServerSelection';
 import Features from '../components/Features/Features';
@@ -11,7 +10,6 @@ import Footer from '../components/Footer/Footer';
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <ServerSelection />
       <Features />

@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import CompanyHero from '../components/CompanyHero/CompanyHero';
 import WhoWeAre from '../components/WhoWeAre/WhoWeAre';
@@ -9,7 +8,6 @@ import ServerChoiceBanner from '../components/ServerChoiceBanner/ServerChoiceBan
 const CompanyPage = () => {
   return (
     <>
-      <Navbar />
       <main className="page-content" style={{ backgroundColor: '#F8F8FA' }}>
         <CompanyHero />
         <WhoWeAre />

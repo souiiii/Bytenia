@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './PrivacyPolicyPage.css';
 
 const PrivacyPolicyPage = () => {
   return (
     <>
-      <Navbar />
       <main className="page-content privacy-policy-page" style={{ backgroundColor: '#F8F8FA' }}>
         
         <div className="container privacy-hero-container">

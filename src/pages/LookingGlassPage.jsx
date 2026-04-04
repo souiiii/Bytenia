@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { DownloadSimple, CaretDown } from '@phosphor-icons/react';
-import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './LookingGlassPage.css';
 
@@ -23,7 +22,6 @@ const LookingGlassPage = () => {
 
   return (
     <>
-      <Navbar />
       <main className="page-content lg-page">
         <div className="container lg-container">
           <div className="lg-card">

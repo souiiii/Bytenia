@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import LocationsHero from '../components/LocationsHero/LocationsHero';
 import WhyLocationMatters from '../components/WhyLocationMatters/WhyLocationMatters';
@@ -9,7 +8,6 @@ import DistributedArchitectureBanner from '../components/DistributedArchitecture
 const LocationsPage = () => {
   return (
     <>
-      <Navbar />
       <main className="page-content" style={{ backgroundColor: '#F8F8FA' }}>
         <LocationsHero />
         <WhyLocationMatters />

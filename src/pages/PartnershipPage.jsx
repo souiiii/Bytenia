@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import PartnerHero from '../components/PartnerHero/PartnerHero';
 import WhyPartner from '../components/WhyPartner/WhyPartner';
@@ -10,7 +9,6 @@ import PartnerSupportBanner from '../components/PartnerSupportBanner/PartnerSupp
 const PartnershipPage = () => {
   return (
     <>
-      <Navbar />
       <main className="page-content" style={{ backgroundColor: '#F8F8FA' }}>
         <PartnerHero />
         <WhyPartner />

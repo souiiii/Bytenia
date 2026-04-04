@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import CostOptimizedHero from '../components/CostOptimizedHero/CostOptimizedHero';
 import CostOptimizedServers from '../components/CostOptimizedServers/CostOptimizedServers';
 import IdealUseCases from '../components/IdealUseCases/IdealUseCases';
@@ -10,7 +9,6 @@ import Footer from '../components/Footer/Footer';
 const CostOptimizedPage = () => {
   return (
     <>
-      <Navbar />
       <CostOptimizedHero />
       <CostOptimizedServers />
       <IdealUseCases />
