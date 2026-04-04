@@ -14,12 +14,15 @@ const ContactSalesBanner = () => {
           />
 
           <div className="contact-content text-center">
-            <h2 className="h2 text-white contact-title">Not Sure<br/>Which Plan to Choose?</h2>
+            <h2 className="contact-title" style={{color: '#fff', fontSize: '3rem', lineHeight: '1.2'}}>
+              <strong style={{fontWeight: 700}}>Not Sure</strong><br/>
+              <span style={{fontWeight: 300}}>Which Plan to Choose?</span>
+            </h2>
             <p className="contact-desc text-gray">
-              Our team of engineers can help you find exactly what you need based on technical requirements and budget limit.
+              <strong style={{fontWeight: 700, color: '#fff'}}>Our team will help you</strong> select the most cost-effective server for your project and growth stage.
             </p>
-            <button className="btn-outline contact-btn" style={{borderColor: 'rgba(255,255,255,0.2)'}}>
-              Contact Sales
+            <button className="btn-outline contact-btn" style={{borderColor: 'rgba(255,255,255,0.6)', color: '#fff', padding: '12px 32px', borderRadius: '50px', fontSize: '0.9rem'}}>
+              Get Expert Consultation
             </button>
           </div>
         </div>
