@@ -1,42 +1,55 @@
 .server-choice-banner {
   padding-top: 80px;
   padding-bottom: 100px;
-  background-color: var(--bg-secondary); /* Blend into leadership background cleanly or global page bg */
+  background-color: var(--bg-secondary);
 }
 
 .choice-card {
   background-color: var(--bg-dark);
-  border-radius: var(--border-radius-lg);
-  padding: 50px 60px;
+  border-radius: 36px;
+  padding: 50px 70px;
   display: flex;
   align-items: center;
+  justify-content: center; /* Horizontally bounds the inner items */
   gap: 60px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
 .choice-graphic {
-  flex: 0 0 180px;
+  flex: 0 0 160px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.shape-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  object-fit: contain;
+}
+
 .choice-content {
-  flex: 1;
+  flex: 0 1 auto; /* Removes endless aggressive stretching out into 1200px */
+  max-width: 700px;
 }
 
 .choice-title {
-  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
   letter-spacing: 0.5px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   line-height: 1.4;
+  color: var(--text-light);
+  text-transform: uppercase;
 }
 
 .choice-desc {
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 30px;
+  font-weight: 300;
 }
 
 @media (max-width: 900px) {
@@ -46,10 +59,20 @@
     padding: 60px 40px;
     gap: 40px;
   }
+  .choice-graphic {
+    flex: 0 0 100px; /* Compress the SVG footprint vertically */
+    width: 100px;
+  }
 }
 
 @media (max-width: 600px) {
   .choice-card {
     padding: 40px 24px;
+    border-radius: 24px;
+    gap: 24px;
+  }
+  .choice-graphic {
+    flex: 0 0 80px; /* Scale heavily down on small mobile profiles */
+    width: 80px;
   }
 }

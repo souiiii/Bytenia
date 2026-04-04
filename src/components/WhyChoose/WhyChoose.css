@@ -49,14 +49,14 @@
 
 .why-choose-title {
   font-family: var(--font-heading);
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: var(--text-light);
   line-height: 1.1;
   text-align: center;
-  margin-bottom: 48px; /* Increased separation */
+  margin-bottom: 20px;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  text-transform: none; /* Strip caps overrides */
+  text-transform: none;
   letter-spacing: normal;
 }
 
@@ -102,7 +102,7 @@
   }
 
   .why-choose-title {
-    font-size: 2.5rem; /* Smoother step down from 3.5rem */
+    font-size: 2rem; /* Smoother step down from 3.5rem */
   }
 
   .why-choose-pills {
@@ -115,6 +115,6 @@
 
 @media (max-width: 547px) {
   .why-choose-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }

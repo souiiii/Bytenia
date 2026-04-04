@@ -1,21 +1,25 @@
 import React from 'react';
-import { Layers } from 'lucide-react';
+import shapeSvg from '../../assets/shape.svg';
 import './CallToAction.css';
 
 const CallToAction = () => {
   return (
     <section className="cta section">
       <div className="container">
-        <div className="cta-card">
-          <div className="cta-graphic">
-            <Layers size={100} strokeWidth={0.5} color="rgba(255,255,255,0.3)" />
+        <div className="choice-card">
+          <div className="choice-graphic">
+            <img src={shapeSvg} alt="Graphic Shape" className="shape-img" />
           </div>
-          <div className="cta-content">
-            <h3 className="cta-title">NOT SURE WHICH SERVER IS RIGHT FOR YOU?</h3>
-            <p className="cta-description">
-              Consult with our experts to find the perfect hosting configuration for your business needs.
+          <div className="choice-content">
+            <h3 className="choice-title text-white">
+              <span style={{fontWeight: 300}}>NOT SURE </span> WHICH SERVER <span style={{fontWeight: 300}}>TO CHOOSE?</span>
+            </h3>
+            <p className="choice-desc text-white" style={{opacity: 0.9}}>
+              Our experts will help you select the right configuration for your workload and budget.
             </p>
-            <button className="btn-outline cta-btn">Contact Sales</button>
+            <button className="btn-outline" style={{borderColor: 'rgba(255,255,255,0.2)', paddingLeft: '32px', paddingRight: '32px', color: '#fff'}}>
+              Contact Our Experts
+            </button>
           </div>
         </div>
       </div>
