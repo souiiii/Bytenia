@@ -1,7 +1,6 @@
 .support-banner {
   background-color: var(--bg-primary);
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding: 100px 0;
 }
 
 .support-card {
