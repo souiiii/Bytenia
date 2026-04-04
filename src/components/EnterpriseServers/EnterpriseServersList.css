@@ -1,6 +1,6 @@
 .ent-servers {
   background-color: var(--bg-primary); /* typically #f8f9fa or white */
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .ent-servers-header {
