@@ -10,30 +10,59 @@
 
 .feature-card {
   background-color: var(--bg-white);
-  padding: 32px 24px;
-  border-radius: var(--border-radius-md);
+  padding: 40px 24px;
+  border-radius: var(--border-radius-lg);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  transition: transform var(--transition-speed);
+  transition: transform 0.3s ease;
+  
+  /* Hidden by default, awaiting Intersection Observer */
+  opacity: 0; 
 }
 
+/* Entrance Animation Setup */
+@keyframes slowSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card.animate-reveal {
+  /* Using a massive cubic bezier spring for premium slowing momentum */
+  animation: slowSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Precision cascading delays for sequential card rendering */
+.feature-card.animate-reveal:nth-child(1) { animation-delay: 0.1s; }
+.feature-card.animate-reveal:nth-child(2) { animation-delay: 0.25s; }
+.feature-card.animate-reveal:nth-child(3) { animation-delay: 0.4s; }
+.feature-card.animate-reveal:nth-child(4) { animation-delay: 0.55s; }
+
+/* Keep hover float physics without breaking resolved standard bounds */
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .feature-card-icon {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   color: var(--bg-dark);
 }
 
 .feature-card-title {
-  font-size: 1.125rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .feature-card-desc {
-  font-size: 0.875rem;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
 }

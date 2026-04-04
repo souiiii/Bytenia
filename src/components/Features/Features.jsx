@@ -1,37 +1,52 @@
-import React from 'react';
-import { Terminal, Shield, HardDrive, Headphones } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Network, Shield, HardDrive, Globe } from 'lucide-react';
 import './Features.css';
 
 const features = [
   {
-    title: 'Full Root Access',
-    desc: 'Get complete control over your server environment and configurations.',
-    icon: <Terminal size={24} />
+    title: 'Guaranteed Dedicated Bandwidth',
+    desc: 'Unmetered bandwidth allocation with consistent throughput and no resource sharing.',
+    icon: <Network size={32} strokeWidth={1.5} />
   },
   {
     title: 'DDoS Protection',
-    desc: 'Enterprise-grade mitigation to ensure maximum server uptime.',
-    icon: <Shield size={24} />
+    desc: 'Always-on DDoS mitigation to protect your services from network attacks.',
+    icon: <Shield size={32} strokeWidth={1.5} />
   },
   {
-    title: 'Backup & Storage Options',
-    desc: 'Keep your data safe with automated and secure backup options.',
-    icon: <HardDrive size={24} />
+    title: 'Backup Storage Options',
+    desc: 'Optional backup storage solutions to secure and recover critical data.',
+    icon: <HardDrive size={32} strokeWidth={1.5} />
   },
   {
-    title: '24/7 Expert Support',
-    desc: 'Our experts are available around the clock to assist you directly.',
-    icon: <Headphones size={24} />
+    title: 'IPv4 & IPv6 Support',
+    desc: 'Native support for both IPv4 and IPv6 addresses to ensure full network compatibility.',
+    icon: <Globe size={32} strokeWidth={1.5} />
   }
 ];
 
 const Features = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-reveal');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const cards = document.querySelectorAll('.feature-card');
+    cards.forEach(card => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="features section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="h2" style={{marginBottom: '16px'}}>Included</h2>
-          <p className="subtitle">with Every Server</p>
+          <h2 className="title-main h2" style={{marginBottom: '16px'}}>Included</h2>
+          <p className="subtitle" style={{fontWeight: 300}}>with Every Server</p>
         </div>
 
         <div className="features-grid">

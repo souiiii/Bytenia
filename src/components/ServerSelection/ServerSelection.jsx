@@ -6,38 +6,38 @@ const serverData = [
   {
     id: "enterprise",
     title: "Enterprise Dedicated Servers",
-    icon: <Server size={32} />,
+    icon: <Server size={64} strokeWidth={1} />,
     subtitle:
-      "Recommended when: you require maximum performance, control, and isolated resources.",
+      "Recommended when: uptime, security, and performance are non-negotiable.",
     features: [
       {
-        name: "HIGH-TRAFFIC WEBSITES",
-        desc: "For platforms with consistent and heavy traffic.",
+        name: "FINTECH & FINANCIAL SERVICES",
+        desc: "Payment systems, financial processing, compliance-driven projects.",
       },
       {
-        name: "COMPLEX DATABASES",
-        desc: "For caching layers, big data processing and large databases.",
+        name: "GAMING & STREAMING",
+        desc: "Game servers, live streaming platforms, high-concurrency workloads.",
       },
       {
-        name: "AI & MACHINE LEARNING",
-        desc: "Custom configurations for intensive computational workloads.",
+        name: "AI / MACHINE LEARNING",
+        desc: "Model training, high-performance computing, GPU workloads.",
       },
       {
-        name: "GAME SERVERS",
-        desc: "High compute, high networking performance, low latency.",
+        name: "ENTERPRISE SYSTEMS",
+        desc: "Business-critical applications requiring 24/7 availability.",
       },
     ],
-    price: "$ 120.99",
+    price: "$ 99.99",
     whyChoose: [
-      "No resource sharing with other users",
-      "Full root access for custom configurations",
-      "Hardware-level security and compliance",
+      "Entire server resources dedicated to your business",
+      "Highest level of security and control",
+      "Enterprise-grade performance and SLA",
     ],
   },
   {
     id: "cost-optimized",
     title: "Cost-Optimized Servers",
-    icon: <Database size={32} />,
+    icon: <Database size={64} strokeWidth={1} />,
     subtitle:
       "Recommended when: budget efficiency is more important than peak performance.",
     features: [
@@ -68,7 +68,7 @@ const serverData = [
   {
     id: "virtual",
     title: "Virtual Dedicated Servers",
-    icon: <Cloud size={32} />,
+    icon: <Cloud size={64} strokeWidth={1} />,
     subtitle:
       "Recommended when: your project is growing and requires predictable performance.",
     features: [
@@ -103,7 +103,7 @@ const ServerSelection = () => {
 
   return (
     <section className="server-selection section">
-      <div className="container" style={{ maxWidth: "1000px" }}>
+      <div className="container">
         <div className="section-header text-center">
           <h2 className="h2" style={{ marginBottom: "16px" }}>
             Choose the Right Server
@@ -162,7 +162,7 @@ const ServerSelection = () => {
                         <ul className="why-choose-list">
                           {server.whyChoose.map((item, idx) => (
                             <li key={idx} className="why-choose-li">
-                              • {item}
+                              {item}
                             </li>
                           ))}
                         </ul>
@@ -172,7 +172,7 @@ const ServerSelection = () => {
                           From {server.price} / month
                         </span>
                         <button
-                          className="btn-primary"
+                          className="btn-view-servers"
                           onClick={(e) => e.stopPropagation()}
                         >
                           View Servers

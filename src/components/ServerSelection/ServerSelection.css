@@ -13,7 +13,7 @@
 .server-cards-container {
   display: flex;
   gap: 24px;
-  height: 600px;
+  min-height: 700px;
 }
 
 .server-card {
@@ -64,6 +64,7 @@
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  min-width: 750px; /* Prevents text-wrapping height-jumps during flex transition squeeze */
   animation: fadeIn 0.5s ease-in forwards;
 }
 
@@ -125,38 +126,77 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-dark-light);
-  padding: 24px 32px;
-  border-radius: var(--border-radius-md);
+  background-color: #191c26; /* Exact requested match */
+  padding: 32px 40px;
+  border-radius: var(--border-radius-lg);
   margin-top: 40px;
 }
 
 .why-choose-title {
-  font-size: 0.75rem;
-  letter-spacing: 1px;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   color: var(--text-light);
   margin-bottom: 12px;
 }
 
 .why-choose-list {
-  list-style: none;
-  font-size: 0.8rem;
+  list-style: disc;
+  font-size: 0.85rem;
   color: var(--text-muted-light);
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transform: translateX(16px);
 }
+
+/* .why-choose-li {
+  padding-left: 12px;
+  position: relative;
+} */
+
+/* .why-choose-li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  color: var(--text-muted-light);
+  font-size: 1.1rem;
+  line-height: 1;
+} */
 
 .pricing-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 16px;
+  gap: 20px;
 }
 
 .price-label {
+  font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: var(--bg-primary);
+}
+
+.btn-view-servers {
+  background-color: var(--bg-white);
+  color: var(--bg-dark);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-view-servers:hover {
+  background-color: #e2e8f0;
 }
 
 @media (max-width: 900px) {
@@ -176,6 +216,10 @@
     padding: 20px 24px;
   }
 
+  .server-card-expanded {
+    min-width: 0;
+  }
+
   .expanded-features {
     grid-template-columns: 1fr;
   }
@@ -191,7 +235,7 @@
     width: 100%;
   }
 
-  .pricing-box .btn-primary {
+  .btn-view-servers {
     width: 100%;
   }
 }
