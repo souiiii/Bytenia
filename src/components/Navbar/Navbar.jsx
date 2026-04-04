@@ -169,7 +169,7 @@ const Navbar = () => {
                 <React.Fragment key={index}>
                   <Link 
                     to={item.path} 
-                    className="submenu-link" 
+                    className={`submenu-link ${location.pathname === item.path ? 'active' : ''}`} 
                   >
                     {item.label}
                   </Link>

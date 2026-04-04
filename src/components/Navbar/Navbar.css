@@ -237,8 +237,9 @@
   transition: color var(--transition-speed);
 }
 
-.submenu-link:hover {
-  color: var(--text-light);
+.submenu-link:hover,
+.submenu-link.active {
+  color: #fff;
 }
 
 .submenu-separator {
