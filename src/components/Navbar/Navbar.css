@@ -61,7 +61,9 @@
 }
 
 .nav-dropdown.active .nav-link {
-  font-weight: 700;
+  /* Use stroke to visibly thicken the text geometry identically without altering kerning physical layout metrics */
+  -webkit-text-stroke: 0.5px var(--text-dark);
+  font-weight: 600; /* Locked to identical base state */
   color: var(--text-dark);
 }
 

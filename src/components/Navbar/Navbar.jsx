@@ -77,7 +77,7 @@ const Navbar = () => {
             onClick={() => setActiveMenu(activeMenu === 'PRODUCTS' ? null : 'PRODUCTS')}
           >
             <span className="nav-link">
-              PRODUCTS {activeMenu === 'PRODUCTS' ? '-' : '+'}
+              PRODUCTS <span style={{ display: 'inline-block', width: '12px', textAlign: 'center' }}>{activeMenu === 'PRODUCTS' ? '-' : '+'}</span>
             </span>
           </div>
           <div 
@@ -85,7 +85,7 @@ const Navbar = () => {
             onClick={() => setActiveMenu(activeMenu === 'COMPANY' ? null : 'COMPANY')}
           >
             <span className="nav-link">
-              COMPANY {activeMenu === 'COMPANY' ? '-' : '+'}
+              COMPANY <span style={{ display: 'inline-block', width: '12px', textAlign: 'center' }}>{activeMenu === 'COMPANY' ? '-' : '+'}</span>
             </span>
           </div>
           <div className="nav-dropdown looking-glass">
