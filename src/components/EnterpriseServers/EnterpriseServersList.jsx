@@ -37,7 +37,7 @@ const EnterpriseServersList = () => {
 
   // Apply filters
   const filteredServers = serversData.filter(server => {
-    if (activeLoc !== "all" && server.countryCode !== activeLoc) return false;
+    if (activeLoc !== "all" && server.city.toLowerCase() !== activeLoc) return false;
     if (cpuFilter !== "Show All" && server.cpuModel !== cpuFilter) return false;
     if (ramFilter !== "Show All" && server.ram !== ramFilter) return false;
     if (storageFilter !== "Show All" && server.storage !== storageFilter) return false;
