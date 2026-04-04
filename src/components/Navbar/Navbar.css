@@ -190,6 +190,9 @@
 
 /* Submenu dark band styles */
 .navbar-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
   background-color: var(--bg-dark);
   padding: 16px 0;

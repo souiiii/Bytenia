@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
 import "./Navbar.css";
 
@@ -18,9 +18,33 @@ const SUBMENU_DATA = {
   ]
 };
 
+const PRODUCTS_ROUTES = [
+  "/enterprise",
+  "/cost-optimized",
+  "/vds",
+  "/colocation",
+  "/locations"
+];
+
+const COMPANY_ROUTES = [
+  "/company",
+  "/partnership-program"
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const [activeMenu, setActiveMenu] = useState(null);
+
+  React.useEffect(() => {
+    if (PRODUCTS_ROUTES.includes(location.pathname)) {
+      setActiveMenu("PRODUCTS");
+    } else if (COMPANY_ROUTES.includes(location.pathname)) {
+      setActiveMenu("COMPANY");
+    } else {
+      setActiveMenu(null);
+    }
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -138,7 +162,7 @@ const Navbar = () => {
                 <Link 
                   to={item.path} 
                   className="submenu-link" 
-                  onClick={() => setActiveMenu(null)}
+                  /* Removed onClick clear so state persists properly */
                 >
                   {item.label}
                 </Link>
