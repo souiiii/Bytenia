@@ -97,6 +97,13 @@
   line-height: 1.6;
 }
 
+.features-subtitle {
+  font-family: var(--font-primary);
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
 @media (max-width: 900px) {
   .marquee-wrapper {
     width: 100%;
@@ -128,5 +135,9 @@
   .feature-card:hover {
     transform: none; /* Disable Z-axis hover lifting if they are hard-stacked */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .features-subtitle {
+    font-size: 1.5rem;
   }
 }

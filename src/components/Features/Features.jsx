@@ -40,8 +40,8 @@ const Features = () => {
     <section className="features section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="title-main h2" style={{marginBottom: '16px'}}>Included</h2>
-          <p className="subtitle" style={{fontWeight: 300}}>with Every Server</p>
+          <h2 className="title-main h2" style={{marginBottom: '8px'}}>Included</h2>
+          <p className="features-subtitle">with Every Server</p>
         </div>
       </div>
       
