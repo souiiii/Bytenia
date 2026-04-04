@@ -1,12 +1,12 @@
 import React from 'react';
-import { Zap, Activity, Globe, Lock } from 'lucide-react';
+import { TrendingUp, Settings2, ShieldCheck, CalendarClock } from 'lucide-react';
 import './WhyChoose.css';
 
 const reasons = [
-  { text: 'High Performance', icon: <Zap size={20} /> },
-  { text: '99.9% Uptime', icon: <Activity size={20} /> },
-  { text: 'Global Network', icon: <Globe size={20} /> },
-  { text: 'Secure Network', icon: <Lock size={20} /> }
+  { text: 'Predictable performance', icon: <TrendingUp size={28} strokeWidth={1.5} /> },
+  { text: 'Scalable configurations', icon: <Settings2 size={28} strokeWidth={1.5} /> },
+  { text: 'Security protection', icon: <ShieldCheck size={28} strokeWidth={1.5} /> },
+  { text: 'Fixed monthly pricing', icon: <CalendarClock size={28} strokeWidth={1.5} /> }
 ];
 
 const WhyChoose = () => {
@@ -22,7 +22,7 @@ const WhyChoose = () => {
       </div>
       
       <div className="container why-choose-content">
-        <h2 className="h2 text-white text-center why-choose-title">
+        <h2 className="why-choose-title">
           Why Choose<br/>Byteania Dedicated Servers
         </h2>
         
