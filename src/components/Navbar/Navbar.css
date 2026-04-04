@@ -216,16 +216,14 @@
 .submenu-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Flow from the left to match visual */
+  justify-content: center; /* Center align horizontally globally */
   flex-wrap: wrap;
   gap: 20px;
-  padding-left: 100px; /* Aligned roughly below the tabs */
 }
 
 @media (max-width: 1200px) {
   .submenu-container {
-    padding-left: 20px;
-    justify-content: center;
+    padding: 0 20px;
   }
 }
 

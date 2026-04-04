@@ -62,7 +62,14 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container container">
-        <Link to="/" className="navbar-logo">
+        <Link 
+          to="/" 
+          className="navbar-logo" 
+          onClick={() => {
+            setActiveMenu(null);
+            setIsOpen(false);
+          }}
+        >
           <img
             src={Logo}
             alt="Byteania Logo"
