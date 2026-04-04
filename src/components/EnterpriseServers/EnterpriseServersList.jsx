@@ -2,21 +2,16 @@ import React, { useState } from "react";
 import { MemoryStick, HardDrive, Cpu, ArrowUpDown } from "lucide-react";
 import "./EnterpriseServersList.css";
 
-const serversData = Array(5)
-  .fill({
-    id: Math.random(),
-    cpuModel: "AMD Ryzen 7950X",
-    cpuDetails: "16C / 32T @ 4.5GHz / 5.7GHz",
-    benchmark: "Scored 46,130 on a CPU benchmark",
-    countryCode: "nl",
-    city: "Amsterdam",
-    country: "Nederlands",
-    ram: "128GB, Type DDR5",
-    storage: "2x 2TB NVMe SSD",
-    network: "10 Gbit",
-    price: "$ 99.99",
-  })
-  .map((item, i) => ({ ...item, id: i })); // Unique IDs
+const serversData = [
+  { id: 1, cpuModel: 'AMD Ryzen 7950X', cpuDetails: '16C / 32T @ 4.5GHz / 5.7GHz', benchmark: 'Scored 46,130 on a CPU benchmark', countryCode: 'us', city: 'Dallas', country: 'United States', ram: '128GB, Type DDR5', storage: '2x 2TB NVMe SSD', network: '10 Gbit', price: '$ 89.99' },
+  { id: 2, cpuModel: 'AMD Ryzen 7950X', cpuDetails: '16C / 32T @ 4.5GHz / 5.7GHz', benchmark: 'Scored 46,130 on a CPU benchmark', countryCode: 'nl', city: 'Amsterdam', country: 'Nederlands', ram: '256GB ECC RAM', storage: '2x 4TB NVMe SSD', network: '10 Gbit', price: '$ 119.99' },
+  { id: 3, cpuModel: 'Intel Xeon Gold 6330', cpuDetails: '28C / 56T @ 2.0GHz / 3.1GHz', benchmark: 'Scored 39,200 on a CPU benchmark', countryCode: 'de', city: 'Frankfurt', country: 'Germany', ram: '128GB, Type DDR5', storage: '2x 2TB NVMe SSD', network: '1 Gbit', price: '$ 129.99' },
+  { id: 4, cpuModel: 'Intel Xeon Gold 6330', cpuDetails: '28C / 56T @ 2.0GHz / 3.1GHz', benchmark: 'Scored 39,200 on a CPU benchmark', countryCode: 'us', city: 'Chicago', country: 'United States', ram: '512GB ECC RAM', storage: '4x 2TB NVMe SSD', network: '10 Gbit', price: '$ 299.99' },
+  { id: 5, cpuModel: 'AMD EPYC 7502P', cpuDetails: '32C / 64T @ 2.5GHz / 3.3GHz', benchmark: 'Scored 42,500 on a CPU benchmark', countryCode: 'au', city: 'Sydney', country: 'Australia', ram: '256GB ECC RAM', storage: '2x 2TB NVMe SSD', network: '10 Gbit', price: '$ 199.99' },
+  { id: 6, cpuModel: 'AMD EPYC 7502P', cpuDetails: '32C / 64T @ 2.5GHz / 3.3GHz', benchmark: 'Scored 42,500 on a CPU benchmark', countryCode: 'gb', city: 'London', country: 'United Kingdom', ram: '128GB, Type DDR5', storage: '4x 1TB NVMe SSD', network: '10 Gbit', price: '$ 189.99' },
+  { id: 7, cpuModel: 'AMD Ryzen 9 5950X', cpuDetails: '16C / 32T @ 3.4GHz / 4.9GHz', benchmark: 'Scored 45,900 on a CPU benchmark', countryCode: 'nl', city: 'Amsterdam', country: 'Nederlands', ram: '64GB DDR4', storage: '2x 2TB NVMe SSD', network: '1 Gbit', price: '$ 79.99' },
+  { id: 8, cpuModel: 'AMD Ryzen 9 5950X', cpuDetails: '16C / 32T @ 3.4GHz / 4.9GHz', benchmark: 'Scored 45,900 on a CPU benchmark', countryCode: 'us', city: 'Miami', country: 'United States', ram: '128GB, Type DDR5', storage: '4x 1TB NVMe SSD', network: '10 Gbit', price: '$ 109.99' }
+];
 
 const filterLocations = [
   { id: "all", label: "All locations" },
