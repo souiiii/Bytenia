@@ -206,7 +206,8 @@ const EnterpriseServersList = () => {
                 </div>
               </div>
             </div>
-          )))}
+          ))
+        )}
         </div>
 
         <div className="text-center" style={{ marginTop: "40px" }}>
