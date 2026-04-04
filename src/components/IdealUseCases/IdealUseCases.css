@@ -13,7 +13,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  opacity: 0.15; /* Keeps it very light and blended */
+  opacity: 0.06;
 }
 
 .use-cases-overlay {
@@ -23,7 +23,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(249, 250, 251, 0.95) 100%);
-  z-index: 2;
+  z-index: 0;
 }
 
 .use-cases-pills {
@@ -35,13 +35,13 @@
 
 .uc-pill {
   background-color: var(--bg-white);
-  padding: 8px 16px;
-  border-radius: var(--border-radius-sm);
+  padding: 12px 20px;
+  border-radius: 12px;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--bg-dark);
+  color: #111827;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--border-light);
+  border: none;
 }
 
 .key-benefits-label {
@@ -59,22 +59,23 @@
 
 .benefit-card {
   background-color: var(--bg-white);
-  padding: 32px 24px;
-  border-radius: var(--border-radius-md);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--border-light);
+  padding: 40px 32px;
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  border: none;
 }
 
 .benefit-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--bg-dark);
-  margin-bottom: 12px;
+  color: #111827;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
 }
 
 .benefit-desc {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  font-size: 0.925rem;
+  color: #4b5563;
   line-height: 1.6;
 }
 

@@ -2,24 +2,24 @@ import React from 'react';
 import './IdealUseCases.css';
 
 const useCasesPills = [
-  "Continuous CI/CD",
-  "VPNs & Secure Environments",
-  "Web & Database Infrastructure",
-  "AI & Machine Learning"
+  "STARTUPS & MVPS",
+  "SMALL E-COMMERCE STORES",
+  "WEB STUDIOS & FREELANCERS",
+  "DEVELOPMENT & TESTING"
 ];
 
 const benefits = [
   {
     title: "Fast Setup & Easy Scaling",
-    desc: "Deploy new servers in minutes and scale laterally seamlessly as your traffic requirements grow over time."
+    desc: "Get started quickly and upgrade as your project grows. No over-investment at the early stage."
   },
   {
     title: "Lower Infrastructure Costs",
-    desc: "Get incredible compute density and network speed for a fraction of the cost of traditional public clouds."
+    desc: "Optimized hardware configurations focused on essential resources. Reduce monthly expenses without sacrificing stability."
   },
   {
     title: "Simple Management",
-    desc: "Monitor resources, reboot hardware, and manage firewalls through our intuitive unified panel."
+    desc: "Straightforward configurations without unnecessary complexity."
   }
 ];
 
@@ -27,7 +27,7 @@ const IdealUseCases = () => {
   return (
     <section className="use-cases section">
       <div className="use-cases-overlay"></div>
-      <img src="/use_cases_bg.png" alt="Clean Servers Background" className="use-cases-bg" />
+      <img src="/laptop_bg.png" alt="Clean Servers Background" className="use-cases-bg" />
       
       <div className="container" style={{position: 'relative', zIndex: 3, maxWidth: '1000px'}}>
         
@@ -41,8 +41,8 @@ const IdealUseCases = () => {
           </div>
         </div>
 
-        <div className="text-center" style={{margin: '60px 0 32px'}}>
-          <span className="key-benefits-label">KEY BENEFITS</span>
+        <div className="text-center" style={{margin: '60px 0 40px'}}>
+          <h3 style={{fontSize: '1.5rem', fontWeight: 600, color: '#111827', textTransform: 'uppercase', margin: 0, letterSpacing: '0.02em'}}>KEY BENEFITS</h3>
         </div>
 
         <div className="benefits-grid">
