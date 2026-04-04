@@ -296,6 +296,18 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    width: 100%;
+  }
+  .ent-selectors-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+  .ent-select-box {
+    width: 100%;
+  }
+  .ent-select-box select {
+    width: 100%;
   }
   .ent-card-metrics {
     flex-wrap: wrap;
