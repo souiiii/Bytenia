@@ -1,7 +1,7 @@
 .features {
   background-color: var(--bg-primary);
   overflow: hidden; /* Prevent horizontal scrollbars bleeding out */
-  padding-bottom: 80px;
+  padding: 0 0 150px 0; /* Null top padding, strict 1.5x bottom */
 }
 
 /* Base Marquee Container */
@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto; /* Capped at 1080p widths and centers automatically on ultra-wide monitors */
-  padding: 40px 0; /* Room for card hovers */
+  padding: 20px 0; /* Room for card hovers */
 
   /* Graduated Fade Edge Mask */
   mask-image: linear-gradient(

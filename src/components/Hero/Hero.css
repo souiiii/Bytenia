@@ -1,6 +1,6 @@
 .hero {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 0px; /* Prevent breaking the 100px top constraint of the next section */
 }
 
 .hero-card {
@@ -77,8 +77,8 @@
   justify-content: center;
   align-items: flex-end;
   opacity: 0.8;
-  margin-top: 30px;
-  margin-bottom: -200px;
+  margin-top: 10px;
+  margin-bottom: -140px; /* Restrict overhang from destroying ServerSelection native padding gap */
   transform: translateY(20px);
 }
 

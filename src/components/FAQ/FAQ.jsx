@@ -41,7 +41,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="faq section">
+    <section className="faq">
       <div className="container faq-container">
         <div className="section-header text-center faq-header">
           <h2 className="h2" style={{marginBottom: '8px'}}>FAQs</h2>

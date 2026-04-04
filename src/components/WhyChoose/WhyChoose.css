@@ -1,7 +1,7 @@
 .why-choose {
   position: relative;
   width: 100%;
-  padding: 180px 0; /* Expanded to match original huge vertical height spacing */
+  padding: 150px 0; /* Matched global 1.5x section spacing */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@
 
 @media (max-width: 768px) {
   .why-choose {
-    padding: 80px 0;
+    padding: 90px 0;
   }
 
   .why-choose-title {

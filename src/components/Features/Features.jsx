@@ -37,7 +37,7 @@ const Features = () => {
   );
 
   return (
-    <section className="features section">
+    <section className="features">
       <div className="container">
         <div className="section-header text-center">
           <h2 className="title-main h2" style={{marginBottom: '8px'}}>Included</h2>

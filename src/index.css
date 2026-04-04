@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* Section Spacing */
 .section {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 @media (max-width: 768px) {
@@ -152,6 +152,6 @@ h1, h2, h3, h4, h5, h6,
     font-size: 2rem;
   }
   .section {
-    padding: 60px 0;
+    padding: 90px 0;
   }
 }
