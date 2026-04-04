@@ -38,8 +38,8 @@
   animation: scrollX 40s linear infinite;
 }
 
-/* Pause animation on hover */
-.marquee-wrapper:hover .marquee-group {
+/* Pause animation strictly when hovering over an explicit card, preserving sync across all groups */
+.marquee-wrapper:has(.feature-card:hover) .marquee-group {
   animation-play-state: paused;
 }
 
