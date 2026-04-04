@@ -14,13 +14,22 @@ const SupportBanner = () => {
           />
 
           <div className="support-content text-center">
-            <h2 className="h2 text-white support-title">We Support You<br/>Beyond Provisioning</h2>
-            <p className="support-desc text-gray">
-              Our enterprise support engineers are available 24/7 to assist with complex network configurations, 
-              hardware optimizations, and specialized operational needs.
+            <h2 className="support-title">
+              <strong>We Support You</strong><br/>
+              <span>Beyond Provisioning</span>
+            </h2>
+            <p className="support-desc">
+              <strong>Whether you're migrating</strong> from cloud, upgrading existing infrastructure, or scaling globally, our team helps:
             </p>
-            <button className="btn-outline support-btn" style={{borderColor: 'rgba(255,255,255,0.2)'}}>
-              Contact Support
+
+            <div className="support-features">
+              <strong>Choose the right configuration</strong> <span className="feat-div">|</span> 
+              <strong>Plan capacity and growth</strong> <span className="feat-div">|</span> 
+              <strong>Optimize performance and cost</strong>
+            </div>
+
+            <button className="btn-outline support-btn">
+              Get Expert Consultation
             </button>
           </div>
         </div>
