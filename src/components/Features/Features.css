@@ -1,50 +1,76 @@
 .features {
   background-color: var(--bg-primary);
+  overflow: hidden; /* Prevent horizontal scrollbars bleeding out */
+  padding-bottom: 80px;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+/* Base Marquee Container */
+.marquee-wrapper {
+  display: flex;
+  gap: 40px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* Forcing edge-to-edge breakout out of potential container restrictions */
+  padding: 40px 0; /* Room for card hovers */
+  
+  /* Graduated Fade Edge Mask */
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 10%,
+    rgba(0,0,0,1) 90%,
+    rgba(0,0,0,0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 10%,
+    rgba(0,0,0,1) 90%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+.marquee-group {
+  display: flex;
+  gap: 40px;
+  flex-shrink: 0;
+  align-items: stretch;
+  /* 40s linear creates a very smooth, slow ambient glide */
+  animation: scrollX 40s linear infinite;
+}
+
+/* Pause animation on hover */
+.marquee-wrapper:hover .marquee-group {
+  animation-play-state: paused;
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translate to full width of group plus the explicit 40px gap connecting them to create pure 0-flicker loop */
+    transform: translateX(calc(-100% - 40px));
+  }
 }
 
 .feature-card {
   background-color: var(--bg-white);
-  padding: 40px 24px;
+  padding: 48px 40px;
   border-radius: var(--border-radius-lg);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-  /* Hidden by default, awaiting Intersection Observer */
-  opacity: 0; 
+  /* Massively widened sizing so duplicates naturally fall off 1080p horizontal real estate */
+  width: 440px;
+  flex-shrink: 0; 
+  display: flex;
+  flex-direction: column;
 }
 
-/* Entrance Animation Setup */
-@keyframes slowSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.feature-card.animate-reveal {
-  /* Using a massive cubic bezier spring for premium slowing momentum */
-  animation: slowSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-/* Precision cascading delays for sequential card rendering */
-.feature-card.animate-reveal:nth-child(1) { animation-delay: 0.1s; }
-.feature-card.animate-reveal:nth-child(2) { animation-delay: 0.25s; }
-.feature-card.animate-reveal:nth-child(3) { animation-delay: 0.4s; }
-.feature-card.animate-reveal:nth-child(4) { animation-delay: 0.55s; }
-
-/* Keep hover float physics without breaking resolved standard bounds */
+/* Smooth ambient lift on cursor focus */
 .feature-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card-icon {
@@ -58,23 +84,47 @@
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .feature-card-desc {
   font-family: var(--font-primary);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
 
-@media (max-width: 1024px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 900px) {
+  .marquee-wrapper {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    padding: 0 24px; /* Internal side-padding to replace standard container boundaries */
+    mask-image: none;
+    -webkit-mask-image: none;
+    gap: 16px;
+  }
+
+  .marquee-group {
+    flex-direction: column;
+    gap: 16px;
+    animation: none !important; /* Hard-kill the scroll physics */
+  }
+
+  /* Completely rip the cloned optical-loop group out of the mobile DOM render */
+  .marquee-wrapper .marquee-group:nth-child(2) {
+    display: none;
+  }
+
+  .feature-card {
+    width: 100%; 
+    padding: 32px 24px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  .feature-card:hover {
+    transform: none; /* Disable Z-axis hover lifting if they are hard-stacked */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   }
 }
 
-@media (max-width: 600px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-}
