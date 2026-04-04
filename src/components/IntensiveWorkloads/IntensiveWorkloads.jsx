@@ -2,12 +2,12 @@ import React from 'react';
 import './IntensiveWorkloads.css';
 
 const workloads = [
-  "High-Traffic E-commerce",
-  "Big Data & Machine Learning",
-  "SaaS & Cloud Infrastructure",
-  "Gaming & Low-Latency Applications",
-  "Video Streaming",
-  "Large Database Deployments"
+  "FINANCIAL & PAYMENT SYSTEMS",
+  "ERP & CORE BUSINESS APPLICATIONS",
+  "DATABASES & HIGH-PERFORMANCE STORAGE",
+  "PRIVATE CLOUD & VIRTUALIZATION PLATFORMS",
+  "AI / ML & DATA PROCESSING",
+  "HIGH-TRAFFIC DIGITAL PLATFORMS"
 ];
 
 const IntensiveWorkloads = () => {
@@ -23,7 +23,10 @@ const IntensiveWorkloads = () => {
           />
 
           <div className="workloads-content">
-            <h2 className="h2 text-white workloads-title">Designed for<br/>intensive workloads</h2>
+            <h2 className="workloads-title">
+              <strong>Designed for</strong><br/>
+              <span>Enterprise Workloads</span>
+            </h2>
             
             <div className="workloads-pills">
               {workloads.map((item, idx) => (
@@ -32,10 +35,10 @@ const IntensiveWorkloads = () => {
             </div>
 
             <p className="workloads-desc text-gray">
-              Our high-performance infrastructure ensures maximum speed, consistency, and uptime for resource-demanding operations.
+              <strong>Our infrastructure experts can help you</strong> select the optimal server based on your workload,<br/>performance requirements, and growth plans.
             </p>
 
-            <button className="btn-primary workloads-btn">Talk to Sales</button>
+            <button className="btn-light workloads-btn" style={{backgroundColor: '#fff', color: '#111827', padding: '12px 32px', borderRadius: '50px', fontWeight: '700', fontSize: '0.9rem'}}>Contact Our Experts</button>
           </div>
         </div>
       </div>
