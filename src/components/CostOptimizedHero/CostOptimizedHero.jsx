@@ -9,7 +9,7 @@ const CostOptimizedHero = () => {
           <div className="co-hero-content">
             <h1 className="hero-title h1 text-white">Cost-Optimized Servers</h1>
             <p className="hero-description text-gray">
-              Affordable yet powerful servers designed for robust scale and high-performance requirements without the premium cost.
+              Affordable server solutions designed for startups, small businesses, and projects where efficiency and cost control matter most.
             </p>
           </div>
         </div>
