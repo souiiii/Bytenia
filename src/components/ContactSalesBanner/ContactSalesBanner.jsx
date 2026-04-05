@@ -22,7 +22,7 @@ const ContactSalesBanner = () => {
             <p className="contact-desc text-gray">
               <strong style={{fontWeight: 700, color: '#fff'}}>Our team will help you</strong> select the most cost-effective server for your project and growth stage.
             </p>
-            <Link to="/connect" className="btn-outline contact-btn" style={{borderColor: 'rgba(255,255,255,0.6)', color: '#fff', padding: '12px 32px', borderRadius: '50px', fontSize: '0.9rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>
+            <Link to="/connect" className="btn-outline contact-btn">
               Get Expert Consultation
             </Link>
           </div>

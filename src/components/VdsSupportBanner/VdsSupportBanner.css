@@ -61,3 +61,23 @@
     padding: 60px 20px;
   }
 }
+
+.vds-contact-btn {
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  color: #fff !important;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  background-color: transparent !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: all var(--transition-speed, 0.3s) ease !important;
+}
+
+.vds-contact-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #fff !important;
+}

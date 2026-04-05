@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './VdsSupportBanner.css';
 
 const VdsSupportBanner = () => {
@@ -21,9 +22,9 @@ const VdsSupportBanner = () => {
             <p className="vds-contact-desc text-gray">
               <strong style={{fontWeight: 800, color: '#fff'}}>Our experts can help you</strong> select the best configuration based on your workload and growth plans.
             </p>
-            <button className="btn-outline vds-contact-btn" style={{borderColor: 'rgba(255,255,255,0.6)', color: '#fff', padding: '12px 32px', borderRadius: '50px', fontSize: '0.9rem', backgroundColor: 'transparent'}}>
+            <Link to="/connect" className="btn-outline vds-contact-btn">
               Contact Our Experts
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import shapeSvg from '../../assets/shape.svg';
 import './DistributedArchitectureBanner.css';
 
@@ -27,9 +28,9 @@ const DistributedArchitectureBanner = () => {
               <li>Edge-focused application scaling</li>
             </ul>
 
-            <button className="btn-outline" style={{borderColor: 'rgba(255,255,255,0.5)', paddingLeft: '32px', paddingRight: '32px', color: '#fff', fontSize: '0.9rem'}}>
+            <Link to="/connect" className="btn-outline" style={{borderColor: 'rgba(255,255,255,0.5)', paddingLeft: '32px', paddingRight: '32px', color: '#fff', fontSize: '0.9rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>
               Contact Our Experts
-            </button>
+            </Link>
           </div>
         </div>
       </div>
