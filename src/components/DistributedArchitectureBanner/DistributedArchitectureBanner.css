@@ -91,4 +91,12 @@
   .architecture-card {
     padding: 40px 24px;
   }
+  
+  .architecture-graphic {
+    flex: 0 0 140px;
+  }
+
+  .architecture-shape {
+    max-width: 140px;
+  }
 }
