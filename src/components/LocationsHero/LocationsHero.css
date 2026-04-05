@@ -11,7 +11,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: none;
-  margin-bottom: -60px; /* Pull the map up slightly into the card's visual space */
+  margin-bottom: 20px;
   z-index: 2;
 }
 
@@ -36,6 +36,10 @@
   max-width: 900px;
 }
 
+.map-marker-group {
+  --pin-scale: 1;
+}
+
 .map-marker-group:hover .marker-bg {
   fill: var(--bg-secondary);
 }
@@ -47,6 +51,9 @@
 @media (max-width: 768px) {
   .locations-datacenter-card {
     padding: 60px 20px;
-    margin-bottom: 0px;
+  }
+  
+  .map-marker-group {
+    --pin-scale: 1.5;
   }
 }

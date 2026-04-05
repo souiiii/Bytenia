@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ComposableMap,
   Geographies,
@@ -11,15 +11,19 @@ import './LocationsHero.css';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-// Approximate coordinates matching the mockups (US West, US East, Central Europe, Australia)
+// Exact coordinates matching earlier server pages (Dallas, Chicago, Miami, London, Amsterdam, Frankfurt, Sydney)
 const markers = [
-  { id: 'us-west', coordinates: [-118.2437, 34.0522] },
-  { id: 'us-east', coordinates: [-74.006, 40.7128] },
-  { id: 'eu-central', coordinates: [8.6821, 50.1109] },
-  { id: 'apac', coordinates: [151.2093, -33.8688] }
+  { id: 'dallas', flag: 'us', coordinates: [-96.7970, 32.7767] },
+  { id: 'chicago', flag: 'us', coordinates: [-87.6298, 41.8781] },
+  { id: 'miami', flag: 'us', coordinates: [-80.1918, 25.7617] },
+  { id: 'london', flag: 'gb', coordinates: [-0.1276, 51.5072] },
+  { id: 'amsterdam', flag: 'nl', coordinates: [4.9041, 52.3676] },
+  { id: 'frankfurt', flag: 'de', coordinates: [8.6821, 50.1109] },
+  { id: 'sydney', flag: 'au', coordinates: [151.2093, -33.8688] }
 ];
 
 const LocationsHero = () => {
+  const [zoomLevel, setZoomLevel] = useState(1);
 
   const handlePinClick = (id) => {
     console.log(`Pin clicked for popup foundation: ${id}`);
@@ -42,17 +46,25 @@ const LocationsHero = () => {
         <div className="map-container">
           <ComposableMap 
             projection="geoMercator" 
-            projectionConfig={{ scale: 140, center: [0, 25] }}
+            projectionConfig={{ scale: 145, center: [0, 30] }}
             width={800}
-            height={450}
+            height={500}
             style={{ width: "100%", height: "auto" }}
           >
-            <ZoomableGroup zoom={1} minZoom={1} maxZoom={4} translateExtent={[[0, 0], [800, 450]]}>
+            <ZoomableGroup 
+              zoom={1} 
+              minZoom={1} 
+              maxZoom={4} 
+              translateExtent={[[0, 0], [800, 500]]}
+              onMoveEnd={(position) => setZoomLevel(position.zoom)}
+            >
               <Geographies geography={geoUrl}>
                 {({ geographies }) =>
-                  geographies.map((geo) => (
-                    <Geography
-                      key={geo.rsmKey}
+                  geographies
+                    .filter(geo => geo.properties.name !== "Antarctica")
+                    .map((geo) => (
+                      <Geography
+                        key={geo.rsmKey}
                       geography={geo}
                       fill="#e2e8f0"
                       stroke="#ffffff"
@@ -72,13 +84,16 @@ const LocationsHero = () => {
                 <filter id="marker-shadow" x="-50%" y="-50%" width="200%" height="200%">
                   <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="rgba(0,0,0,0.15)" />
                 </filter>
+                <clipPath id="flag-clip">
+                  <circle cx="0" cy="-26" r="7" />
+                </clipPath>
               </defs>
 
-              {markers.map(({ id, coordinates }) => (
+              {markers.map(({ id, flag, coordinates }) => (
                 <Marker key={id} coordinates={coordinates} onClick={() => handlePinClick(id)}>
                   <g 
                     className="map-marker-group" 
-                    style={{ cursor: "pointer", transition: "transform 0.2s" }}
+                    style={{ cursor: "pointer", transition: "transform 0.1s", transform: `scale(calc(${1 / zoomLevel} * var(--pin-scale, 1)))` }}
                   >
                     {/* Teardrop style pin background */}
                     <path
@@ -87,10 +102,18 @@ const LocationsHero = () => {
                       filter="url(#marker-shadow)"
                       className="marker-bg"
                     />
-                    {/* Inner active dot */}
-                    <circle cx="0" cy="-26" r="6" fill="#0f121b" className="marker-dot" />
-                    {/* Tiny accent color */}
-                    <circle cx="0" cy="-26" r="2" fill="#fff" />
+                    {/* Tiny accent ring */}
+                    <circle cx="0" cy="-26" r="8" fill="#e2e8f0" />
+                    {/* Inner active flag */}
+                    <image 
+                      href={`https://flagcdn.com/w40/${flag}.png`} 
+                      x="-7" 
+                      y="-33" 
+                      width="14" 
+                      height="14" 
+                      clipPath="url(#flag-clip)" 
+                      preserveAspectRatio="xMidYMid slice" 
+                    />
                   </g>
                 </Marker>
               ))}
@@ -100,9 +123,9 @@ const LocationsHero = () => {
 
         {/* Bottom Text Hook */}
         <div className="text-center" style={{ marginTop: '20px', marginBottom: '80px' }}>
-          <h3 className="h3" style={{ fontSize: '1.125rem', letterSpacing: '0.5px', marginBottom: '16px' }}>MULTI-REGION<br/>ARCHITECTURE READY</h3>
-          <p className="subtitle" style={{ maxWidth: '600px', margin: '0 auto', fontSize: '0.9rem' }}>
-            Deploy your infrastructure strategically built on multi-tier secure data centers providing lowest edge routing, robust secure connections, and ultimate resilience for enterprise operations.
+          <h3 className="h3" style={{ fontSize: '1.25rem', letterSpacing: '0.5px', marginBottom: '16px' }}>MULTI-REGION ARCHITECTURE READY</h3>
+          <p className="subtitle" style={{ maxWidth: '800px', margin: '0 auto', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+            Deploy in one location or build geographically distributed infrastructure with full control over performance and resource allocation.
           </p>
         </div>
 
