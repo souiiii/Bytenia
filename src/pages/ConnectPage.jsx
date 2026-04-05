@@ -135,12 +135,39 @@ const ALT_CONTACTS = [
 const ConnectPage = () => {
   const [phoneCountry, setPhoneCountry] = useState(COUNTRY_CODES[0]);
   const [phoneDropdownOpen, setPhoneDropdownOpen] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
   
   const [altContact, setAltContact] = useState(ALT_CONTACTS[0]);
   const [altContactDropdownOpen, setAltContactDropdownOpen] = useState(false);
 
   const phoneRef = useRef();
   const altRef = useRef();
+
+  const handlePhoneChange = (e) => {
+    let val = e.target.value;
+    if (val.trim().startsWith('+')) {
+      const cleanVal = val.replace(/\s/g, '');
+      const sortedCountries = [...COUNTRY_CODES].sort((a, b) => b.code.length - a.code.length);
+      const matched = sortedCountries.find(c => cleanVal.startsWith(c.code));
+      
+      if (matched) {
+        setPhoneCountry(matched);
+        let matchIndex = 0;
+        let cutoff = 0;
+        for (let i = 0; i < val.length; i++) {
+          if (val[i] !== ' ' && val[i] === matched.code[matchIndex]) {
+            matchIndex++;
+          }
+          if (matchIndex === matched.code.length) {
+            cutoff = i + 1;
+            break;
+          }
+        }
+        val = val.substring(cutoff).trimStart();
+      }
+    }
+    setPhoneNumber(val);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -223,7 +250,13 @@ const ConnectPage = () => {
                         ))}
                       </div>
                     )}
-                    <input type="tel" className="inline-input" placeholder="(000) 000 0000" />
+                    <input 
+                      type="tel" 
+                      className="inline-input" 
+                      placeholder="(000) 000 0000" 
+                      value={phoneNumber}
+                      onChange={handlePhoneChange}
+                    />
                   </div>
                 </div>
 
