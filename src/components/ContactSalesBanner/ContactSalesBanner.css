@@ -6,7 +6,7 @@
 
 .contact-card {
   position: relative;
-  border-radius: 48px; /* Huge boundary matches */
+  border-radius: 48px; 
   overflow: hidden;
   padding: 100px 40px;
   display: flex;

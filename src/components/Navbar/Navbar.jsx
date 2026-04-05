@@ -60,7 +60,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    // Prevent scrolling when menu is open
+    
     document.body.style.overflow = !isOpen ? "hidden" : "auto";
   };
 
@@ -82,7 +82,7 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Desktop Menu */}
+        
         <div className="navbar-menu desktop-menu">
           <div 
             className={`nav-dropdown ${activeMenu === 'PRODUCTS' ? 'active' : ''}`}
@@ -110,7 +110,7 @@ const Navbar = () => {
             <button
               className="btn-outline login-btn"
               style={{
-                display: "none", /* Hidden per request */
+                display: "none", 
                 padding: "8px 24px",
                 borderRadius: "50px",
                 fontSize: "0.95rem",
@@ -150,13 +150,13 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        
         <button className="mobile-toggle" onClick={toggleMenu}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      
       <div className={`mobile-menu ${isOpen ? "active" : ""}`}>
         <div className="mobile-menu-header">
           <Link 
@@ -215,7 +215,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Desktop Submenu Dark Band */}
+      
       <div className={`navbar-submenu-wrapper ${activeMenu ? 'open' : ''}`}>
         <div className="navbar-submenu-inner">
           <div className="navbar-submenu">

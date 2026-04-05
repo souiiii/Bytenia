@@ -131,7 +131,7 @@ const EnterpriseServersList = () => {
   const [storageFilter, setStorageFilter] = useState("Show All");
   const [sortOrder, setSortOrder] = useState("asc");
 
-  // Extract unique options dynamically
+  
   const uniqueCPUs = [
     "Show All",
     ...new Set(serversData.map((s) => s.cpuModel)),
@@ -142,7 +142,7 @@ const EnterpriseServersList = () => {
     ...new Set(serversData.map((s) => s.storage)),
   ];
 
-  // Apply filters and sort computationally
+  
   const filteredServers = serversData
     .filter((server) => {
       if (activeLoc !== "all" && server.city.toLowerCase() !== activeLoc)
@@ -163,7 +163,7 @@ const EnterpriseServersList = () => {
   return (
     <section className="ent-servers section">
       <div className="container" style={{ maxWidth: "1200px" }}>
-        {/* Header Strings exactly aligning */}
+        
         <div className="text-center" style={{ marginBottom: "40px" }}>
           <h2 className="ent-servers-header">
             <strong>Available</strong>
@@ -184,7 +184,7 @@ const EnterpriseServersList = () => {
           </p>
         </div>
 
-        {/* Filters Top Nav */}
+        
         <div className="ent-location-filters">
           {filterLocations.map((loc) => (
             <button
@@ -259,7 +259,7 @@ const EnterpriseServersList = () => {
           </div>
         </div>
 
-        {/* Server Cards List */}
+        
         <div className="ent-server-cards">
           {filteredServers.length === 0 ? (
             <div
@@ -273,7 +273,7 @@ const EnterpriseServersList = () => {
               (server) => (
                 <div key={server.id} className="ent-server-card">
                   <div className="ent-card-left">
-                    {/* Top Inner Grid Row */}
+                    
                     <div className="ent-card-top">
                       <h3 className="ent-cpu-title">
                         {server.cpuModel} <span>| {server.cpuDetails}</span>
@@ -281,7 +281,7 @@ const EnterpriseServersList = () => {
                       <div className="ent-benchmark">{server.benchmark}</div>
                     </div>
 
-                    {/* Bottom Inner Grid Row */}
+                    
                     <div className="ent-card-metrics">
                       <div className="ent-metric-item">
                         <img
@@ -342,7 +342,7 @@ const EnterpriseServersList = () => {
                     </div>
                   </div>
 
-                  {/* Right Action Block */}
+                  
                   <div className="ent-card-right">
                     <div className="ent-price-pill">
                       <div className="ent-price-val">

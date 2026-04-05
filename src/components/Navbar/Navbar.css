@@ -41,7 +41,7 @@
 .desktop-menu {
   display: flex;
   align-items: center;
-  gap: 8px; /* Slight gap between active states */
+  gap: 8px; 
   height: 100%;
 }
 
@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   padding: 0 16px;
-  border-top: 4px solid transparent; /* Allows border alignment dynamically */
+  border-top: 4px solid transparent; 
   cursor: pointer;
   transition: background-color var(--transition-speed);
 }
@@ -61,9 +61,9 @@
 }
 
 .nav-dropdown.active .nav-link {
-  /* Use stroke to visibly thicken the text geometry identically without altering kerning physical layout metrics */
+  
   -webkit-text-stroke: 0.5px var(--text-dark);
-  font-weight: 600; /* Locked to identical base state */
+  font-weight: 600; 
   color: var(--text-dark);
 }
 
@@ -126,7 +126,7 @@
   color: var(--bg-dark);
 }
 
-/* Mobile Menu Base */
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -236,7 +236,7 @@
   }
 }
 
-/* Submenu dark band styles */
+
 .navbar-submenu-wrapper {
   display: grid;
   grid-template-rows: 0fr;
@@ -268,7 +268,7 @@
 .submenu-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center align horizontally globally */
+  justify-content: center; 
   flex-wrap: wrap;
   gap: 20px;
 }

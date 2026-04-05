@@ -127,7 +127,7 @@
 .vds-server-rows {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* spacing between disconnected rows */
+  gap: 10px; 
 }
 
 .vds-server-row {

@@ -1,5 +1,5 @@
 .co-servers {
-  background-color: var(--bg-primary); /* typically #f8f9fa or white */
+  background-color: var(--bg-primary); 
   padding: 50px 0;
 }
 
@@ -31,7 +31,7 @@
   font-weight: 700;
 }
 
-/* Location Flags Filter row */
+
 .co-location-filters {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +68,7 @@
   object-fit: cover;
 }
 
-/* Dropdowns section */
+
 .co-selectors-row {
   display: flex;
   justify-content: space-between;
@@ -124,7 +124,7 @@
   color: #111827;
 }
 
-/* Server Cards */
+
 .co-server-cards {
   display: flex;
   flex-direction: column;
@@ -155,7 +155,7 @@
   padding-right: 30px;
 }
 
-/* Top text line */
+
 .co-card-top {
   display: flex;
   flex-direction: column;
@@ -179,7 +179,7 @@
   color: #6b7280;
 }
 
-/* Bottom Metrics line */
+
 .co-card-metrics {
   display: flex;
   justify-content: space-between;
@@ -221,7 +221,7 @@
   color: #6b7280;
 }
 
-/* Right Dark Pill box */
+
 .co-card-right {
   display: flex;
   align-items: center;

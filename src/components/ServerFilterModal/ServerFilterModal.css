@@ -54,7 +54,7 @@
   padding: 0 10px;
 }
 
-/* Customizing rc-slider to match dark theme */
+
 .rc-slider-track {
   background-color: var(--bg-dark-light) !important;
 }

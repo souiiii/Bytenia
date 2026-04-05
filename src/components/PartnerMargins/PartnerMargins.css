@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--bg-dark); /* Using dark color mapping since this is a light screen */
+  color: var(--bg-dark); 
 }
 
 .margin-text {

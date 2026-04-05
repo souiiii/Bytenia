@@ -1,7 +1,7 @@
 .architecture-banner {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--bg-primary); /* match global highlights background to blend */
+  background-color: var(--bg-primary); 
 }
 
 .architecture-card {
@@ -83,7 +83,7 @@
   }
   
   .architecture-list li {
-    text-align: left; /* Keep list bullets aligned safely */
+    text-align: left; 
   }
 }
 

@@ -54,11 +54,11 @@
   line-height: 1.6;
 }
 
-/* Why Trust Section */
+
 .why-trust {
   position: relative;
   padding: 100px 0;
-  background-color: #f3f4f6; /* Base light grey */
+  background-color: #f3f4f6; 
   border-bottom: 1px solid var(--border-light);
   overflow: hidden;
 }
@@ -71,7 +71,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.06; /* 10% opacity exactly */
+  opacity: 0.06; 
   z-index: 1;
 }
 
@@ -139,14 +139,14 @@
     padding: 16px;
   }
 
-  /* Built-for Mobile Overrides */
+  
   .built-card {
     padding: 24px;
     border-radius: 12px;
   }
   
   .built-icon {
-    display: none; /* Streamline mobile cards */
+    display: none; 
   }
 
   .built-for .section-header {

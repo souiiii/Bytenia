@@ -35,12 +35,12 @@ const CostOptimizedServers = () => {
   const [storageFilter, setStorageFilter] = useState("Show All");
   const [sortOrder, setSortOrder] = useState("asc");
 
-  // Extract unique options dynamically
+  
   const uniqueCPUs = ["Show All", ...new Set(serversData.map(s => s.cpuModel))];
   const uniqueRAMs = ["Show All", ...new Set(serversData.map(s => s.ram))];
   const uniqueStorages = ["Show All", ...new Set(serversData.map(s => s.storage))];
 
-  // Apply filters and sort computationally
+  
   const filteredServers = serversData
     .filter(server => {
       if (activeLoc !== "all" && server.city.toLowerCase() !== activeLoc) return false;
@@ -58,7 +58,7 @@ const CostOptimizedServers = () => {
   return (
     <section className="co-servers section">
       <div className="container" style={{ maxWidth: "1200px" }}>
-        {/* Header Strings exactly aligning */}
+        
         <div className="text-center" style={{ marginBottom: "60px" }}>
           <h2 className="co-servers-header">
             <strong>Available</strong>
@@ -72,7 +72,7 @@ const CostOptimizedServers = () => {
           </p>
         </div>
 
-        {/* Filters Top Nav */}
+        
         <div className="co-location-filters">
           {filterLocations.map((loc) => (
             <button
@@ -124,7 +124,7 @@ const CostOptimizedServers = () => {
           </div>
         </div>
 
-        {/* Server Cards List */}
+        
         <div className="co-server-cards">
           {filteredServers.length === 0 ? (
             <div className="text-center" style={{padding: '60px 0', color: '#6b7280'}}>
@@ -134,7 +134,7 @@ const CostOptimizedServers = () => {
             (isExpanded ? filteredServers : filteredServers.slice(0, 5)).map((server) => (
               <div key={server.id} className="co-server-card">
               <div className="co-card-left">
-                {/* Top Inner Grid Row */}
+                
                 <div className="co-card-top">
                   <h3 className="co-cpu-title">
                     {server.cpuModel} <span>| {server.cpuDetails}</span>
@@ -142,7 +142,7 @@ const CostOptimizedServers = () => {
                   <div className="co-benchmark">{server.benchmark}</div>
                 </div>
 
-                {/* Bottom Inner Grid Row */}
+                
                 <div className="co-card-metrics">
                   <div className="co-metric-item">
                     <img
@@ -196,7 +196,7 @@ const CostOptimizedServers = () => {
                 </div>
               </div>
 
-              {/* Right Action Block */}
+              
               <div className="co-card-right">
                 <div className="co-price-pill">
                   <div className="co-price-val">

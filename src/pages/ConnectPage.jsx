@@ -260,7 +260,7 @@ const ConnectPage = () => {
               </div>
 
               <div className="form-row">
-                {/* Phone Selector */}
+                
                 <div className="form-group" ref={phoneRef}>
                   <label className="form-label">Phone Number</label>
                   <div className="input-with-dropdown">
@@ -299,7 +299,7 @@ const ConnectPage = () => {
                   </div>
                 </div>
 
-                {/* Alternative Contact Selector */}
+                
                 <div className="form-group" ref={altRef}>
                   <label className="form-label">Alternative Contact</label>
                   <div className="input-with-dropdown">

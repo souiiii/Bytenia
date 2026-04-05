@@ -45,12 +45,12 @@ const Features = () => {
         </div>
       </div>
       
-      {/* Edge-to-edge Marquee Wrapper */}
+      
       <div className="marquee-wrapper">
         <div className="marquee-group">
           {renderCards()}
         </div>
-        {/* Exact Duplicate for Seamless Infinite CSS Loop */}
+        
         <div className="marquee-group" aria-hidden="true">
           {renderCards()}
         </div>

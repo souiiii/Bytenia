@@ -30,7 +30,7 @@ const faqs = [
 ];
 
 const FAQ = () => {
-  const [openIdx, setOpenIdx] = useState(2); // Default open the third one slightly like in the mockup
+  const [openIdx, setOpenIdx] = useState(2); 
 
   const toggleFAQ = (idx) => {
     if (openIdx === idx) {

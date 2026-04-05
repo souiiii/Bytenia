@@ -54,7 +54,7 @@ const teamMembers = [
 ];
 
 const LeadershipTeam = ({ visible = false }) => {
-  if (!visible) return null; // Hidden for MVP as requested
+  if (!visible) return null; 
 
   return (
     <section className="leadership-section section">

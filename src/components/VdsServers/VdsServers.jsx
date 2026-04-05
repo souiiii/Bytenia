@@ -71,7 +71,7 @@ const VdsServers = () => {
           </p>
         </div>
 
-        {/* Location Tabs */}
+        
         <div className="vds-locations">
           {locations.map((loc) => (
             <button 
@@ -85,7 +85,7 @@ const VdsServers = () => {
           ))}
         </div>
 
-        {/* Inline Filters */}
+        
         <div className="vds-filters-bar">
           <div className="vds-inline-filters">
             <div className="vds-filter-group">
@@ -115,7 +115,7 @@ const VdsServers = () => {
           </div>
         </div>
 
-        {/* Data Table */}
+        
         <div className="vds-table-wrapper">
           <div className="vds-table-header desktop-only-grid">
             <div className="vds-th">CPU</div>

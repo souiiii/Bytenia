@@ -38,7 +38,7 @@ const EnterpriseFeatures = () => {
   return (
     <div className="enterprise-features-wrapper">
       
-      {/* 1. Built For Organizations */}
+      
       <section className="built-for section">
         <div className="container">
           <div className="text-center section-header">
@@ -60,7 +60,7 @@ const EnterpriseFeatures = () => {
         </div>
       </section>
 
-      {/* 2. Why Trust */}
+      
       <section className="why-trust section">
         <img 
           src="/server_room_bg.png" 

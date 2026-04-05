@@ -10,7 +10,7 @@ const CompanyPage = () => {
       <main className="page-content" style={{ backgroundColor: '#F8F8FA' }}>
         <CompanyHero />
         <WhoWeAre />
-        {/* Leadership Team is built but hidden for MVP per requirements */}
+        
         <LeadershipTeam visible={false} />
         <ServerChoiceBanner />
       </main>

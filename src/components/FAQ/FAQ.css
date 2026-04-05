@@ -1,6 +1,6 @@
 .faq {
   background-color: var(--bg-primary);
-  padding: 0 0 150px 0; /* Null top padding to prevent stacking, strict 1.5x bottom */
+  padding: 0 0 150px 0; 
 }
 
 .faq-container {
@@ -19,7 +19,7 @@
 }
 
 .faq-item {
-  background-color: #f0f3f8; /* slightly darker than bg-primary */
+  background-color: #f0f3f8; 
   border-radius: var(--border-radius-sm);
   padding: 24px 32px;
   cursor: pointer;

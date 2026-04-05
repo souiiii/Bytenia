@@ -36,7 +36,7 @@ const LookingGlassPage = () => {
             </header>
 
             <div className="lg-body">
-              {/* Datacenter Selector */}
+              
               <div className="lg-selector-wrapper">
                 <div className="custom-select" onClick={() => setDropdownOpen(!dropdownOpen)}>
                   <div className="selected-value">
@@ -61,7 +61,7 @@ const LookingGlassPage = () => {
                 )}
               </div>
 
-              {/* Stats Box */}
+              
               <div className="lg-stats-box">
                 <div className="lg-stat-item">
                   <span className="stat-value">{selectedDc.ipv4}</span>
@@ -81,7 +81,7 @@ const LookingGlassPage = () => {
                 </div>
               </div>
 
-              {/* Test Files */}
+              
               <div className="lg-section">
                 <h3 className="lg-section-title">Test Files</h3>
                 <div className="lg-files-row">
@@ -104,7 +104,7 @@ const LookingGlassPage = () => {
                 </div>
               </div>
 
-              {/* Action Form */}
+              
               <div className="lg-section lg-actions-section">
                 <h3 className="lg-section-title">Looking Glass</h3>
                 <div className="lg-actions-row">

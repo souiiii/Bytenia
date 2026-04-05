@@ -16,7 +16,7 @@ import "./LocationsHero.css";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-// Exact coordinates matching earlier server pages (Dallas, Chicago, Miami, London, Amsterdam, Frankfurt, Sydney)
+
 const markers = [
   { id: "dallas", flag: "us", coordinates: [-96.797, 32.7767] },
   { id: "chicago", flag: "us", coordinates: [-87.6298, 41.8781] },
@@ -151,7 +151,7 @@ const LocationsHero = () => {
       let progress = (time - startTime) / duration;
       if (progress > 1) progress = 1;
 
-      // Calculate easing (easeOutCubic)
+      
       const ease = 1 - Math.pow(1 - progress, 3);
 
       const currentZoom = startZoom + (endZoom - startZoom) * ease;
@@ -181,7 +181,7 @@ const LocationsHero = () => {
   return (
     <section className="locations-hero">
       <div className="container">
-        {/* Top Dark Datacenters Card */}
+        
         <div className="locations-datacenter-card">
           <h1 className="hero-title text-white">Our Global Datacenters</h1>
           <p className="hero-description text-gray">
@@ -190,9 +190,9 @@ const LocationsHero = () => {
           </p>
         </div>
 
-        {/* Map Widget */}
+        
         <div className="map-container">
-          {/* Modal Popup overlay natively resolving active selections */}
+          
           {activeLocation && locationDetails[activeLocation] && (
             <div className="modal-overlay" onClick={handleOverlayClick}>
               <div className="location-modal-card">
@@ -285,7 +285,7 @@ const LocationsHero = () => {
                 }
               </Geographies>
 
-              {/* Shadows Definition for markers */}
+              
               <defs>
                 <filter
                   id="marker-shadow"
@@ -320,16 +320,16 @@ const LocationsHero = () => {
                       transform: `scale(calc(${1 / zoomLevel} * var(--pin-scale, 1)))`,
                     }}
                   >
-                    {/* Teardrop style pin background */}
+                    
                     <path
                       d="M 0 0 C -8 -10 -14 -18 -14 -26 C -14 -33.7 -7.7 -40 0 -40 C 7.7 -40 14 -33.7 14 -26 C 14 -18 8 -10 0 0 Z"
                       fill="#ffffff"
                       filter="url(#marker-shadow)"
                       className="marker-bg"
                     />
-                    {/* Tiny accent ring */}
+                    
                     <circle cx="0" cy="-26" r="8" fill="#e2e8f0" />
-                    {/* Inner active flag */}
+                    
                     <image
                       href={`https://flagcdn.com/w40/${flag}.png`}
                       x="-7"
@@ -357,7 +357,7 @@ const LocationsHero = () => {
           )}
         </div>
 
-        {/* Bottom Text Hook */}
+        
         <div className="text-center" style={{ marginTop: "20px" }}>
           <h3
             className="h3"

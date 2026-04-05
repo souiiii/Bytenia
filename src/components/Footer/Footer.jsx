@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-container">
         
-        {/* Top Header Row */}
+        
         <div className="footer-top">
           <div className="footer-logo">
             <img src={Logo} alt="Byteania Logo" style={{ height: '40px', width: 'auto' }} />
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Links Grid Area */}
+        
         <div className="footer-links-wrapper">
           <div className="footer-column">
             <h4 className="footer-title">PRODUCTS</h4>
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Mobile Badges - explicitly requested for mobile preservation */}
+        
         <div className="footer-badges mobile-only-badges">
           <div className="cert-box">
             <img src={Cert0} alt="ISO 9001" className="iso-badges-img" />
@@ -72,7 +72,7 @@ const Footer = () => {
             <p className="cert-text">Certificate<br/>No:272922017</p>
           </div>
         </div>
-        {/* Bottom Address and Copyright */}
+        
         <div className="footer-bottom">
           <p className="footer-address">
             Building A1, Dubai Silicon Oasis<br/>

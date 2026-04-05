@@ -1,11 +1,11 @@
 .why-location-section {
   position: relative;
-  background-color: var(--bg-secondary); /* Default solid fallback */
+  background-color: var(--bg-secondary); 
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-/* Synthesizing the graphic background mapping from image */
+
 .why-location-bg-overlay {
   position: absolute;
   top: 0;

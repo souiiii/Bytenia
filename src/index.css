@@ -4,12 +4,12 @@
   --bg-primary: #f8f8fa;
   --bg-secondary: #f0f1f7;
   --bg-dark: #0b0e18;
-  --bg-dark-light: #151a28; /* Slightly lighter shade derived from 0B0E18 */
+  --bg-dark-light: #151a28; 
   --bg-white: #ffffff;
 
   --text-dark: #0b0e18;
   --text-light: #ffffff;
-  --text-muted: #5c6270; /* Hand-adjusted legible gray for contrast on light */
+  --text-muted: #5c6270; 
   --text-muted-light: #d9d9d9;
 
   --border-light: #d9d9d9;
@@ -66,7 +66,7 @@ img {
   display: block;
 }
 
-/* Typography Utilities */
+
 h1,
 h2,
 h3,
@@ -105,7 +105,7 @@ h6,
   color: var(--text-muted-light);
 }
 
-/* Utilities */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -147,7 +147,7 @@ h6,
   border-color: var(--text-muted-light);
 }
 
-/* Section Spacing */
+
 .section {
   padding: 150px 0;
 }

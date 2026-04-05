@@ -56,7 +56,7 @@
   color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 24px;
-  flex-grow: 1; /* Pushes socials to the bottom implicitly */
+  flex-grow: 1; 
 }
 
 .team-socials {

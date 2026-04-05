@@ -1,7 +1,7 @@
 .why-choose {
   position: relative;
   width: 100%;
-  padding: 150px 0; /* Matched global 1.5x section spacing */
+  padding: 150px 0; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,11 +75,11 @@
 
 .why-choose-pill {
   background-color: var(--bg-white);
-  padding: 16px 32px; /* Emulated taller pill boundaries */
+  padding: 16px 32px; 
   border-radius: var(--border-radius-pill);
   display: flex;
   align-items: center;
-  gap: 16px; /* Widen distance to text */
+  gap: 16px; 
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition-speed);
   cursor: default;
@@ -108,7 +108,7 @@
   }
 
   .why-choose-title {
-    font-size: 2rem; /* Smoother step down from 3.5rem */
+    font-size: 2rem; 
   }
 
   .below-title {

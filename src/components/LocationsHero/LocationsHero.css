@@ -12,7 +12,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: none;
-  /* margin-bottom: 20px; */
+  
   z-index: 2;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .map-marker-group:hover .marker-dot {
-  fill: #3b82f6; /* Highlight on hover */
+  fill: #3b82f6; 
 }
 
 .reset-map-btn {
@@ -84,7 +84,7 @@
   }
 }
 
-/* Modal Overlay Styles mapping exact UI Reference Boundaries */
+
 .modal-overlay {
   position: absolute;
   top: 0;
@@ -108,7 +108,7 @@
   position: relative;
   width: 90%;
   max-width: 800px;
-  background-color: #0f121b; /* Matches exact internal dark context from reference */
+  background-color: #0f121b; 
   border-radius: 24px;
   padding: 50px 50px 60px 50px;
   box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
@@ -150,7 +150,7 @@
   height: 60px;
   background-color: #fff;
   border-radius: 50% 50% 50% 0;
-  transform: rotate(-315deg); /* Points down matching svg map */
+  transform: rotate(-315deg); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +162,7 @@
   height: 38px;
   border-radius: 50%;
   object-fit: cover;
-  transform: rotate(315deg); /* Counter rotate for normal flag display natively */
+  transform: rotate(315deg); 
 }
 
 .modal-header-text h2 {

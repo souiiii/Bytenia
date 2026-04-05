@@ -10,7 +10,7 @@
   padding: 70px 70px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Horizontally bounds the inner items */
+  justify-content: center; 
   gap: 60px;
   box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -31,7 +31,7 @@
 }
 
 .choice-content {
-  flex: 0 1 auto; /* Removes endless aggressive stretching out into 1200px */
+  flex: 0 1 auto; 
   max-width: 700px;
 }
 
@@ -60,7 +60,7 @@
     gap: 40px;
   }
   .choice-graphic {
-    flex: 0 0 100px; /* Compress the SVG footprint vertically */
+    flex: 0 0 100px; 
     width: 100px;
   }
 }
@@ -72,7 +72,7 @@
     gap: 24px;
   }
   .choice-graphic {
-    flex: 0 0 80px; /* Scale heavily down on small mobile profiles */
+    flex: 0 0 80px; 
     width: 80px;
   }
 }
