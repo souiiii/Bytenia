@@ -9,6 +9,9 @@ import {
   Graticule,
 } from "react-simple-maps";
 import { ArrowsIn, X } from "@phosphor-icons/react";
+import { serversData as enterpriseData } from "../EnterpriseServers/EnterpriseServersList";
+import { serversData as costOptimizedData } from "../CostOptimizedServers/CostOptimizedServers";
+import { serversData as vdsData } from "../VdsServers/VdsServers";
 import "./LocationsHero.css";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -225,9 +228,15 @@ const LocationsHero = () => {
                 </p>
 
                 <div className="modal-buttons">
-                  <Link to="/enterprise" className="modal-pill-btn">Enterprise Dedicated Servers</Link>
-                  <Link to="/cost-optimized" className="modal-pill-btn">Cost-Optimized Servers</Link>
-                  <Link to="/vds" className="modal-pill-btn">Virtual Dedicated Servers</Link>
+                  {enterpriseData.some(s => s.city.toLowerCase() === activeLocation.toLowerCase()) && (
+                    <Link to={`/enterprise?loc=${activeLocation}`} className="modal-pill-btn">Enterprise Dedicated Servers</Link>
+                  )}
+                  {costOptimizedData.some(s => s.city.toLowerCase() === activeLocation.toLowerCase()) && (
+                    <Link to={`/cost-optimized?loc=${activeLocation}`} className="modal-pill-btn">Cost-Optimized Servers</Link>
+                  )}
+                  {vdsData.some(s => s.city.toLowerCase() === activeLocation.toLowerCase()) && (
+                    <Link to={`/vds?loc=${activeLocation}`} className="modal-pill-btn">Virtual Dedicated Servers</Link>
+                  )}
                 </div>
               </div>
             </div>

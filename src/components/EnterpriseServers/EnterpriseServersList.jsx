@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MemoryStick, HardDrive, Cpu, ArrowUpDown } from "lucide-react";
 import "./EnterpriseServersList.css";
 
-const serversData = [
+export const serversData = [
   { id: 1, cpuModel: 'AMD Ryzen 7950X', cpuDetails: '16C / 32T @ 4.5GHz / 5.7GHz', benchmark: 'Scored 46,130 on a CPU benchmark', countryCode: 'us', city: 'Dallas', country: 'United States', ram: '128GB, Type DDR5', storage: '2x 2TB NVMe SSD', network: '10 Gbit', price: '$ 89.99' },
   { id: 2, cpuModel: 'AMD Ryzen 7950X', cpuDetails: '16C / 32T @ 4.5GHz / 5.7GHz', benchmark: 'Scored 46,130 on a CPU benchmark', countryCode: 'nl', city: 'Amsterdam', country: 'Nederlands', ram: '256GB ECC RAM', storage: '2x 4TB NVMe SSD', network: '10 Gbit', price: '$ 119.99' },
   { id: 3, cpuModel: 'Intel Xeon Gold 6330', cpuDetails: '28C / 56T @ 2.0GHz / 3.1GHz', benchmark: 'Scored 39,200 on a CPU benchmark', countryCode: 'de', city: 'Frankfurt', country: 'Germany', ram: '128GB, Type DDR5', storage: '2x 2TB NVMe SSD', network: '1 Gbit', price: '$ 129.99' },
@@ -25,7 +25,10 @@ const filterLocations = [
 ];
 
 const EnterpriseServersList = () => {
-  const [activeLoc, setActiveLoc] = useState("all");
+  const [activeLoc, setActiveLoc] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("loc") || "all";
+  });
   const [isExpanded, setIsExpanded] = useState(false);
   const [cpuFilter, setCpuFilter] = useState("Show All");
   const [ramFilter, setRamFilter] = useState("Show All");

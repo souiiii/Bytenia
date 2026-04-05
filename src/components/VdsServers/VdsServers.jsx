@@ -16,7 +16,7 @@ const locations = [
   { id: 'london', name: 'London, UK', code: 'GB', city: 'London' }
 ];
 
-const serversData = [
+export const serversData = [
   { id: 1, city: 'Dallas', code: 'US', cpu: 'AMD Ryzen 5950X', vcores: '2 @ 3.4 / 4.9 GHz', ram: '8 GB DDR4', storage: '100 GB NVMe SSD', network: 'Unmetered 1 Gbit', price: '$ 89.99 / month' },
   { id: 2, city: 'Amsterdam', code: 'NL', cpu: 'AMD Ryzen 7950X', vcores: '4 @ 4.5 / 5.7 GHz', ram: '16 GB DDR5', storage: '250 GB NVMe SSD', network: 'Unmetered 1 Gbit', price: '$ 129.99 / month' },
   { id: 3, city: 'Frankfurt', code: 'DE', cpu: 'Intel Xeon Gold', vcores: '6 @ 3.0 / 3.6 GHz', ram: '32 GB DDR4', storage: '500 GB NVMe SSD', network: 'Unmetered 1 Gbit', price: '$ 149.99 / month' },
@@ -28,7 +28,10 @@ const serversData = [
 ];
 
 const VdsServers = () => {
-  const [activeLoc, setActiveLoc] = useState('all');
+  const [activeLoc, setActiveLoc] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("loc") || "all";
+  });
   const [isExpanded, setIsExpanded] = useState(false);
   const [cpuFilter, setCpuFilter] = useState("Show All");
   const [ramFilter, setRamFilter] = useState("Show All");
