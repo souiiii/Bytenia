@@ -116,16 +116,21 @@ const Navbar = () => {
             >
               Login
             </button>
-            <button
+            <Link
+              to="/connect"
               className="btn-primary start-btn"
               style={{
                 padding: "8px 20px",
                 borderRadius: "50px",
                 fontSize: "0.875rem",
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center"
               }}
             >
               Talk to Sales
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -161,12 +166,22 @@ const Navbar = () => {
             >
               Login
             </button>
-            <button
+            <Link
+              to="/connect"
               className="btn-primary"
-              style={{ width: "100%", padding: "12px" }}
+              style={{ 
+                width: "100%", 
+                padding: "12px",
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxSizing: "border-box"
+              }}
+              onClick={() => setIsOpen(false)}
             >
               Talk to Sales
-            </button>
+            </Link>
           </div>
         </div>
       </div>
