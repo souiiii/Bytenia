@@ -7,6 +7,7 @@ import {
   ZoomableGroup,
   Graticule,
 } from "react-simple-maps";
+import { ArrowsIn } from "@phosphor-icons/react";
 import "./LocationsHero.css";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -23,7 +24,49 @@ const markers = [
 ];
 
 const LocationsHero = () => {
+  const [position, setPosition] = useState({ coordinates: [0, 45], zoom: 1 });
   const [zoomLevel, setZoomLevel] = useState(1);
+
+  const handleMoveEnd = (pos) => {
+    setPosition(pos);
+    setZoomLevel(pos.zoom);
+  };
+
+  const handleResetMap = () => {
+    const startZoom = position.zoom;
+    const startCenter = position.coordinates;
+    const endZoom = 1;
+    const endCenter = [0, 45];
+
+    const duration = 400;
+    const startTime = performance.now();
+
+    const animate = (time) => {
+      let progress = (time - startTime) / duration;
+      if (progress > 1) progress = 1;
+
+      // Calculate easing (easeOutCubic)
+      const ease = 1 - Math.pow(1 - progress, 3);
+
+      const currentZoom = startZoom + (endZoom - startZoom) * ease;
+      const currentX = startCenter[0] + (endCenter[0] - startCenter[0]) * ease;
+      const currentY = startCenter[1] + (endCenter[1] - startCenter[1]) * ease;
+
+      setPosition({ coordinates: [currentX, currentY], zoom: currentZoom });
+      setZoomLevel(currentZoom);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  };
+
+  const isDefaultPosition = 
+    zoomLevel === 1 && 
+    Math.abs(position.coordinates[0] - 0) < 0.01 && 
+    Math.abs(position.coordinates[1] - 45) < 0.01;
 
   const handlePinClick = (id) => {
     console.log(`Pin clicked for popup foundation: ${id}`);
@@ -52,10 +95,11 @@ const LocationsHero = () => {
             style={{ width: "100%", height: "auto" }}
           >
             <ZoomableGroup
-              zoom={1}
+              zoom={position.zoom}
+              center={position.coordinates}
               minZoom={1}
               maxZoom={4}
-              onMoveEnd={(position) => setZoomLevel(position.zoom)}
+              onMoveEnd={handleMoveEnd}
             >
               <Geographies geography={geoUrl}>
                 {({ geographies }) =>
@@ -137,6 +181,17 @@ const LocationsHero = () => {
               ))}
             </ZoomableGroup>
           </ComposableMap>
+
+          {!isDefaultPosition && (
+            <button
+              className="reset-map-btn"
+              onClick={handleResetMap}
+              title="Reset Map"
+              aria-label="Reset Map"
+            >
+              <ArrowsIn size={20} weight="bold" />
+            </button>
+          )}
         </div>
 
         {/* Bottom Text Hook */}
