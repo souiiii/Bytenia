@@ -4,16 +4,28 @@
 }
 
 .tos-hero-container {
-  max-width: 900px;
   margin: 0 auto 60px auto;
 }
 
 .tos-hero-card {
   background-color: var(--bg-dark);
-  border-radius: var(--border-radius-lg);
-  padding: 60px 40px;
+  border-radius: 36px;
+  padding: 100px 40px;
   text-align: center;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+}
+
+.tos-hero-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.tos-hero-date {
+  font-size: 0.95rem;
+  font-weight: 300;
+  opacity: 0.8;
 }
 
 .tos-content-container {

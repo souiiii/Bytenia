@@ -9,10 +9,10 @@ const TermsOfServicePage = () => {
         
         <div className="container tos-hero-container">
           <div className="tos-hero-card">
-            <h1 className="h1 text-white" style={{ marginBottom: '16px' }}>
+            <h1 className="tos-hero-title text-white">
               Byteania Terms of Service
             </h1>
-            <p className="text-gray" style={{ fontSize: '0.9rem' }}>
+            <p className="tos-hero-date text-gray">
               Last updated: 25 July 2024
             </p>
           </div>
