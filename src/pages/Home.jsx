@@ -5,7 +5,6 @@ import Features from '../components/Features/Features';
 import WhyChoose from '../components/WhyChoose/WhyChoose';
 import CallToAction from '../components/CallToAction/CallToAction';
 import FAQ from '../components/FAQ/FAQ';
-import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -16,8 +15,7 @@ const Home = () => {
       <WhyChoose />
       <CallToAction />
       <FAQ />
-      <Footer />
-    </>
+          </>
   );
 };
 

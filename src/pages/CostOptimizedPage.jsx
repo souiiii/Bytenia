@@ -4,7 +4,6 @@ import CostOptimizedServers from '../components/CostOptimizedServers/CostOptimiz
 import IdealUseCases from '../components/IdealUseCases/IdealUseCases';
 import WhyCostOptimized from '../components/WhyCostOptimized/WhyCostOptimized';
 import ContactSalesBanner from '../components/ContactSalesBanner/ContactSalesBanner';
-import Footer from '../components/Footer/Footer';
 
 const CostOptimizedPage = () => {
   return (
@@ -14,8 +13,7 @@ const CostOptimizedPage = () => {
       <IdealUseCases />
       <WhyCostOptimized />
       <ContactSalesBanner />
-      <Footer />
-    </>
+          </>
   );
 };
 

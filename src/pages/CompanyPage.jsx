@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import CompanyHero from '../components/CompanyHero/CompanyHero';
 import WhoWeAre from '../components/WhoWeAre/WhoWeAre';
 import LeadershipTeam from '../components/LeadershipTeam/LeadershipTeam';
@@ -15,8 +14,7 @@ const CompanyPage = () => {
         <LeadershipTeam visible={false} />
         <ServerChoiceBanner />
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

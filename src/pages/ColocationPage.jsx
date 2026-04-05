@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import ColocationHero from '../components/ColocationHero/ColocationHero';
 import ColocationPricing from '../components/ColocationPricing/ColocationPricing';
 import ColocationContactBanner from '../components/ColocationContactBanner/ColocationContactBanner';
@@ -12,8 +11,7 @@ const ColocationPage = () => {
         <ColocationPricing />
         <ColocationContactBanner />
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

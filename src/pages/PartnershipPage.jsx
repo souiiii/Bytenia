@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import PartnerHero from '../components/PartnerHero/PartnerHero';
 import WhyPartner from '../components/WhyPartner/WhyPartner';
 import PartnershipTiers from '../components/PartnershipTiers/PartnershipTiers';
@@ -16,8 +15,7 @@ const PartnershipPage = () => {
         <PartnerMargins />
         <PartnerSupportBanner />
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

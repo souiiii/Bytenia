@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import './TermsOfServicePage.css';
 
 const TermsOfServicePage = () => {
@@ -168,8 +167,7 @@ const TermsOfServicePage = () => {
 
         </div>
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

@@ -17,9 +17,9 @@ const markers = [
   { id: "dallas", flag: "us", coordinates: [-96.797, 32.7767] },
   { id: "chicago", flag: "us", coordinates: [-87.6298, 41.8781] },
   { id: "miami", flag: "us", coordinates: [-80.1918, 25.7617] },
-  { id: "london", flag: "gb", coordinates: [-0.1276, 51.5072] },
-  { id: "amsterdam", flag: "nl", coordinates: [4.9041, 52.3676] },
   { id: "frankfurt", flag: "de", coordinates: [8.6821, 50.1109] },
+  { id: "amsterdam", flag: "nl", coordinates: [4.9041, 52.3676] },
+  { id: "london", flag: "gb", coordinates: [-0.1276, 51.5072] },
   { id: "sydney", flag: "au", coordinates: [151.2093, -33.8688] },
 ];
 

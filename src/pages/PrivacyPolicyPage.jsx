@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import './PrivacyPolicyPage.css';
 
 const PrivacyPolicyPage = () => {
@@ -185,8 +184,7 @@ const PrivacyPolicyPage = () => {
 
         </div>
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

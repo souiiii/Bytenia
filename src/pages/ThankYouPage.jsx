@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import './ThankYouPage.css';
 
 const ThankYouPage = () => {
@@ -15,8 +14,7 @@ const ThankYouPage = () => {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

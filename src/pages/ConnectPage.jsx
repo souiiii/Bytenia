@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CaretDown, TelegramLogo, DiscordLogo } from '@phosphor-icons/react';
-import Footer from '../components/Footer/Footer';
 import './ConnectPage.css';
 
 const COUNTRY_CODES = [
@@ -354,8 +353,7 @@ const ConnectPage = () => {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

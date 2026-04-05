@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { DownloadSimple, CaretDown } from '@phosphor-icons/react';
-import Footer from '../components/Footer/Footer';
 import './LookingGlassPage.css';
 
 const datacenters = [
@@ -134,8 +133,7 @@ const LookingGlassPage = () => {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 

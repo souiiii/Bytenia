@@ -4,7 +4,6 @@ import EnterpriseServersList from '../components/EnterpriseServers/EnterpriseSer
 import IntensiveWorkloads from '../components/IntensiveWorkloads/IntensiveWorkloads';
 import EnterpriseFeatures from '../components/EnterpriseFeatures/EnterpriseFeatures';
 import SupportBanner from '../components/SupportBanner/SupportBanner';
-import Footer from '../components/Footer/Footer';
 
 const EnterprisePage = () => {
   return (
@@ -14,8 +13,7 @@ const EnterprisePage = () => {
       <IntensiveWorkloads />
       <EnterpriseFeatures />
       <SupportBanner />
-      <Footer />
-    </>
+          </>
   );
 };
 

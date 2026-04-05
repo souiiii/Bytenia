@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
 import LocationsHero from '../components/LocationsHero/LocationsHero';
 import WhyLocationMatters from '../components/WhyLocationMatters/WhyLocationMatters';
 import GlobalHighlights from '../components/GlobalHighlights/GlobalHighlights';
@@ -14,8 +13,7 @@ const LocationsPage = () => {
         <GlobalHighlights />
         <DistributedArchitectureBanner />
       </main>
-      <Footer />
-    </>
+          </>
   );
 };
 
