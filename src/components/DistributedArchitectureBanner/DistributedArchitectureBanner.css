@@ -1,4 +1,5 @@
 .architecture-banner {
+  padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--bg-primary); /* match global highlights background to blend */
 }

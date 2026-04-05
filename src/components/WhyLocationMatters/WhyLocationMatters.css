@@ -2,7 +2,7 @@
   position: relative;
   background-color: var(--bg-secondary); /* Default solid fallback */
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 /* Synthesizing the graphic background mapping from image */

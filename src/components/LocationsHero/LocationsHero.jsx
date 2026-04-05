@@ -201,7 +201,7 @@ const LocationsHero = () => {
         {/* Bottom Text Hook */}
         <div
           className="text-center"
-          style={{ marginTop: "20px", marginBottom: "80px" }}
+          style={{ marginTop: "20px" }}
         >
           <h3
             className="h3"
