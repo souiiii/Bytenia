@@ -11,7 +11,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: none;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   z-index: 2;
 }
 
@@ -33,7 +33,7 @@
   z-index: 1;
   width: 100%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .map-marker-group {
@@ -52,7 +52,7 @@
   .locations-datacenter-card {
     padding: 60px 20px;
   }
-  
+
   .map-marker-group {
     --pin-scale: 1.5;
   }
