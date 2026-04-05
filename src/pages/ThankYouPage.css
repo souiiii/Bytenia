@@ -1,0 +1,40 @@
+.ty-page {
+  background-color: var(--bg-primary); /* Typically #F8F8FA */
+  padding: 40px 0 120px;
+}
+
+.ty-container {
+  width: 100%;
+}
+
+.ty-card {
+  background-color: var(--bg-dark);
+  border-radius: 36px;
+  padding: 100px 40px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ty-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.ty-subtitle {
+  color: var(--text-muted-light);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .ty-card {
+    padding: 60px 20px;
+  }
+  .ty-title {
+    font-size: 2.5rem;
+  }
+}

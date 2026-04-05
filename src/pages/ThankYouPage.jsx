@@ -1,15 +1,18 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
+import './ThankYouPage.css';
 
 const ThankYouPage = () => {
   return (
     <>
-      <main className="page-content" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div className="container" style={{ textAlign: 'center' }}>
-          <h1 style={{ color: 'white', marginBottom: '20px' }}>Thank You!</h1>
-          <p style={{ color: 'var(--text-muted-light)' }}>
-            We have received your submission.
-          </p>
+      <main className="page-content ty-page">
+        <div className="container ty-container">
+          <div className="ty-card">
+            <h1 className="ty-title">Thank You!</h1>
+            <p className="ty-subtitle">
+              Your request has been sent successfully. Our team will contact you shortly.
+            </p>
+          </div>
         </div>
       </main>
       <Footer />
