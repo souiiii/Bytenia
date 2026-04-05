@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CaretDown, TelegramLogo, DiscordLogo } from '@phosphor-icons/react';
 import Footer from '../components/Footer/Footer';
 import './ConnectPage.css';
@@ -133,6 +134,7 @@ const ALT_CONTACTS = [
 ];
 
 const ConnectPage = () => {
+  const navigate = useNavigate();
   const [phoneCountry, setPhoneCountry] = useState(COUNTRY_CODES[0]);
   const [phoneDropdownOpen, setPhoneDropdownOpen] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -140,8 +142,31 @@ const ConnectPage = () => {
   const [altContact, setAltContact] = useState(ALT_CONTACTS[0]);
   const [altContactDropdownOpen, setAltContactDropdownOpen] = useState(false);
 
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    website: '',
+    email: '',
+    altContactId: '',
+    message: ''
+  });
+  const [error, setError] = useState('');
+
   const phoneRef = useRef();
   const altRef = useRef();
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (error) setError('');
+  };
+
+  const handleSubmit = () => {
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setError('Please fill in all required fields marked with *');
+      return;
+    }
+    navigate('/thankyou');
+  };
 
   const handlePhoneChange = (e) => {
     let val = e.target.value;
@@ -201,22 +226,22 @@ const ConnectPage = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Your Name *</label>
-                  <input type="text" className="form-input" placeholder="Enter Your Full Name" />
+                  <input type="text" name="name" value={formData.name} onChange={handleInputChange} className="form-input" placeholder="Enter Your Full Name" />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Company Name</label>
-                  <input type="text" className="form-input" placeholder="Enter Company Name" />
+                  <input type="text" name="company" value={formData.company} onChange={handleInputChange} className="form-input" placeholder="Enter Company Name" />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Company Website</label>
-                  <input type="text" className="form-input" placeholder="Enter Website" />
+                  <input type="text" name="website" value={formData.website} onChange={handleInputChange} className="form-input" placeholder="Enter Website" />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Email *</label>
-                  <input type="email" className="form-input" placeholder="Enter Email" />
+                  <input type="email" name="email" value={formData.email} onChange={handleInputChange} className="form-input" placeholder="Enter Email" />
                 </div>
               </div>
 
@@ -290,7 +315,7 @@ const ConnectPage = () => {
                         ))}
                       </div>
                     )}
-                    <input type="text" className="inline-input" placeholder={altContact.placeholder} />
+                    <input type="text" name="altContactId" value={formData.altContactId} onChange={handleInputChange} className="inline-input" placeholder={altContact.placeholder} />
                   </div>
                 </div>
               </div>
@@ -298,12 +323,13 @@ const ConnectPage = () => {
               <div className="form-row">
                 <div className="form-group full-width">
                   <label className="form-label">Message</label>
-                  <textarea className="form-textarea" placeholder="Enter Your Message"></textarea>
+                  <textarea name="message" value={formData.message} onChange={handleInputChange} className="form-textarea" placeholder="Enter Your Message"></textarea>
                 </div>
               </div>
 
               <div className="form-footer">
-                <button className="connect-submit-btn">Contact Our Experts</button>
+                {error && <div style={{ color: '#ff4c4c', marginBottom: '20px', fontSize: '0.95rem', fontWeight: 500 }}>{error}</div>}
+                <button className="connect-submit-btn" onClick={handleSubmit}>Contact Our Experts</button>
                 <div className="connect-disclaimer">
                   By clicking Submit, I agree to the use of my personal data in accordance with Byteania <a href="/privacy-policy">Privacy Notice</a>. Byteania will not sell, trade, lease, or rent your personal data to third parties.
                 </div>

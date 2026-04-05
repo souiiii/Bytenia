@@ -14,6 +14,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import LookingGlassPage from './pages/LookingGlassPage';
 import ConnectPage from './pages/ConnectPage';
+import ThankYouPage from './pages/ThankYouPage';
 import './App.css';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
           <Route path="/looking-glass" element={<LookingGlassPage />} />
           <Route path="/connect" element={<ConnectPage />} />
+          <Route path="/thankyou" element={<ThankYouPage />} />
         </Routes>
       </div>
     </Router>
