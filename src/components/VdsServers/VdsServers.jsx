@@ -168,8 +168,7 @@ const VdsServers = () => {
         {filteredServers.length > 6 && (
           <div className="text-center" style={{marginTop: '40px'}}>
             <button 
-              className="btn-outline" 
-              style={{padding: '12px 36px', borderRadius: '50px'}}
+              className="vds-show-more"
               onClick={() => setIsExpanded(!isExpanded)}
             >
               {isExpanded ? "Hide Servers" : "Show More"}
