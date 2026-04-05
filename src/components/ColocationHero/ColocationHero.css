@@ -1,14 +1,38 @@
 .colocation-hero {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .colocation-hero-card {
   background-color: var(--bg-dark);
-  border-radius: var(--border-radius-lg);
+  border-radius: 36px;
   padding: 80px 40px;
   text-align: center;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.colocation-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colocation-hero-card .hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.colocation-hero-card .hero-description {
+  max-width: 850px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
