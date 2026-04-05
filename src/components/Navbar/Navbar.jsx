@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { XLogo, DiscordLogo, InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
 import "./Navbar.css";
@@ -157,64 +158,59 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div className={`mobile-menu ${isOpen ? "active" : ""}`}>
-        <div className="mobile-menu-container">
-          <span 
-            className="mobile-link"
-            onClick={() => setActiveMenu(activeMenu === 'PRODUCTS' ? null : 'PRODUCTS')}
+        <div className="mobile-menu-header">
+          <Link 
+            to="/" 
+            className="navbar-logo" 
+            onClick={() => {
+              setActiveMenu(null);
+              setIsOpen(false);
+            }}
           >
-            PRODUCTS {activeMenu === 'PRODUCTS' ? '-' : '+'}
-          </span>
-          <span 
-            className="mobile-link"
-            onClick={() => setActiveMenu(activeMenu === 'COMPANY' ? null : 'COMPANY')}
-          >
-            COMPANY {activeMenu === 'COMPANY' ? '-' : '+'}
-          </span>
-          <Link to="/looking-glass" className="mobile-link" onClick={() => { setActiveMenu(null); setIsOpen(false); }}>
-            LOOKING GLASS
+            <img
+              src={Logo}
+              alt="Byteania Logo"
+              style={{ height: "40px", width: "auto", filter: 'brightness(0) invert(1)' }}
+            />
+          </Link>
+          <button className="mobile-toggle" onClick={toggleMenu} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
+            <X size={28} color="#fff" />
+          </button>
+        </div>
+
+        <div className="mobile-menu-body">
+          <div className="mobile-section">
+            <h3 className="mobile-section-title">PRODUCTS</h3>
+            <div className="mobile-sublinks">
+              <Link to="/cost-optimized" className="mobile-sublink" onClick={toggleMenu}>Cost-Optimized Servers</Link>
+              <Link to="/enterprise" className="mobile-sublink" onClick={toggleMenu}>Advance Dedicated Servers</Link>
+              <Link to="/vds" className="mobile-sublink" onClick={toggleMenu}>Virtual Dedicated Servers</Link>
+              <Link to="/colocation" className="mobile-sublink" onClick={toggleMenu}>Colocation</Link>
+              <Link to="/locations" className="mobile-sublink" onClick={toggleMenu}>Infrastructure Locations</Link>
+              <Link to="/looking-glass" className="mobile-sublink" onClick={toggleMenu}>Looking Glass</Link>
+            </div>
+          </div>
+
+          <div className="mobile-section">
+            <h3 className="mobile-section-title">COMPANY</h3>
+            <div className="mobile-sublinks">
+              <Link to="/about-us" className="mobile-sublink" onClick={toggleMenu}>About Us</Link>
+              <Link to="/partnership-program" className="mobile-sublink" onClick={toggleMenu}>Partnership Program</Link>
+              <Link to="/terms-of-service" className="mobile-sublink" onClick={toggleMenu}>Terms of Service</Link>
+              <Link to="/privacy-policy" className="mobile-sublink" onClick={toggleMenu}>Privacy Policy</Link>
+              <Link to="/sla" className="mobile-sublink" onClick={toggleMenu}>Service Level Agreement</Link>
+            </div>
+          </div>
+
+          <Link to="/connect" className="mobile-contact-btn" onClick={toggleMenu}>
+            Contact Our Experts
           </Link>
 
-          <div className="mobile-actions">
-            <button
-              className="btn-outline"
-              style={{ 
-                display: "none", /* Hidden per request */
-                width: "100%", 
-                marginBottom: "12px", 
-                padding: "12px",
-                borderRadius: "50px",
-                fontSize: "0.95rem",
-                fontWeight: 600,
-                border: "1.5px solid var(--text-dark, #060914)",
-                color: "var(--text-dark, #060914)",
-                backgroundColor: "transparent",
-                boxSizing: "border-box"
-              }}
-            >
-              Login
-            </button>
-            <Link
-              to="/connect"
-              className="btn-primary"
-              style={{ 
-                width: "100%", 
-                padding: "12px",
-                borderRadius: "50px",
-                fontSize: "0.95rem",
-                fontWeight: 600,
-                backgroundColor: "var(--bg-dark, #060914)",
-                color: "#ffffff",
-                border: "1.5px solid var(--bg-dark, #060914)",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                boxSizing: "border-box"
-              }}
-              onClick={() => setIsOpen(false)}
-            >
-              Talk to Sales
-            </Link>
+          <div className="mobile-socials">
+            <a href="#" className="mobile-social-icon"><XLogo size={32} weight="fill" /></a>
+            <a href="#" className="mobile-social-icon"><DiscordLogo size={32} weight="fill" /></a>
+            <a href="#" className="mobile-social-icon"><InstagramLogo size={32} weight="regular" /></a>
+            <a href="#" className="mobile-social-icon"><FacebookLogo size={32} weight="fill" /></a>
           </div>
         </div>
       </div>
