@@ -4,22 +4,22 @@ import './VdsBenefits.css';
 const benefitsData = [
   {
     title: "Dedicated Resources",
-    desc: "Guaranteed CPU and RAM allocated exclusively to your instance for predictable, lag-free performance under load."
+    desc: "Guaranteed CPU and RAM allocated exclusively to your virtual server. Stable and predictable performance under load."
   },
   {
     title: "Strong Isolation",
-    desc: "VM-level hardware virtualization ensures that no noisy neighbors affect your server's security footprint and performance."
+    desc: "Virtualization ensures workload isolation from other tenants. Improved security and consistent performance."
   },
   {
     title: "Full Control & Customization",
-    desc: "Root access, OS choice, and full environment control give you the freedom to configure the server to your exact needs."
+    desc: "Root access, OS choice, and full environment control, giving you the freedom to configure the server to your exact needs."
   }
 ];
 
 const useCasesPills = [
   "SAAS & WEB APPLICATIONS",
-  "SMALL & MEDIUM DATABASES",
-  "DATA ANALYTICS",
+  "SMALL & MEDIUM BUSINESSES",
+  "DATA & ANALYTICS",
   "DIGITAL AGENCIES"
 ];
 

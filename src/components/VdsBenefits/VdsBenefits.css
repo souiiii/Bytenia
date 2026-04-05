@@ -1,7 +1,7 @@
 .vds-benefits {
   background-color: var(--bg-secondary);
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .vds-benefits-grid {
@@ -12,30 +12,32 @@
 
 .vds-benefit-card {
   background-color: var(--bg-white);
-  padding: 32px 24px;
-  border-radius: var(--border-radius-md);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
-  border: 1px solid var(--border-light);
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: none;
 }
 
 .vds-benefit-title {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--bg-dark);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .vds-benefit-desc {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
 .vds-use-cases-label {
-  font-size: 0.825rem;
+  font-size: 1.25rem;
   letter-spacing: 0.5px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--bg-dark);
+  text-transform: uppercase;
 }
 
 .vds-use-cases-pills {
@@ -47,13 +49,13 @@
 
 .vds-uc-pill {
   background-color: var(--bg-white);
-  padding: 10px 20px;
-  border-radius: var(--border-radius-sm);
-  font-size: 0.75rem;
-  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 800;
   color: var(--bg-dark);
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-  border: 1px solid var(--border-light);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  border: none;
   letter-spacing: 0.5px;
 }
 
