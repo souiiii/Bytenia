@@ -63,9 +63,9 @@ const LocationsHero = () => {
     requestAnimationFrame(animate);
   };
 
-  const isDefaultPosition = 
-    zoomLevel === 1 && 
-    Math.abs(position.coordinates[0] - 0) < 0.01 && 
+  const isDefaultPosition =
+    zoomLevel === 1 &&
+    Math.abs(position.coordinates[0] - 0) < 0.01 &&
     Math.abs(position.coordinates[1] - 45) < 0.01;
 
   const handlePinClick = (id) => {
@@ -98,8 +98,11 @@ const LocationsHero = () => {
               zoom={position.zoom}
               center={position.coordinates}
               minZoom={1}
-              maxZoom={4}
-              translateExtent={[[0, 0], [800, 500]]}
+              maxZoom={8}
+              translateExtent={[
+                [0, 0],
+                [800, 500],
+              ]}
               onMoveEnd={handleMoveEnd}
             >
               <Geographies geography={geoUrl}>
