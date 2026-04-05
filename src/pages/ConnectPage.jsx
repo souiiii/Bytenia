@@ -165,6 +165,21 @@ const ConnectPage = () => {
       setError('Please fill in all required fields marked with *');
       return;
     }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email.trim())) {
+      setError('Please enter a valid email address');
+      return;
+    }
+
+    if (phoneNumber.trim()) {
+      const phoneRegex = /^[\d\s\-()]{6,20}$/;
+      if (!phoneRegex.test(phoneNumber.trim())) {
+        setError('Please enter a valid phone number (digits, spaces, hyphens)');
+        return;
+      }
+    }
+
     navigate('/thankyou');
   };
 
