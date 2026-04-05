@@ -4,47 +4,47 @@ import './PartnershipTiers.css';
 const tiers = [
   {
     name: "BRONZE PARTNER",
-    subtitle: "For new partners",
+    subtitle: "For growing resellers.",
     features: [
       "API access",
-      "Basic tech support",
-      "Standard payout terms (Net45)",
+      "Standard support",
+      "Minimum commitment: $2,500",
     ],
     discount: "10% base discount"
   },
   {
     name: "SILVER PARTNER",
-    subtitle: "For growing infrastructure",
+    subtitle: "For scaling infrastructure providers.",
     features: [
-      "Priority Tier 2 tech support",
+      "Private Slack/Channel access",
       "API access",
-      "Dedicated account rep",
-      "Net 30 discount terms",
+      "Dedicated account contact",
+      "Minimum commitment: $7,500",
     ],
     discount: "15% base discount"
   },
   {
     name: "GOLD PARTNER",
-    subtitle: "For high-volume resellers",
+    subtitle: "For high-volume partners.",
     features: [
       "Priority provisioning",
-      "Dedicated Sales Manager",
-      "24/7 priority support",
-      "Co-marketing funds",
-      "SLA reimbursement 100%",
+      "Dedicated Partner Manager",
+      "Custom billing options",
+      "Early feature access",
+      "Minimum commitment: $15,000",
     ],
     discount: "20% base discount"
   },
   {
     name: "PLATINUM PARTNER",
-    subtitle: "For Enterprise integrations",
+    subtitle: "For strategic infrastructure partners.",
     features: [
-      "Fully priority resolution",
-      "Dedicated slack channel with ops",
-      "QBRs with engineering tier",
+      "24/7 priority escalation",
+      "Custom infrastructure solutions",
+      "Joint marketing opportunities",
       "White-label options",
-      "Priority network ingress",
-      "Instant payout terms (Net15)",
+      "Executive-level support",
+      "Minimum commitment: $30,000",
     ],
     discount: "25% base discount"
   }
@@ -62,7 +62,9 @@ const PartnershipTiers = () => {
           {tiers.map((tier, idx) => (
             <div key={idx} className="tier-card">
               <div className="tier-header">
-                <h4 className="tier-name">{tier.name}</h4>
+                <h4 className="tier-name">
+                  <strong>{tier.name.split(' ')[0]}</strong> <span style={{ fontWeight: 300, color: 'var(--text-muted)' }}>{tier.name.split(' ')[1]}</span>
+                </h4>
                 <p className="tier-subtitle">{tier.subtitle}</p>
               </div>
               <ul className="tier-features">
@@ -71,7 +73,9 @@ const PartnershipTiers = () => {
                 ))}
               </ul>
               <div className="tier-footer">
-                <div className="discount-pill">{tier.discount}</div>
+                <div className="discount-pill">
+                  <strong>{tier.discount.split(' ')[0]}</strong> <span style={{ fontWeight: 400 }}>{tier.discount.substring(tier.discount.indexOf(' ') + 1)}</span>
+                </div>
               </div>
             </div>
           ))}
