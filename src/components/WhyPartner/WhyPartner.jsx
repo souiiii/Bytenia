@@ -4,28 +4,28 @@ import './WhyPartner.css';
 const features = [
   {
     title: "Enterprise-Grade Infrastructure",
-    desc: "High-performance bare-metal and compute networks to power your clients' most demanding workloads."
+    desc: "High-performance dedicated servers deployed across 14+ global points of presence. Built for reliability, scale, and enterprise-grade performance."
   },
   {
     title: "Global Reach",
-    desc: "Expand into emerging markets with established European networks and global edge networks reaching more customers instantly."
+    desc: "Low-latency network coverage across North America, Europe, and Asia, enabling partners to serve customers worldwide without operational complexity."
   },
   {
     title: "Security-First Architecture",
-    desc: "Advanced DDoS protection, rigid compliance standards, and robust physical and network access mitigation."
+    desc: "Always-on DDoS protection, network redundancy, and proactive monitoring designed to protect mission-critical services."
   },
   {
     title: "Scalable Revenue Model",
-    desc: "Tiered volume discounting providing long-term predictable margin realization allowing you to scale profitably."
+    desc: "Tier-based margins structured for long-term growth, increasing discounts as your volume expands. Win-win."
   }
 ];
 
 const WhyPartner = () => {
   return (
     <section className="why-partner section text-center">
-      <div className="container" style={{ maxWidth: '1000px' }}>
+      <div className="container">
         <h2 className="why-title">
-          Why <strong>Partner</strong> With Byteania?
+          Why Partner With Byteania?
         </h2>
         
         <div className="why-grid">
