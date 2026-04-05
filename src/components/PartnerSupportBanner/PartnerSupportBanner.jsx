@@ -15,13 +15,11 @@ const PartnerSupportBanner = () => {
             <strong>Whether you're migrating</strong> from cloud, upgrading existing infrastructure, or scaling globally, our team helps:
           </p>
 
-          <div className="support-inline-list">
-            <span>Choose the right configuration</span>
-            <span className="list-sep">|</span>
-            <span>Plan capacity and growth</span>
-            <span className="list-sep">|</span>
-            <span>Optimize performance and cost</span>
-          </div>
+          <ul className="support-inline-list">
+            <li>Choose the right configuration</li>
+            <li>Plan capacity and growth</li>
+            <li>Optimize performance and cost</li>
+          </ul>
 
           <button className="btn-outline" style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff', padding: '12px 32px' }}>
             Contact Our Experts
