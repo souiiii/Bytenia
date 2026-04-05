@@ -1,27 +1,27 @@
 import React from 'react';
 import { 
-  HardDrives, 
-  SlidersHorizontal, 
-  Tag, 
-  Headset, 
-  ShieldCheck, 
-  Cube 
+  Receipt, 
+  Gear, 
+  ArrowsClockwise, 
+  Gauge, 
+  CalendarBlank, 
+  Certificate 
 } from '@phosphor-icons/react';
 import './PartnerMargins.css';
 
 const marginFeatures = [
-  { text: "HARDWARE SCALING", icon: <HardDrives size={24} weight="regular" /> },
-  { text: "CUSTOM ADMIN DASHBOARD", icon: <SlidersHorizontal size={24} weight="regular" /> },
-  { text: "BULK VOLUME DISCOUNTS", icon: <Tag size={24} weight="regular" /> },
-  { text: "PREFERENTIAL SUPPORT", icon: <Headset size={24} weight="regular" /> },
-  { text: "PREMIUM SLA", icon: <ShieldCheck size={24} weight="regular" /> },
-  { text: "DEDICATED INTEGRATIONS", icon: <Cube size={24} weight="regular" /> }
+  { text: "VOLUME-BASED PRICING", icon: <Receipt size={40} weight="light" /> },
+  { text: "CUSTOM HARDWARE CONFIGURATIONS", icon: <Gear size={40} weight="light" /> },
+  { text: "FLEXIBLE BILLING CYCLES", icon: <ArrowsClockwise size={40} weight="light" /> },
+  { text: "PERFORMANCE-BASED REBATES", icon: <Gauge size={40} weight="light" /> },
+  { text: "MULTI-YEAR INCENTIVES", icon: <CalendarBlank size={40} weight="light" /> },
+  { text: "DEAL REGISTRATION PROTECTION", icon: <Certificate size={40} weight="light" /> }
 ];
 
 const PartnerMargins = () => {
   return (
     <section className="partner-margins section text-center">
-      <div className="container" style={{ maxWidth: '1000px' }}>
+      <div className="container">
         <h2 className="margins-title">
           <strong>Built for</strong> Long-Term Margins
         </h2>
