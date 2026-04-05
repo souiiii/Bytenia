@@ -99,6 +99,7 @@ const LocationsHero = () => {
               center={position.coordinates}
               minZoom={1}
               maxZoom={4}
+              translateExtent={[[0, 0], [800, 500]]}
               onMoveEnd={handleMoveEnd}
             >
               <Geographies geography={geoUrl}>
