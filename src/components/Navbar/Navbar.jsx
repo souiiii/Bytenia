@@ -109,9 +109,16 @@ const Navbar = () => {
             <button
               className="btn-outline login-btn"
               style={{
-                padding: "6px 16px",
+                padding: "8px 24px",
                 borderRadius: "50px",
-                fontSize: "0.875rem",
+                fontSize: "0.95rem",
+                fontWeight: 600,
+                border: "1.5px solid var(--text-dark, #060914)",
+                color: "var(--text-dark, #060914)",
+                backgroundColor: "transparent",
+                cursor: "pointer",
+                height: "42px",
+                boxSizing: "border-box"
               }}
             >
               Login
@@ -120,13 +127,20 @@ const Navbar = () => {
               to="/connect"
               className="btn-primary start-btn"
               style={{
-                padding: "8px 20px",
+                padding: "8px 24px",
                 borderRadius: "50px",
-                fontSize: "0.875rem",
+                fontSize: "0.95rem",
+                fontWeight: 600,
+                backgroundColor: "var(--bg-dark, #060914)",
+                color: "#ffffff",
+                border: "1.5px solid var(--bg-dark, #060914)",
                 textDecoration: "none",
                 display: "inline-flex",
                 alignItems: "center",
-                justifyContent: "center"
+                justifyContent: "center",
+                cursor: "pointer",
+                height: "42px",
+                boxSizing: "border-box"
               }}
             >
               Talk to Sales
@@ -162,7 +176,18 @@ const Navbar = () => {
           <div className="mobile-actions">
             <button
               className="btn-outline"
-              style={{ width: "100%", marginBottom: "12px", padding: "12px" }}
+              style={{ 
+                width: "100%", 
+                marginBottom: "12px", 
+                padding: "12px",
+                borderRadius: "50px",
+                fontSize: "0.95rem",
+                fontWeight: 600,
+                border: "1.5px solid var(--text-dark, #060914)",
+                color: "var(--text-dark, #060914)",
+                backgroundColor: "transparent",
+                boxSizing: "border-box"
+              }}
             >
               Login
             </button>
@@ -172,6 +197,12 @@ const Navbar = () => {
               style={{ 
                 width: "100%", 
                 padding: "12px",
+                borderRadius: "50px",
+                fontSize: "0.95rem",
+                fontWeight: 600,
+                backgroundColor: "var(--bg-dark, #060914)",
+                color: "#ffffff",
+                border: "1.5px solid var(--bg-dark, #060914)",
                 textDecoration: "none",
                 display: "inline-flex",
                 alignItems: "center",
