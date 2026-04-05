@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import shapeSvg from '../../assets/shape.svg';
 import './ServerChoiceBanner.css';
 
@@ -19,9 +20,9 @@ const ServerChoiceBanner = () => {
             <p className="choice-desc text-white" style={{opacity: 0.9}}>
               Our experts will help you select the right configuration for your workload and budget.
             </p>
-            <button className="btn-outline" style={{borderColor: 'rgba(255,255,255,0.2)', paddingLeft: '32px', paddingRight: '32px', color: '#fff'}}>
+            <Link to="/connect" className="btn-outline" style={{borderColor: 'rgba(255,255,255,0.2)', paddingLeft: '32px', paddingRight: '32px', color: '#fff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>
               Contact Our Experts
-            </button>
+            </Link>
           </div>
           
         </div>

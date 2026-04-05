@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './IntensiveWorkloads.css';
 
 const workloads = [
@@ -38,7 +39,7 @@ const IntensiveWorkloads = () => {
               <strong>Our infrastructure experts can help you</strong> select the optimal server based on your workload,<br/>performance requirements, and growth plans.
             </p>
 
-            <button className="btn-light workloads-btn" style={{backgroundColor: '#fff', color: '#111827', padding: '12px 32px', borderRadius: '50px', fontWeight: '700', fontSize: '0.9rem'}}>Contact Our Experts</button>
+            <Link to="/connect" className="btn-light workloads-btn" style={{backgroundColor: '#fff', color: '#111827', padding: '12px 32px', borderRadius: '50px', fontWeight: '700', fontSize: '0.9rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>Contact Our Experts</Link>
           </div>
         </div>
       </div>

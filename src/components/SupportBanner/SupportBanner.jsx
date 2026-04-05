@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SupportBanner.css';
 
 const SupportBanner = () => {
@@ -28,9 +29,9 @@ const SupportBanner = () => {
               <strong>Optimize performance and cost</strong>
             </div>
 
-            <button className="btn-outline support-btn">
+            <Link to="/connect" className="btn-outline support-btn" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box' }}>
               Get Expert Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

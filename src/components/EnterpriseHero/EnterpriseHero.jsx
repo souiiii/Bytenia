@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './EnterpriseHero.css';
 
 const EnterpriseHero = () => {
@@ -12,7 +13,7 @@ const EnterpriseHero = () => {
               Enterprise-grade dedicated servers designed for organizations that require full control, predictable performance, and uncompromising reliability. <strong>100% dedicated hardware. Enterprise SLA & high availability. Full data and infrastructure control.</strong>
             </p>
             <div className="hero-actions">
-              <button className="btn-outline hero-btn-outline" style={{borderColor: 'rgba(255,255,255,0.3)', color: '#fff'}}>Contact Our Experts</button>
+              <Link to="/connect" className="btn-outline hero-btn-outline" style={{borderColor: 'rgba(255,255,255,0.3)', color: '#fff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>Contact Our Experts</Link>
             </div>
           </div>
         </div>
