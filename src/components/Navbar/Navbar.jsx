@@ -13,7 +13,7 @@ const SUBMENU_DATA = {
     { label: "Infrastructure Locations", path: "/locations" },
   ],
   COMPANY: [
-    { label: "About Us", path: "/company" },
+    { label: "About Us", path: "/about-us" },
     { label: "Partnership Program", path: "/partnership-program" },
   ]
 };
@@ -27,7 +27,7 @@ const PRODUCTS_ROUTES = [
 ];
 
 const COMPANY_ROUTES = [
-  "/company",
+  "/about-us",
   "/partnership-program"
 ];
 
