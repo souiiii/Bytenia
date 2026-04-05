@@ -16,10 +16,16 @@
 }
 
 .architecture-graphic {
-  flex: 0 0 200px;
+  flex: 0 0 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.architecture-shape {
+  width: 100%;
+  max-width: 320px;
+  object-fit: contain;
 }
 
 .architecture-content {
