@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './PartnerSupportBanner.css';
 
 const PartnerSupportBanner = () => {
@@ -21,9 +22,9 @@ const PartnerSupportBanner = () => {
             <li>Optimize performance and cost</li>
           </ul>
 
-          <button className="btn-outline" style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff', padding: '12px 32px' }}>
+          <Link to="/connect" className="btn-outline partner-btn">
             Contact Our Experts
-          </button>
+          </Link>
         </div>
       </div>
     </section>
