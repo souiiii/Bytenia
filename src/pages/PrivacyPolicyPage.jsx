@@ -9,10 +9,10 @@ const PrivacyPolicyPage = () => {
         
         <div className="container privacy-hero-container">
           <div className="privacy-hero-card">
-            <h1 className="h1 text-white" style={{ marginBottom: '16px' }}>
+            <h1 className="privacy-hero-title text-white">
               Byteania Privacy Policy
             </h1>
-            <p className="text-gray" style={{ fontSize: '0.9rem' }}>
+            <p className="privacy-hero-date text-gray">
               Last updated: 25 July 2024
             </p>
           </div>
