@@ -9,7 +9,7 @@ const VdsHero = () => {
           <div className="vds-hero-content">
             <h1 className="hero-title h1 text-white">Virtual Dedicated Servers</h1>
             <p className="hero-description text-gray">
-              Virtual instances with dedicated CPU and RAM resources that provide predictable performance, scalability, and security.
+              Virtual servers with dedicated CPU and RAM, designed for businesses that need reliable performance, scalability, and versatility.
             </p>
           </div>
         </div>
