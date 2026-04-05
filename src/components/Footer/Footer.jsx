@@ -1,5 +1,6 @@
 import React from "react";
 import { XLogo, DiscordLogo, InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 import Logo from '../../assets/Logo.svg';
 import "./Footer.css";
 
@@ -27,23 +28,23 @@ const Footer = () => {
           <div className="footer-column">
             <h4 className="footer-title">PRODUCTS</h4>
             <ul className="footer-list">
-              <li><a href="#">Cost-Optimized Servers</a></li>
-              <li><a href="#">Advance Dedicated Servers</a></li>
-              <li><a href="#">Virtual Dedicated Servers</a></li>
-              <li><a href="#">Colocation</a></li>
-              <li><a href="#">Infrastructure Locations</a></li>
-              <li><a href="#">Looking Glass</a></li>
+              <li><Link to="/cost-optimized">Cost-Optimized Servers</Link></li>
+              <li><Link to="/enterprise">Advance Dedicated Servers</Link></li>
+              <li><Link to="/vds">Virtual Dedicated Servers</Link></li>
+              <li><Link to="/colocation">Colocation</Link></li>
+              <li><Link to="/locations">Infrastructure Locations</Link></li>
+              <li><Link to="/looking-glass">Looking Glass</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4 className="footer-title">COMPANY</h4>
             <ul className="footer-list">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Partnership Program</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Service Level Agreement</a></li>
+              <li><Link to="/about-us">About Us</Link></li>
+              <li><Link to="/partnership-program">Partnership Program</Link></li>
+              <li><Link to="/terms-of-service">Terms of Service</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/sla">Service Level Agreement</Link></li>
             </ul>
           </div>
         </div>
