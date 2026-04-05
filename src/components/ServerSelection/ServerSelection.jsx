@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Server, Database, Cloud } from "lucide-react";
 import "./ServerSelection.css";
 
@@ -66,7 +67,7 @@ const serverData = [
     ],
   },
   {
-    id: "virtual",
+    id: "vds",
     title: "Virtual Dedicated Servers",
     icon: <Cloud size={64} strokeWidth={1} />,
     subtitle:
@@ -171,12 +172,14 @@ const ServerSelection = () => {
                         <span className="price-label">
                           From {server.price} / month
                         </span>
-                        <button
+                        <Link
+                          to={`/${server.id}`}
                           className="btn-view-servers"
                           onClick={(e) => e.stopPropagation()}
+                          style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box' }}
                         >
                           View Servers
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
