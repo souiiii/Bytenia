@@ -5,7 +5,7 @@ import './DistributedArchitectureBanner.css';
 const DistributedArchitectureBanner = () => {
   return (
     <section className="architecture-banner section">
-      <div className="container" style={{maxWidth: '1000px'}}>
+      <div className="container">
         <div className="architecture-card">
           
           <div className="architecture-graphic">
