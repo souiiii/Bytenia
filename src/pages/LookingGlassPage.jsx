@@ -4,10 +4,13 @@ import Footer from '../components/Footer/Footer';
 import './LookingGlassPage.css';
 
 const datacenters = [
-  { id: 'syd', name: 'Sydney, AU', location: 'Sydney, AU', datacenter: 'Equinix SY5', ipv4: '172.111.33.35', ipv6: 'Not set', flag: 'au' },
-  { id: 'fra', name: 'Frankfurt, DE', location: 'Frankfurt, DE', datacenter: 'Equinix FR5', ipv4: '185.12.33.1', ipv6: '2a01:4f8::1', flag: 'de' },
-  { id: 'nyc', name: 'New York, US', location: 'New York, US', datacenter: 'Equinix NY4', ipv4: '192.168.1.1', ipv6: 'Not set', flag: 'us' },
-  { id: 'dxb', name: 'Dubai, UAE', location: 'Dubai, UAE', datacenter: 'DXB1', ipv4: '10.0.0.1', ipv6: 'Not set', flag: 'ae' }
+  { id: 'dallas', name: 'Dallas, US', location: 'Dallas, US', datacenter: 'Equinix DA1', ipv4: '192.168.10.1', ipv6: 'Not set', flag: 'us' },
+  { id: 'chicago', name: 'Chicago, US', location: 'Chicago, US', datacenter: 'Equinix CH1', ipv4: '192.168.20.1', ipv6: 'Not set', flag: 'us' },
+  { id: 'miami', name: 'Miami, US', location: 'Miami, US', datacenter: 'Equinix MI1', ipv4: '192.168.30.1', ipv6: 'Not set', flag: 'us' },
+  { id: 'london', name: 'London, UK', location: 'London, UK', datacenter: 'Equinix LD1', ipv4: '185.15.15.1', ipv6: 'Not set', flag: 'gb' },
+  { id: 'amsterdam', name: 'Amsterdam, NL', location: 'Amsterdam, NL', datacenter: 'Equinix AM1', ipv4: '185.10.10.1', ipv6: '2a01::1', flag: 'nl' },
+  { id: 'frankfurt', name: 'Frankfurt, DE', location: 'Frankfurt, DE', datacenter: 'Equinix FR5', ipv4: '185.12.33.1', ipv6: '2a01:4f8::1', flag: 'de' },
+  { id: 'sydney', name: 'Sydney, AU', location: 'Sydney, AU', datacenter: 'Equinix SY5', ipv4: '172.111.33.35', ipv6: 'Not set', flag: 'au' }
 ];
 
 const LookingGlassPage = () => {

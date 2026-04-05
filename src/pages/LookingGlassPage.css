@@ -4,16 +4,15 @@
 }
 
 .lg-container {
-  max-width: 1000px; /* Same max width constraint as other top-level pages */
   width: 100%;
 }
 
 .lg-card {
   background-color: var(--bg-dark);
-  border-radius: var(--border-radius-lg);
-  padding: 60px;
+  border-radius: 36px;
+  padding: 100px 40px;
   color: var(--text-light);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: none;
   margin: 0 auto;
 }
 
