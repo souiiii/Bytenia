@@ -1,5 +1,5 @@
 import React from 'react';
-import { HardDrives, Plug, Globe, CursorClick } from '@phosphor-icons/react';
+import { HardDrives, Power, Globe, Cursor } from '@phosphor-icons/react';
 import './ColocationPricing.css';
 
 const pricingPlans = [
@@ -9,10 +9,10 @@ const pricingPlans = [
       {
         icon: <HardDrives size={24} weight="regular" />,
         main: "1U Rackspace",
-        sub: "+$15/mo for each extra U"
+        sub: "+$75/mo for each extra U"
       },
       {
-        icon: <Plug size={24} weight="regular" />,
+        icon: <Power size={24} weight="regular" />,
         main: "1A @ 208V (up to 200W usable)",
         sub: "+$15/mo for each extra amp"
       },
@@ -22,15 +22,15 @@ const pricingPlans = [
         sub: null
       },
       {
-        icon: <CursorClick size={24} weight="regular" />,
+        icon: <Cursor size={24} weight="regular" />,
         main: "1 IPv4 address included - additional IPs only $1/mo each",
         sub: null
       }
     ],
     locations: [
-      { flag: "gb", city: "London", country: "United Kingdom", price: "From $ 125 / month" },
-      { flag: "au", city: "Sydney", country: "Australia", price: "From $ 100 / month" },
-      { flag: "us", city: "Dallas", country: "USA", price: "From $ 130 / month" }
+      { flag: "gb", city: "London", country: "United Kingdom", priceVal: "125" },
+      { flag: "au", city: "Sydney", country: "Australia", priceVal: "100" },
+      { flag: "us", city: "Dallas", country: "USA", priceVal: "130" }
     ]
   },
   {
@@ -42,7 +42,7 @@ const pricingPlans = [
         sub: null
       },
       {
-        icon: <Plug size={24} weight="regular" />,
+        icon: <Power size={24} weight="regular" />,
         main: "15A @ 208V (up to 2.5kW usable)",
         sub: null
       },
@@ -52,15 +52,15 @@ const pricingPlans = [
         sub: null
       },
       {
-        icon: <CursorClick size={24} weight="regular" />,
+        icon: <Cursor size={24} weight="regular" />,
         main: "32 IPv4 addresses included - additional IPs only $1/mo each",
         sub: null
       }
     ],
     locations: [
-      { flag: "gb", city: "London", country: "United Kingdom", price: "From $ 2200 / month" },
-      { flag: "au", city: "Sydney", country: "Australia", price: "From $ 2200 / month" },
-      { flag: "us", city: "Dallas", country: "USA", price: "From $ 2200 / month" }
+      { flag: "gb", city: "London", country: "United Kingdom", priceVal: "2200" },
+      { flag: "au", city: "Sydney", country: "Australia", priceVal: "2200" },
+      { flag: "us", city: "Dallas", country: "USA", priceVal: "2200" }
     ]
   }
 ];
@@ -107,7 +107,7 @@ const ColocationPricing = () => {
                       </div>
                     </div>
                     <div className="colo-loc-right">
-                      <span className="colo-price">{loc.price}</span>
+                      <span className="colo-price">From <strong>$ {loc.priceVal}</strong> / month</span>
                     </div>
                   </div>
                 ))}
