@@ -2,6 +2,10 @@ import React from "react";
 import { XLogo, DiscordLogo, InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/Logo.svg';
+import Cert0 from '../../assets/certificate-0.png';
+import Cert1 from '../../assets/certificate-1.png';
+import Cert2 from '../../assets/certificate-2.png';
+import Cert3 from '../../assets/certificate-3.png';
 import "./Footer.css";
 
 const Footer = () => {
@@ -51,13 +55,23 @@ const Footer = () => {
 
         {/* Mobile Badges - explicitly requested for mobile preservation */}
         <div className="footer-badges mobile-only-badges">
-          <img
-            src="/iso_certificates.png"
-            alt="ISO Certifications"
-            className="iso-badges-img"
-          />
+          <div className="cert-box">
+            <img src={Cert0} alt="ISO 9001" className="iso-badges-img" />
+            <p className="cert-text">Certificate<br/>No:272902017</p>
+          </div>
+          <div className="cert-box">
+            <img src={Cert1} alt="ISO 27001" className="iso-badges-img" />
+            <p className="cert-text">Certificate<br/>No:272912017</p>
+          </div>
+          <div className="cert-box">
+            <img src={Cert2} alt="ISO 14001" className="iso-badges-img" />
+            <p className="cert-text">Certificate<br/>No:272892017</p>
+          </div>
+          <div className="cert-box">
+            <img src={Cert3} alt="ISO 50001" className="iso-badges-img" />
+            <p className="cert-text">Certificate<br/>No:272922017</p>
+          </div>
         </div>
-
         {/* Bottom Address and Copyright */}
         <div className="footer-bottom">
           <p className="footer-address">
