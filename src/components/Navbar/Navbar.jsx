@@ -15,6 +15,8 @@ const SUBMENU_DATA = {
   COMPANY: [
     { label: "About Us", path: "/about-us" },
     { label: "Partnership Program", path: "/partnership-program" },
+    { label: "Terms of Service", path: "/terms-of-service" },
+    { label: "Privacy Policy", path: "/privacy-policy" },
   ]
 };
 
@@ -28,7 +30,9 @@ const PRODUCTS_ROUTES = [
 
 const COMPANY_ROUTES = [
   "/about-us",
-  "/partnership-program"
+  "/partnership-program",
+  "/terms-of-service",
+  "/privacy-policy"
 ];
 
 const Navbar = () => {
