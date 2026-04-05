@@ -92,7 +92,12 @@ const LocationsHero = () => {
             projectionConfig={{ scale: 120, center: [0, 45] }}
             width={800}
             height={500}
-            style={{ width: "100%", height: "auto" }}
+            style={{
+              width: "100%",
+              height: "auto",
+              borderBottomLeftRadius: "2rem",
+              borderBottomRightRadius: "2rem",
+            }}
           >
             <ZoomableGroup
               zoom={position.zoom}
@@ -199,10 +204,7 @@ const LocationsHero = () => {
         </div>
 
         {/* Bottom Text Hook */}
-        <div
-          className="text-center"
-          style={{ marginTop: "20px" }}
-        >
+        <div className="text-center" style={{ marginTop: "20px" }}>
           <h3
             className="h3"
             style={{

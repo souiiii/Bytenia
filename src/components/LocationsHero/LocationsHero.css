@@ -5,7 +5,8 @@
 
 .locations-datacenter-card {
   background-color: var(--bg-dark);
-  border-radius: 36px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
   padding: 80px 40px;
   text-align: center;
   position: relative;
