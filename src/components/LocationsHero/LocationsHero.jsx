@@ -79,41 +79,41 @@ const locationDetails = {
   },
   dallas: {
     title: "Dallas, USA",
-    address: "1950 N Stemmons Fwy, Dallas, TX 75207, United States",
-    description: "The Equinix DA1 facility is a vital interconnection hub offering low-latency connectivity to telecommunications networks and enterprise customers across the American Southwest.",
+    address: "1221 Coit Road, Plano, TX 75075, United States",
+    description: "Evocative DAL6 is a Dallas metro facility built for scalable colocation and dedicated deployments, with a focus on uptime-driven design and audited operational controls. The site is supported by redundant power and cooling architecture and is positioned for strong regional connectivity within Texas, and surrounding states.",
     infrastructure: [
-      "Strategic location in the Infomart, a premier interconnection facility",
-      "Dense ecosystem of cloud providers, ISPs, and enterprise networks",
-      "Direct connections to major Latin American networks",
-      "Robust power and cooling infrastructure with 2N electrical redundancy"
+      "Dedicated bare-metal and colocation options for production workloads",
+      "N+1 redundancy across UPS, cooling, and standby power systems",
+      "Meet-Me Room (MMR) for carrier interconnect and cross-connect workflows",
+      "Certifications include HIPAA, PCI-DSS, SOC 2 Type II, SOC 3, ISAE 3402, SSAE 18, and LEED"
     ],
-    summary: "Dallas is ideal for North American enterprise deployments requiring robust interconnection options and direct bridges into LatAm networks.",
+    summary: "Dallas is well-suited for US central deployments, multi-region architectures, and latency-balanced application hosting across North America.",
     flag: "us"
   },
   chicago: {
     title: "Chicago, USA",
-    address: "350 E Cermak Rd, Chicago, IL 60616, United States",
-    description: "Located in one of the world's largest data centers, our Chicago deployment leverages massive carrier density and strategic Midwestern positioning to serve latency-sensitive workloads.",
+    address: "350 E Cermak Road, 5th Floor, Chicago, Illinois 60616, United States",
+    description: "The Equinix Chicago campus is positioned in one of the world's major financial hubs and is designed for interconnection-focused deployments that prioritize performance, predictable latency, and direct access to dense network and cloud ecosystems.",
     infrastructure: [
-      "Premier 350 E Cermak facility offering unparalleled network density",
-      "Direct access to top financial exchanges and enterprise networks",
-      "Sustainable energy initiatives and advanced cooling systems",
-      "N+1 power and cooling redundancy for resilient enterprise operations"
+      "Interconnection-forward colocation designed to enhance performance and meet latency targets",
+      "N+1 electrical system and cooling redundancy",
+      "Private connectivity options via Cross Connects and Equinix Fabric",
+      "Enterprise compliance and operational standards, including ISO 27001, PCI DSS, SOC 1 Type II, SOC 2 Type II, HIPAA, and NIST 800-53/FISMA High"
     ],
-    summary: "Chicago serves as a crucial hub for financial services, enterprise colocation, and low-latency deployments targeting deep North American routing.",
+    summary: "Chicago is well-suited for US-central hosting, financial and latency-sensitive workloads, and business continuity architectures that benefit from proximity to major exchanges and dense interconnection ecosystems.",
     flag: "us"
   },
   frankfurt: {
     title: "Frankfurt, Germany",
-    address: "Kruppstraße 121, 60388 Frankfurt am Main, Germany",
-    description: "The Interxion FRA campus is a leading European data center hub, providing unmatched access to DE-CIX, Europe's largest internet exchange, and deep connectivity into core European markets.",
+    address: "Eschborner Landstraße 100, Frankfurt am Main, Germany",
+    description: "NTT DATA FRA1 is a large-scale campus designed for high-availability enterprise and hyperscale requirements, with direct access to major carrier hubs, cloud networks, and DE-CIX. The facility is built around resilient electrical and mechanical systems to support continuously running production infrastructure.",
     infrastructure: [
-      "Direct access to DE-CIX and hundreds of international carriers",
-      "Purpose-built for high-density cloud computing and enterprise workloads",
-      "Adherence to strict European data sovereignty and compliance standards",
-      "100% renewable energy commitments across the facility operations"
+      "Campus-scale footprint with multiple purpose-built data center buildings",
+      "Connectivity into major carrier hubs, cloud networks, and DE-CIX",
+      "2N UPS architecture with dual A- and B-supply systems",
+      "Multiple certifications available across the Global Data Centers platform including ISO/IEC 27001, ISO 50001, PCI DSS, ISAE 3402/SOC 1, and ISAE 3000/SOC 2"
     ],
-    summary: "Frankfurt is the definitive choice for Central European deployments, high-volume internet peering, and enterprise architectures demanding high interconnect density.",
+    summary: "Frankfurt is well-suited for EU-central hosting, financial and latency-sensitive applications, and architectures that benefit from dense peering and cloud-adjacent connectivity.",
     flag: "de"
   }
 };
