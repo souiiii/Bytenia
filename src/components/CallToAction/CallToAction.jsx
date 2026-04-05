@@ -18,7 +18,7 @@ const CallToAction = () => {
             <p className="choice-desc text-white" style={{opacity: 0.9}}>
               Our experts will help you select the right configuration for your workload and budget.
             </p>
-            <Link to="/connect" className="btn-outline" style={{borderColor: 'rgba(255,255,255,0.2)', paddingLeft: '32px', paddingRight: '32px', color: '#fff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box'}}>
+            <Link to="/connect" className="btn-outline cta-btn">
               Contact Our Experts
             </Link>
           </div>
