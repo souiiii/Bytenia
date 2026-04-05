@@ -109,6 +109,7 @@ const Navbar = () => {
             <button
               className="btn-outline login-btn"
               style={{
+                display: "none", /* Hidden per request */
                 padding: "8px 24px",
                 borderRadius: "50px",
                 fontSize: "0.95rem",
@@ -177,6 +178,7 @@ const Navbar = () => {
             <button
               className="btn-outline"
               style={{ 
+                display: "none", /* Hidden per request */
                 width: "100%", 
                 marginBottom: "12px", 
                 padding: "12px",
