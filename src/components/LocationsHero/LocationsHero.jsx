@@ -28,13 +28,13 @@ const LocationsHero = () => {
 
   return (
     <section className="locations-hero">
-      <div className="container" style={{ maxWidth: '1000px' }}>
+      <div className="container">
         
         {/* Top Dark Datacenters Card */}
         <div className="locations-datacenter-card">
-          <h1 className="h1 text-white">Our Global<br/>Datacenters</h1>
-          <p className="text-gray" style={{ maxWidth: '480px', margin: '0 auto', fontSize: '1rem', lineHeight: '1.6' }}>
-            High-performance infrastructure strategically located worldwide to deliver lower latency, higher availability, and scalability to users globally.
+          <h1 className="hero-title text-white">Our Global Datacenters</h1>
+          <p className="hero-description text-gray">
+            High-performance servers strategically located around the world to serve your business needs with speed, reliability, and flexibility.
           </p>
         </div>
 
