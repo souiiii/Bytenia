@@ -157,7 +157,7 @@ const VdsServers = () => {
                     <span className="vds-val-strong">{s.price}</span>
                   </div>
                   <div className="vds-td vds-action-col">
-                    <button className="btn-primary vds-order-btn">Order Now</button>
+                    <button className="vds-order-btn">Order Now</button>
                   </div>
                 </div>
               ))
