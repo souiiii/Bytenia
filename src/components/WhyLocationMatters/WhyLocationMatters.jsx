@@ -35,7 +35,7 @@ const WhyLocationMatters = () => {
     <section className="why-location-section section">
       <div 
         className="why-location-bg-overlay" 
-        style={{ backgroundImage: `url(${planetBg})` }}
+        style={{ backgroundImage: `url("${planetBg}")` }}
       ></div>
       <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: '1200px' }}>
         

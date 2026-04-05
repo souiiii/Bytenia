@@ -12,10 +12,10 @@
 
 .highlight-card {
   background-color: var(--bg-white);
-  padding: 32px;
-  border-radius: var(--border-radius-md);
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+  padding: 40px;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
 }
 
 .highlight-title {
