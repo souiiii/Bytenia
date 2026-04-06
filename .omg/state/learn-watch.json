@@ -1,0 +1,11 @@
+{
+  "last_session_id": "e1ea9faf-d6b5-4163-9266-ebb421fe3b67",
+  "last_event_key": "e1ea9faf-d6b5-4163-9266-ebb421fe3b67:transcript:766b862a9e508dd58709696f79cc9e73208c63ef7291b6b455bb5fde1d3ebda6",
+  "last_prompted_session_id": "",
+  "last_reason": "short-session",
+  "last_user_message_count": 3,
+  "last_actionable_message_count": 0,
+  "deep_interview_lock_active": false,
+  "deep_interview_lock_source": "/home/zahid/Documents/GitHub/bytenia/.omg/state/deep-interview.json",
+  "updated_at": "2026-04-06T17:50:13.617Z"
+}

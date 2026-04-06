@@ -36,7 +36,6 @@ const Footer = () => {
               <li><Link to="/enterprise">Advance Dedicated Servers</Link></li>
               <li><Link to="/vds">Virtual Dedicated Servers</Link></li>
               <li><Link to="/colocation">Colocation</Link></li>
-              <li><Link to="/locations">Infrastructure Locations</Link></li>
               <li><Link to="/looking-glass">Looking Glass</Link></li>
             </ul>
           </div>
@@ -45,6 +44,7 @@ const Footer = () => {
             <h4 className="footer-title">COMPANY</h4>
             <ul className="footer-list">
               <li><Link to="/about-us">About Us</Link></li>
+              <li><Link to="/locations">Infrastructure Locations</Link></li>
               <li><Link to="/partnership-program">Partnership Program</Link></li>
               <li><Link to="/terms-of-service">Terms of Service</Link></li>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>

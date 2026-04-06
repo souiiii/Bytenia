@@ -129,6 +129,7 @@ const ServerSelection = () => {
               <div
                 key={server.id}
                 className={`server-card ${isActive ? "active" : ""}`}
+                onMouseEnter={() => setActiveId(server.id)}
                 onClick={() => setActiveId(server.id)}
               >
                 {!isActive ? (

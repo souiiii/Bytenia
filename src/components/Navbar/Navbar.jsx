@@ -11,10 +11,10 @@ const SUBMENU_DATA = {
     { label: "Cost-Optimized Dedicated Servers", path: "/cost-optimized" },
     { label: "Virtual Dedicated Servers", path: "/vds" },
     { label: "Colocation", path: "/colocation" },
-    { label: "Infrastructure Locations", path: "/locations" },
   ],
   COMPANY: [
     { label: "About Us", path: "/about-us" },
+    { label: "Infrastructure Locations", path: "/locations" },
     { label: "Partnership Program", path: "/partnership-program" },
     { label: "Terms of Service", path: "/terms-of-service" },
     { label: "Privacy Policy", path: "/privacy-policy" },
@@ -26,11 +26,11 @@ const PRODUCTS_ROUTES = [
   "/cost-optimized",
   "/vds",
   "/colocation",
-  "/locations"
 ];
 
 const COMPANY_ROUTES = [
   "/about-us",
+  "/locations",
   "/partnership-program",
   "/terms-of-service",
   "/privacy-policy"
@@ -110,7 +110,7 @@ const Navbar = () => {
             <button
               className="btn-outline login-btn"
               style={{
-                display: "none", 
+                display: "inline-flex", 
                 padding: "8px 24px",
                 borderRadius: "50px",
                 fontSize: "0.95rem",
@@ -120,7 +120,9 @@ const Navbar = () => {
                 backgroundColor: "transparent",
                 cursor: "pointer",
                 height: "42px",
-                boxSizing: "border-box"
+                boxSizing: "border-box",
+                alignItems: "center",
+                justifyContent: "center"
               }}
             >
               Login
@@ -186,7 +188,6 @@ const Navbar = () => {
               <Link to="/enterprise" className="mobile-sublink" onClick={toggleMenu}>Advance Dedicated Servers</Link>
               <Link to="/vds" className="mobile-sublink" onClick={toggleMenu}>Virtual Dedicated Servers</Link>
               <Link to="/colocation" className="mobile-sublink" onClick={toggleMenu}>Colocation</Link>
-              <Link to="/locations" className="mobile-sublink" onClick={toggleMenu}>Infrastructure Locations</Link>
               <Link to="/looking-glass" className="mobile-sublink" onClick={toggleMenu}>Looking Glass</Link>
             </div>
           </div>
@@ -195,6 +196,7 @@ const Navbar = () => {
             <h3 className="mobile-section-title">COMPANY</h3>
             <div className="mobile-sublinks">
               <Link to="/about-us" className="mobile-sublink" onClick={toggleMenu}>About Us</Link>
+              <Link to="/locations" className="mobile-sublink" onClick={toggleMenu}>Infrastructure Locations</Link>
               <Link to="/partnership-program" className="mobile-sublink" onClick={toggleMenu}>Partnership Program</Link>
               <Link to="/terms-of-service" className="mobile-sublink" onClick={toggleMenu}>Terms of Service</Link>
               <Link to="/privacy-policy" className="mobile-sublink" onClick={toggleMenu}>Privacy Policy</Link>
