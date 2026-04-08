@@ -17,7 +17,7 @@
 }
 
 .choice-graphic {
-  flex: 0 0 160px;
+  flex: 0 0 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,8 +60,8 @@
     gap: 40px;
   }
   .choice-graphic {
-    flex: 0 0 100px; 
-    width: 100px;
+    flex: 0 0 220px; 
+    width: 220px;
   }
 }
 
@@ -72,8 +72,8 @@
     gap: 24px;
   }
   .choice-graphic {
-    flex: 0 0 80px; 
-    width: 80px;
+    flex: 0 0 180px; 
+    width: 180px;
   }
 }
 

@@ -25,7 +25,7 @@ const WhyPartner = () => {
     <section className="why-partner section text-center">
       <div className="container">
         <h2 className="why-title">
-          Why Partner With Byteania?
+          Why Partner With Tempest?
         </h2>
         
         <div className="why-grid">

@@ -9,7 +9,7 @@ const TermsOfServicePage = () => {
         <div className="container tos-hero-container">
           <div className="tos-hero-card">
             <h1 className="tos-hero-title text-white">
-              Byteania Terms of Service
+              Tempest Terms of Service
             </h1>
             <p className="tos-hero-date text-gray">
               Last updated: 25 July 2024
@@ -20,10 +20,10 @@ const TermsOfServicePage = () => {
         <div className="tos-content-container">
           <div className="tos-intro">
             <p className="tos-intro-p">
-              These Terms of Service (the “Terms”) govern your access to and use of the Byteania website (the “Site”) and any products or services offered through the Site (collectively, the “Services”).
+              These Terms of Service (the “Terms”) govern your access to and use of the Tempest website (the “Site”) and any products or services offered through the Site (collectively, the “Services”).
             </p>
             <p className="tos-intro-p">
-              The Site and Services are operated by AGX Management Consultancy FZCO (“Byteania,” “we,” “us,” or “our”). By accessing the Site or purchasing, deploying, or using any Services, you agree to be bound by these Terms and any policies referenced here, including the Privacy Policy.
+              The Site and Services are operated by AGX Management Consultancy FZCO (“Tempest,” “we,” “us,” or “our”). By accessing the Site or purchasing, deploying, or using any Services, you agree to be bound by these Terms and any policies referenced here, including the Privacy Policy.
             </p>
             <p className="tos-intro-p">
               If you do not agree to these Terms, do not use the Site or Services.
@@ -69,7 +69,7 @@ const TermsOfServicePage = () => {
               <li>Abusive, harassing, or threatening behavior, including targeting our staff, partners, or other customers.</li>
               <li>Any activity that violates applicable laws, regulations, or third-party rights.</li>
             </ul>
-            <p>We may suspend or terminate Services immediately if we believe your use creates risk to the network, other customers, third parties, or Byteania.</p>
+            <p>We may suspend or terminate Services immediately if we believe your use creates risk to the network, other customers, third parties, or Tempest.</p>
           </section>
 
           <section className="tos-section">
@@ -113,12 +113,12 @@ const TermsOfServicePage = () => {
 
           <section className="tos-section">
             <h3>12. Intellectual property</h3>
-            <p>The Site, branding, and all related content and materials are owned by or licensed to Byteania and are protected by intellectual property laws. You may not copy, modify, distribute, or reverse engineer the Site or Services except as expressly permitted by law or in writing by Byteania.</p>
+            <p>The Site, branding, and all related content and materials are owned by or licensed to Tempest and are protected by intellectual property laws. You may not copy, modify, distribute, or reverse engineer the Site or Services except as expressly permitted by law or in writing by Tempest.</p>
           </section>
 
           <section className="tos-section">
             <h3>13. Customer content and data</h3>
-            <p>You retain all rights in your content and data. You grant Byteania a limited license to host, process, and transmit your data solely to provide the Services, maintain security, and comply with legal obligations.</p>
+            <p>You retain all rights in your content and data. You grant Tempest a limited license to host, process, and transmit your data solely to provide the Services, maintain security, and comply with legal obligations.</p>
           </section>
 
           <section className="tos-section">
@@ -141,13 +141,13 @@ const TermsOfServicePage = () => {
 
           <section className="tos-section">
             <h3>16. Limitation of liability</h3>
-            <p>To the maximum extent permitted by law, Byteania will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, or goodwill, arising from or related to your use of the Services.</p>
-            <p>Byteania’s total liability for any claim will not exceed the amount you paid to Byteania for the affected Service during the three (3) months preceding the event giving rise to the claim.</p>
+            <p>To the maximum extent permitted by law, Tempest will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, or goodwill, arising from or related to your use of the Services.</p>
+            <p>Tempest’s total liability for any claim will not exceed the amount you paid to Tempest for the affected Service during the three (3) months preceding the event giving rise to the claim.</p>
           </section>
 
           <section className="tos-section">
             <h3>17. Indemnification</h3>
-            <p>You agree to defend, indemnify, and hold harmless Byteania, its affiliates, and its personnel from claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising from your use of the Services, your content, or your violation of these Terms or applicable law.</p>
+            <p>You agree to defend, indemnify, and hold harmless Tempest, its affiliates, and its personnel from claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising from your use of the Services, your content, or your violation of these Terms or applicable law.</p>
           </section>
 
           <section className="tos-section">

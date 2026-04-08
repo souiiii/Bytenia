@@ -345,7 +345,7 @@ const ConnectPage = () => {
                 {error && <div style={{ color: '#ff4c4c', marginBottom: '20px', fontSize: '0.95rem', fontWeight: 500 }}>{error}</div>}
                 <button className="connect-submit-btn" onClick={handleSubmit}>Contact Our Experts</button>
                 <div className="connect-disclaimer">
-                  By clicking Submit, I agree to the use of my personal data in accordance with Byteania <a href="/privacy-policy">Privacy Notice</a>. Byteania will not sell, trade, lease, or rent your personal data to third parties.
+                  By clicking Submit, I agree to the use of my personal data in accordance with Tempest <a href="/privacy-policy">Privacy Notice</a>. Tempest will not sell, trade, lease, or rent your personal data to third parties.
                 </div>
               </div>
             </div>

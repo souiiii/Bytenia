@@ -16,7 +16,7 @@ const Footer = () => {
         
         <div className="footer-top">
           <div className="footer-logo">
-            <img src={Logo} alt="Byteania Logo" style={{ height: '40px', width: 'auto' }} />
+            <img src={Logo} alt="Tempest Logo" style={{ height: '40px', width: 'auto' }} />
           </div>
           
           <div className="footer-socials">
@@ -79,7 +79,7 @@ const Footer = () => {
             Dubai, United Arab Emirates
           </p>
           <p className="copyright-text">
-            Copyright 2026 © Byteania. All rights reserved.
+            Copyright 2026 © Tempest. All rights reserved.
           </p>
         </div>
 

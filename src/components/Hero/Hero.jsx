@@ -13,7 +13,7 @@ const Hero = () => {
             <p className="hero-subtitle">BUILT FOR MISSION-CRITICAL WORKLOADS</p>
             <div className="hero-divider"></div>
             <p className="hero-description text-gray">
-              Byteania delivers enterprise-grade dedicated servers with predictable performance, full hardware control, and scalable infrastructure. Designed for businesses that require stability, security, and long-term reliability.
+              Tempest delivers enterprise-grade dedicated servers with predictable performance, full hardware control, and scalable infrastructure. Designed for businesses that require stability, security, and long-term reliability.
             </p>
             <div className="hero-actions">
               <Link to="/enterprise" className="btn-primary hero-btn" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box' }}>Discover Our Servers</Link>
@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-graphic">
-            <img src={ShapeGraphic} alt="Byteania Shape" className="hero-logo-graphic" style={{ width: '300px', height: 'auto', display: 'block' }} />
+            <img src={ShapeGraphic} alt="Tempest Shape" className="hero-logo-graphic" />
           </div>
         </div>
       </div>

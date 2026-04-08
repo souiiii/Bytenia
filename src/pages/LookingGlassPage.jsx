@@ -31,7 +31,7 @@ const LookingGlassPage = () => {
             <header className="lg-header">
               <h1 className="lg-title">Looking Glass</h1>
               <p className="lg-subtitle">
-                Access live network diagnostics from our datacenters and evaluate Byteania's global backbone in real time.
+                Access live network diagnostics from our datacenters and evaluate Tempest's global backbone in real time.
               </p>
             </header>
 

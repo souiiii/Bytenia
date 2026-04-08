@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
         <div className="container privacy-hero-container">
           <div className="privacy-hero-card">
             <h1 className="privacy-hero-title text-white">
-              Byteania Privacy Policy
+              Tempest Privacy Policy
             </h1>
             <p className="privacy-hero-date text-gray">
               Last updated: 25 July 2024
@@ -20,7 +20,7 @@ const PrivacyPolicyPage = () => {
         <div className="privacy-content-container">
           <div className="privacy-intro">
             <p style={{ marginBottom: '16px' }}>
-              AGX Management Consultancy FZCO (“Byteania,” “we,” “us,” or “our”) values your privacy and is committed to being transparent about how we collect, use, and protect personal information in connection with our website, products, and services (collectively, the “Services”).
+              AGX Management Consultancy FZCO (“Tempest,” “we,” “us,” or “our”) values your privacy and is committed to being transparent about how we collect, use, and protect personal information in connection with our website, products, and services (collectively, the “Services”).
             </p>
             <p>
               This Privacy Policy explains what information we collect, why we collect it, how we use it, and the choices you may have. By accessing or using the Services, you acknowledge this Privacy Policy.
@@ -34,7 +34,7 @@ const PrivacyPolicyPage = () => {
               <li>Visit our websites or portals that link to this Privacy Policy</li>
               <li>Create an account or place an order</li>
               <li>Use our infrastructure services (including dedicated servers, colocation, networking, and related offerings)</li>
-              <li>Contact support, sales, or otherwise communicate with Byteania</li>
+              <li>Contact support, sales, or otherwise communicate with Tempest</li>
             </ul>
             <p>This Privacy Policy does not cover third-party websites, services, or applications that may be linked from our Services.</p>
           </section>
@@ -46,9 +46,9 @@ const PrivacyPolicyPage = () => {
             <h4>A. Information you provide</h4>
             <ul>
               <li><strong>Account information:</strong> name, company name, email address, phone number, username, and authentication details.</li>
-              <li><strong>Billing information:</strong> billing address, tax/VAT details (where applicable), and payment-related identifiers. Payment card details are typically processed by our payment processors rather than stored directly by Byteania.</li>
+              <li><strong>Billing information:</strong> billing address, tax/VAT details (where applicable), and payment-related identifiers. Payment card details are typically processed by our payment processors rather than stored directly by Tempest.</li>
               <li><strong>Order and service details:</strong> products purchased, service configurations, resource identifiers, and related provisioning information.</li>
-              <li><strong>Support and communications:</strong> messages you send to support, sales, abuse, or other Byteania channels, including attachments you provide.</li>
+              <li><strong>Support and communications:</strong> messages you send to support, sales, abuse, or other Tempest channels, including attachments you provide.</li>
             </ul>
 
             <h4>B. Information collected automatically</h4>
@@ -106,7 +106,7 @@ const PrivacyPolicyPage = () => {
             <p>We may share personal information in the following circumstances:</p>
 
             <h4>A. Service providers and processors</h4>
-            <p>We share information with vendors that help us operate the Services, such as payment processors, cloud/infrastructure providers, support platforms, analytics providers, and security tooling. These providers are authorized to process information only as needed to provide services to Byteania and must protect it consistent with contractual obligations.</p>
+            <p>We share information with vendors that help us operate the Services, such as payment processors, cloud/infrastructure providers, support platforms, analytics providers, and security tooling. These providers are authorized to process information only as needed to provide services to Tempest and must protect it consistent with contractual obligations.</p>
 
             <h4>B. Network, datacenter, and connectivity partners</h4>
             <p>Where necessary to deliver Services (including colocation and connectivity), we may share limited information with datacenters, carriers, or upstream providers, such as service identifiers, routing details, and operational contact information.</p>
@@ -115,12 +115,12 @@ const PrivacyPolicyPage = () => {
             <p>We may disclose information if we believe, in good faith, that disclosure is necessary to:</p>
             <ul>
               <li>Comply with law, regulation, legal process, or lawful requests</li>
-              <li>Protect the rights, property, and safety of Byteania, our customers, or others</li>
+              <li>Protect the rights, property, and safety of Tempest, our customers, or others</li>
               <li>Investigate and address fraud, abuse, security incidents, or policy violations</li>
             </ul>
 
             <h4>D. Business transfers</h4>
-            <p>If Byteania is involved in a merger, acquisition, reorganization, or sale of assets, information may be transferred as part of that transaction, subject to appropriate confidentiality protections.</p>
+            <p>If Tempest is involved in a merger, acquisition, reorganization, or sale of assets, information may be transferred as part of that transaction, subject to appropriate confidentiality protections.</p>
             <p>We do not sell personal information in exchange for money. If certain privacy laws define “sale” or “sharing” broadly (for example, in relation to some advertising technologies), you may have rights to opt out as described below.</p>
           </section>
 
@@ -143,7 +143,7 @@ const PrivacyPolicyPage = () => {
 
           <section className="privacy-section">
             <h3>9. International transfers</h3>
-            <p>Your information may be processed in countries other than where you live, including where Byteania, our affiliates, or our service providers operate. Where required, we use appropriate safeguards for cross-border transfers.</p>
+            <p>Your information may be processed in countries other than where you live, including where Tempest, our affiliates, or our service providers operate. Where required, we use appropriate safeguards for cross-border transfers.</p>
           </section>
 
           <section className="privacy-section">
@@ -179,7 +179,7 @@ const PrivacyPolicyPage = () => {
 
           <section className="privacy-section">
             <h3>14. Contact</h3>
-            <p>For privacy questions or requests, contact Byteania using the support or contact methods listed on the Byteania website, or email: privacy@byteania.com.</p>
+            <p>For privacy questions or requests, contact Tempest using the support or contact methods listed on the Tempest website, or email: privacy@tempest.com.</p>
           </section>
 
         </div>

@@ -1,6 +1,6 @@
 .hero {
   padding-top: 40px;
-  padding-bottom: 0px; 
+  padding-bottom: 0px;
 }
 
 .hero-card {
@@ -25,7 +25,7 @@
 
 .hero-title {
   color: var(--text-light);
-  font-size: 4.5rem; 
+  font-size: 4.5rem;
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -78,8 +78,16 @@
   align-items: flex-end;
   opacity: 0.8;
   margin-top: 10px;
-  margin-bottom: -200px; 
-  transform: translateY(20px);
+  margin-bottom: -130px;
+  transform: translate(-40px, -20px);
+}
+
+.hero-logo-graphic {
+  width: 500px;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  max-width: none;
 }
 
 @media (max-width: 768px) {
@@ -98,5 +106,13 @@
 
   .hero-btn {
     width: 100%;
+  }
+
+  .hero-graphic {
+    margin-bottom: -100px;
+    transform: translate(-40px, -23px);
+  }
+  .hero-logo-graphic {
+    width: 350px;
   }
 }

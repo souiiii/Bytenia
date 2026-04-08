@@ -42,7 +42,7 @@ const WhyChoose = () => {
         <h2 className="why-choose-title below-title">
           Why Choose
           <br />
-          Byteania Dedicated Servers
+          Tempest Dedicated Servers
         </h2>
 
         <div className="why-choose-pills">
