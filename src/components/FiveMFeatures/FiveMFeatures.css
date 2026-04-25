@@ -10,6 +10,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 280px; /* Lock height so children can aggressively expand out of flow */
   align-items: center;
+  gap: 16px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -27,9 +28,11 @@
 }
 
 /* Base Greyed-Out Styles */
-.fivem-feat-card.left { background-color: #ececec; }
-.fivem-feat-card.center { background-color: #e5e5e5; }
-.fivem-feat-card.right { background-color: #f2f2f2; }
+.fivem-feat-card.left,
+.fivem-feat-card.center,
+.fivem-feat-card.right { 
+  background-color: #f3f3f3; 
+}
 
 /* Interactive Hover State mimicking original center style */
 .fivem-feat-card:hover {
