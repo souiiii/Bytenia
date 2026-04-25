@@ -1,0 +1,56 @@
+.hytale-tech-faq-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.hytale-tech-faq-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin: 0 0 60px 0;
+}
+
+.hytale-tech-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 80px;
+}
+
+.hytale-tech-faq-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.hytale-tech-faq-q {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.05em;
+}
+
+.hytale-tech-faq-a {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Constraints */
+@media (max-width: 992px) {
+  .hytale-tech-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hytale-tech-faq-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+}

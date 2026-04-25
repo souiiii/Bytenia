@@ -4,6 +4,7 @@ import HytaleReliability from "../components/HytaleReliability/HytaleReliability
 import HytaleInstanceTiers from "../components/HytaleInstanceTiers/HytaleInstanceTiers";
 import HytaleControl from "../components/HytaleControl/HytaleControl";
 import HytaleAdvantage from "../components/HytaleAdvantage/HytaleAdvantage";
+import HytaleTechnicalFAQ from "../components/HytaleTechnicalFAQ/HytaleTechnicalFAQ";
 
 const HytaleServersPage = () => {
   return (
@@ -13,6 +14,7 @@ const HytaleServersPage = () => {
       <HytaleInstanceTiers />
       <HytaleControl />
       <HytaleAdvantage />
+      <HytaleTechnicalFAQ />
     </>
   );
 };
