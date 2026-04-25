@@ -1,0 +1,67 @@
+.mc-cta {
+  background-color: #1a1a1a;
+  padding: 100px 0;
+}
+
+.mc-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mc-cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mc-cta-title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.mc-cta-subtitle {
+  color: #a0a0a0;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.mc-cta-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 18px 36px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mc-cta-btn:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .mc-cta {
+    padding: 80px 0;
+  }
+  .mc-cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .mc-cta-title {
+    font-size: 2.2rem;
+  }
+  .mc-cta-btn {
+    width: 100%;
+  }
+}
