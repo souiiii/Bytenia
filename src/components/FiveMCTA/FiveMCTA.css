@@ -1,33 +1,36 @@
 .fivem-cta-section {
   position: relative;
   width: 100%;
-  padding: 100px 0;
-  background-color: #ffffff; /* Clean page background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 100px 0 0px 0; /* Removed bottom padding */
+  background-color: #fff;
+  display: block;
+  overflow: hidden; /* Ensure the infinite bar doesn't break horizontal scroll */
+}
+
+/* Ensure container handles relative positioning for the infinite bar */
+.fivem-cta-section .container {
+  position: relative;
 }
 
 /* Infinite stretching horizontal black bar */
-.fivem-cta-section::before {
-  content: '';
+.fivem-cta-section .container::before {
+  content: "";
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
-  height: 65%; /* Shorter than the main box */
+  left: -50vw; /* Stretch out past the container */
+  right: -50vw;
+  height: 80%;
   transform: translateY(-50%);
   background-color: #050505;
   z-index: 1;
 }
 
-/* The actual central CTA card */
 .fivem-cta-box {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 40px;
+  padding: 80px 40px;
   background-color: #050505;
   z-index: 2; /* Sits above the infinite bar */
   overflow: hidden;
@@ -40,7 +43,7 @@
 /* Geometric corner cutouts mimicking the image background */
 .fivem-cta-box::before,
 .fivem-cta-box::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -100,7 +103,7 @@
 .fivem-cta-btn:hover {
   background-color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive constraints */
@@ -127,7 +130,7 @@
   .fivem-cta-section {
     padding: 60px 0;
   }
-  
+
   .fivem-cta-box {
     padding: 80px 20px;
   }

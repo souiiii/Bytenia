@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FiveMNodeConfigurations.css';
 
 const nodes = [
-  { id: 'STANDARD_NODE_01', cpu: 'RYZEN 5 7600X', ram: '32GB 5200MHZ', price: '79.99' },
-  { id: 'ADVANCED_NODE_02', cpu: 'RYZEN 7 7700X', ram: '64GB 5600MHZ', price: '119.99' },
-  { id: 'EXTREME_NODE_03', cpu: 'RYZEN 9 7950X', ram: '128GB 5600MHZ', price: '189.99' },
-  { id: 'ELITE_NODE_04', cpu: 'INTEL I9 14900K', ram: '128GB 6000MHZ', price: '209.99' },
-  { id: 'CUSTOM_NODE_XX', cpu: 'DUAL EPYC 9654', ram: '256GB ECC', price: '499.99' }
+  { id: 'STANDARD_NODE_01', cpu: 'RYZEN 5 7600X', ram: '32GB 5200MHZ', priceMonthly: '79.99', priceHourly: '0.11' },
+  { id: 'ADVANCED_NODE_02', cpu: 'RYZEN 7 7700X', ram: '64GB 5600MHZ', priceMonthly: '119.99', priceHourly: '0.16' },
+  { id: 'EXTREME_NODE_03', cpu: 'RYZEN 9 7950X', ram: '128GB 5600MHZ', priceMonthly: '189.99', priceHourly: '0.26' },
+  { id: 'ELITE_NODE_04', cpu: 'INTEL I9 14900K', ram: '128GB 6000MHZ', priceMonthly: '209.99', priceHourly: '0.29' },
+  { id: 'CUSTOM_NODE_XX', cpu: 'DUAL EPYC 9654', ram: '256GB ECC', priceMonthly: '499.99', priceHourly: '0.68' }
 ];
 
 const FiveMNodeConfigurations = () => {
+  const [billingCycle, setBillingCycle] = useState('monthly');
   return (
     <section className="node-conf-section">
       <div className="container">
@@ -20,8 +21,18 @@ const FiveMNodeConfigurations = () => {
             <p>DEPLOYMENT_READY_MODULES</p>
           </div>
           <div className="node-conf-toggles">
-            <button className="toggle-btn inactive">MONTHLY</button>
-            <button className="toggle-btn active">HOURLY</button>
+            <button 
+              className={`toggle-btn ${billingCycle === 'monthly' ? 'active' : 'inactive'}`}
+              onClick={() => setBillingCycle('monthly')}
+            >
+              MONTHLY
+            </button>
+            <button 
+              className={`toggle-btn ${billingCycle === 'hourly' ? 'active' : 'inactive'}`}
+              onClick={() => setBillingCycle('hourly')}
+            >
+              HOURLY
+            </button>
           </div>
         </div>
 
@@ -52,8 +63,12 @@ const FiveMNodeConfigurations = () => {
                 <div className="node-col price-col">
                   <span className="mobile-label">PRICE</span>
                   <div className="price-wrapper">
-                    <span className="price-val">${node.price}</span>
-                    <span className="price-per">/ MONTH</span>
+                    <span className="price-val">
+                      ${billingCycle === 'monthly' ? node.priceMonthly : node.priceHourly}
+                    </span>
+                    <span className="price-per">
+                      / {billingCycle === 'monthly' ? 'MONTH' : 'HOUR'}
+                    </span>
                   </div>
                 </div>
                 

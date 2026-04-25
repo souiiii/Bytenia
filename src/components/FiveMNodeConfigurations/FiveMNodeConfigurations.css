@@ -156,6 +156,10 @@
     gap: 30px;
   }
   
+  .node-conf-titles h2 {
+    font-size: 1.8rem;
+  }
+  
   .node-conf-toggles {
     width: 100%;
   }
@@ -231,5 +235,17 @@
   .select-server-btn:hover {
     color: #fff;
     background-color: #000;
+  }
+}
+
+@media (max-width: 450px) {
+  .node-conf-titles h2 {
+    font-size: 1.6rem;
+    overflow-wrap: break-word;
+    word-break: break-word; /* Failsafe against extremely narrow viewports */
+  }
+  
+  .node-conf-titles p {
+    font-size: 0.75rem;
   }
 }
