@@ -1,0 +1,124 @@
+.fivem-workloads-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.fivem-workloads-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 550px;
+}
+
+/* Left Content Block */
+.workloads-left {
+  flex: 1;
+  background-image: url('../../assets/fivem1.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workloads-left h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0 0 25px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5); /* subtle shadow to ensure readability on noisy backgrounds */
+}
+
+.workloads-left p {
+  color: #d8d8d8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  max-width: 460px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.workloads-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workloads-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.workloads-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Right Content Block */
+.workloads-right {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 80px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-content: center;
+}
+
+.workload-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workload-card h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  color: #111;
+  line-height: 1.3;
+}
+
+.workload-card p {
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .fivem-workloads-wrapper {
+    flex-direction: column;
+  }
+  
+  .workloads-left {
+    padding: 60px 40px;
+    min-height: 400px; /* give it some height since content might not stretch it enough to see the image well */
+  }
+
+  .workloads-left h2 {
+    font-size: 2.2rem;
+  }
+
+  .workloads-right {
+    padding: 60px 40px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .workload-card {
+    padding: 30px 25px;
+  }
+}
