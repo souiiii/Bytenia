@@ -65,6 +65,7 @@
   line-height: 1.6;
   color: #444;
   margin: 0;
+  max-width: 520px;
   font-weight: 400;
 }
 
@@ -100,7 +101,9 @@
 
 /* Response to smaller screens */
 @media (max-width: 992px) {
-  .mc-arch-row, .mc-arch-row:nth-child(odd), .mc-arch-row:nth-child(even) {
+  .mc-arch-row,
+  .mc-arch-row:nth-child(odd),
+  .mc-arch-row:nth-child(even) {
     display: flex;
     flex-direction: column;
     text-align: left;
