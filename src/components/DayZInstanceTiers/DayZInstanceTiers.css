@@ -1,0 +1,175 @@
+.dayz-tiers-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.dayz-tiers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dayz-tiers-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px 0;
+}
+
+.dayz-tiers-subtitle {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.dayz-tiers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.dayz-tier-card {
+  display: flex;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.dayz-tier-info {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+.dayz-tier-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.dayz-tier-badge {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.5rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.dayz-tier-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.55rem;
+  color: #888;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.dayz-tier-cpu {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #111;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+}
+
+.dayz-tier-specs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.dayz-spec {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dayz-spec-label {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dayz-spec-val {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.dayz-tier-pricing {
+  width: 250px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #eaeaea;
+  padding: 30px;
+}
+
+.dayz-pricing-label {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.dayz-pricing-val {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.dayz-tier-btn {
+  background-color: #e5e5e5;
+  color: #111;
+  border: none;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.dayz-tier-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* Responsive Constraints */
+@media (max-width: 768px) {
+  .dayz-tier-card {
+    flex-direction: column;
+  }
+  
+  .dayz-tier-info {
+    padding: 24px;
+  }
+  
+  .dayz-tier-specs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .dayz-tier-pricing {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #eaeaea;
+    padding: 24px;
+  }
+}
