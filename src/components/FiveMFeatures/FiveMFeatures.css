@@ -7,39 +7,44 @@
 
 .fivem-features-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr 1fr;
-  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 280px; /* Lock height so children can aggressively expand out of flow */
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .fivem-feat-card {
-  padding: 50px 40px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
-}
-
-.fivem-feat-card.left {
-  background-color: #e5e5e5;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
   z-index: 1;
-  padding-right: 70px;
 }
 
-.fivem-feat-card.center {
+/* Base Greyed-Out Styles */
+.fivem-feat-card.left { background-color: #ececec; }
+.fivem-feat-card.center { background-color: #e5e5e5; }
+.fivem-feat-card.right { background-color: #f2f2f2; }
+
+/* Interactive Hover State mimicking original center style */
+.fivem-feat-card:hover {
   background-color: #ffffff;
-  z-index: 2;
-  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.04), 0 20px 40px rgba(0, 0, 0, 0.12); /* Subtle top bloom + Sharpened lower shadow */
-  margin: -30px -30px; /* Bleeds symmetrically top and bottom while side cards lock identically */
-  padding: 60px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.fivem-feat-card.right {
-  background-color: #f5f5f5;
-  z-index: 1;
-  padding-left: 70px;
+  z-index: 20;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.04), 0 20px 40px rgba(0, 0, 0, 0.12);
+  
+  /* Physical bloom Expansion over adjacent columns/rows */
+  width: calc(100% + 40px); /* 20px left, 20px right */
+  height: calc(100% + 60px); /* 30px top, 30px bottom */
+  margin-top: -30px;
+  margin-left: -20px;
+  
+  /* Inverse padding so text content grid stays perfectly still */
+  padding: 70px 50px; 
 }
 
 .fivem-feat-icon {
@@ -68,13 +73,26 @@
 @media (max-width: 992px) {
   .fivem-features-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 20px;
+  }
+  .fivem-feat-card {
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 40px 30px !important;
   }
   .fivem-feat-card.left,
   .fivem-feat-card.center,
   .fivem-feat-card.right {
-    height: auto;
-    margin: 0;
-    padding: 40px 30px;
+    height: auto !important;
+    width: 100% !important;
+  }
+  .fivem-feat-card:hover {
+    margin: 0 !important;
+    padding: 40px 30px !important;
+    transform: none;
+    box-shadow: none;
+    background-color: inherit;
   }
 }
