@@ -1,0 +1,141 @@
+.mc-arch {
+  background-image: url('../../assets/alignment.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+
+.mc-arch-header {
+  margin-bottom: 100px;
+}
+
+.mc-arch-super {
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.mc-arch-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #111;
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.mc-arch-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-arch-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.mc-arch-row:last-child {
+  margin-bottom: 0;
+}
+
+.mc-arch-divider {
+  width: 3px;
+  height: 90px;
+  background-color: #111;
+  flex-shrink: 0;
+}
+
+.mc-arch-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-arch-half.left {
+  padding-right: 60px;
+}
+
+.mc-arch-half.right {
+  padding-left: 60px;
+}
+
+.mc-arch-half.align-right {
+  text-align: right;
+}
+
+.mc-arch-heading-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-arch-num {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.08); /* watermark style */
+  line-height: 0.8;
+  margin-bottom: 2px;
+}
+
+.mc-arch-box-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #111;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.mc-arch-half p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+  max-width: 480px;
+  font-weight: 400;
+}
+
+.mc-arch-half.left p {
+  margin-left: auto;
+}
+
+/* Response to smaller screens */
+@media (max-width: 900px) {
+  .mc-arch-row {
+    flex-direction: column;
+    text-align: center !important;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+  .mc-arch-half.left,
+  .mc-arch-half.right {
+    padding: 0;
+    align-items: center;
+  }
+  .mc-arch-half.align-right {
+    text-align: center;
+  }
+  .mc-arch-half p, 
+  .mc-arch-half.left p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mc-arch-divider {
+    height: 3px;
+    width: 60px;
+    transform: rotate(90deg); /* keep it vertical, or just make it short horizontal */
+  }
+}
+
+@media (max-width: 768px) {
+  .mc-arch {
+    padding: 80px 0;
+  }
+  .mc-arch-title {
+    font-size: 2rem;
+  }
+}

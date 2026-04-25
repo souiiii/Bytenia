@@ -1,0 +1,218 @@
+.mc-tiers {
+  background-color: var(--bg-primary, #f9f9f9);
+  padding: 120px 0;
+  border-bottom: 1px solid #e5e5e5; /* The image has a faint border at the bottom right before the footer/next section */
+}
+
+.mc-tiers-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mc-tiers-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+.mc-tiers-subtitle {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #a0a0a0;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.mc-tiers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mc-tier-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+}
+
+.mc-tier-info {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-tier-info-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.mc-tier-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #111;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.mc-tier-specs-sep {
+  color: #d0d0d0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.mc-tier-specs {
+  color: #888;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.mc-tier-score {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.mc-tier-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.mc-tier-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mc-tier-icon {
+  color: #888;
+  flex-shrink: 0;
+}
+
+.mc-tier-feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feature-main {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.feature-sub {
+  font-size: 0.6rem;
+  color: #a0a0a0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mc-tier-pricing {
+  width: 260px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #eaeaea;
+  background-color: #fcfcfc; /* very subtle distinction for pricing zone */
+}
+
+.mc-tier-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 4px;
+}
+
+.price-amount {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #111;
+}
+
+.price-period {
+  font-size: 0.6rem;
+  color: #a0a0a0;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.mc-tier-btn {
+  background-color: #080808;
+  color: #ffffff;
+  border: none;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 14px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.mc-tier-btn:hover {
+  background-color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .mc-tier-features {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 850px) {
+  .mc-tier-info-header {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+  .mc-tier-specs-sep {
+    display: none;
+  }
+  .mc-tier-card {
+    flex-direction: column;
+  }
+  .mc-tier-pricing {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #eaeaea;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mc-tier-price {
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+  .mc-tier-btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .mc-tier-pricing {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .mc-tier-price {
+    align-items: center;
+  }
+  .mc-tier-btn {
+    width: 100%;
+  }
+}
