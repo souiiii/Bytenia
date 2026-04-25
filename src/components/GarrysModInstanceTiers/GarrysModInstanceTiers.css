@@ -1,0 +1,225 @@
+.garrys-tiers-section {
+  padding: 100px 0;
+  background-color: #f8f8fa;
+}
+
+.garrys-tiers-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.garrys-tiers-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  margin: 0 0 10px 0;
+  line-height: 1;
+}
+
+.garrys-tiers-subtitle {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Table Architecture */
+.garrys-tiers-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.garrys-tiers-thead, .garrys-tier-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1.2fr 1.5fr 1.8fr 1.5fr 0.8fr;
+  align-items: center;
+  padding: 25px 30px;
+}
+
+.garrys-tiers-thead {
+  background-color: #f3f3f3;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #777;
+  letter-spacing: 0.05em;
+}
+
+.garrys-tier-row {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
+  transition: background-color 0.2s ease;
+}
+
+.garrys-tier-row:hover {
+  background-color: #fafafa;
+}
+
+.garrys-trow-col {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.tier-id-col {
+  font-weight: 800;
+  color: #111;
+}
+
+.price-col {
+  display: flex;
+  align-items: center;
+}
+
+.price-display {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.price-currency, .price-value {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.price-period {
+  font-size: 0.65rem;
+  color: #888;
+  font-weight: 700;
+}
+
+.action-col {
+  justify-content: flex-end;
+}
+
+.garrys-tier-btn {
+  background: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.garrys-tier-btn:hover {
+  border-color: #111;
+  color: #111;
+  background-color: rgba(0,0,0,0.02);
+}
+
+.mobile-label {
+  display: none;
+}
+
+/* Responsive constraints */
+@media (max-width: 1024px) {
+  .garrys-tiers-thead, .garrys-tier-row {
+    grid-template-columns: 1fr 1.2fr 1fr 1.2fr 1.2fr 1.2fr 0.8fr;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .garrys-tiers-thead {
+    display: none; /* Hide standard headers on mobile */
+  }
+
+  .garrys-tiers-tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .garrys-tier-row {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eaeaea;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+  }
+
+  .garrys-tier-row:hover {
+    background-color: #fff;
+  }
+
+  .garrys-trow-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #f5f5f5;
+    width: 100%;
+  }
+
+  .garrys-trow-col:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-label {
+    display: block;
+    font-weight: 800;
+    color: #999;
+    font-size: 0.7rem;
+  }
+
+  .tier-id-col {
+    background: #fbfbfb;
+    font-size: 1.1rem;
+    color: #111;
+    justify-content: center;
+  }
+  
+  .tier-id-col .mobile-label {
+    display: none; /* Hide 'TIER ID' label on the header card of mobile */
+  }
+
+  .action-col {
+    justify-content: center;
+    padding: 25px;
+    background-color: #fafafa;
+  }
+
+  .garrys-tier-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+  }
+
+  .garrys-tier-btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .garrys-tiers-title {
+    font-size: 2.8rem;
+  }
+  
+  .garrys-trow-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  
+  .tier-id-col {
+    align-items: center;
+  }
+  
+  .action-col {
+    padding: 15px;
+  }
+}
