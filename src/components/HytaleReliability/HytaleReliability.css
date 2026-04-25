@@ -1,0 +1,54 @@
+.hytale-reliability-section {
+  padding: 120px 0;
+  background-color: #ffffff;
+}
+
+.hytale-reliability-eyebrow {
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: #888;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.hytale-reliability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.hytale-reliability-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hytale-reliability-icon {
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.hytale-reliability-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.02em;
+}
+
+.hytale-reliability-desc {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Constraints */
+@media (max-width: 992px) {
+  .hytale-reliability-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
