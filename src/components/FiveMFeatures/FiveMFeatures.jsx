@@ -9,7 +9,7 @@ const FiveMFeatures = () => {
         <div className="fivem-features-grid">
           
           <div className="fivem-feat-card left">
-            <Cpu size={24} weight="regular" className="fivem-feat-icon" />
+            <Cpu size={32} weight="regular" className="fivem-feat-icon" />
             <h3 className="fivem-feat-title">RYZEN 9 7950X</h3>
             <p className="fivem-feat-desc">
               The gold standard for FiveM. Zen 4 architecture ensures no stutter during high-population script execution.
@@ -17,7 +17,7 @@ const FiveMFeatures = () => {
           </div>
 
           <div className="fivem-feat-card center">
-            <HardDrives size={24} weight="regular" className="fivem-feat-icon" />
+            <HardDrives size={32} weight="regular" className="fivem-feat-icon" />
             <h3 className="fivem-feat-title">NVME RAID 1</h3>
             <p className="fivem-feat-desc">
               Zero-latency SQL queries. We use enterprise-grade Gen5 NVMe drives in RAID 1 for absolute data redundancy and speed.
@@ -25,7 +25,7 @@ const FiveMFeatures = () => {
           </div>
 
           <div className="fivem-feat-card right">
-            <Globe size={24} weight="regular" className="fivem-feat-icon" />
+            <Globe size={32} weight="regular" className="fivem-feat-icon" />
             <h3 className="fivem-feat-title">GLOBAL FIBER</h3>
             <p className="fivem-feat-desc">
               Anycast network with Tier-1 providers. Minimized hops for global player access.
