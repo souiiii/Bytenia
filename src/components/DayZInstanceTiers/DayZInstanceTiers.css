@@ -1,6 +1,12 @@
 .dayz-tiers-section {
-  padding: 60px 0 0 0;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff calc(100% - 100px), #050505 calc(100% - 100px), #050505 100%);
+  padding: 75px 0 0 0;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff calc(100% - 100px),
+    #050505 calc(100% - 100px),
+    #050505 100%
+  );
 }
 
 .dayz-tiers-section .container {
@@ -161,16 +167,16 @@
   .dayz-tier-card {
     flex-direction: column;
   }
-  
+
   .dayz-tier-info {
     padding: 24px;
   }
-  
+
   .dayz-tier-specs {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  
+
   .dayz-tier-pricing {
     width: 100%;
     border-left: none;

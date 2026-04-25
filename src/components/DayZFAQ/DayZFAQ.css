@@ -1,5 +1,5 @@
 .dayz-faq-section {
-  padding: 60px 0;
+  padding: 75px 0 150px 0;
   background-color: #ffffff;
 }
 
@@ -74,7 +74,18 @@
 
 .dayz-faq-answer {
   padding: 0 30px 24px 30px;
-  /* Specifically removed fadeIn animation as per user preference */
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dayz-faq-answer p {
@@ -89,11 +100,11 @@
   .dayz-faq-title {
     font-size: 2.5rem;
   }
-  
+
   .dayz-faq-question {
     padding: 20px;
   }
-  
+
   .dayz-faq-answer {
     padding: 0 20px 20px 20px;
   }
