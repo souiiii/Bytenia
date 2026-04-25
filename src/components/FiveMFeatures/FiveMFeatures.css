@@ -27,7 +27,7 @@
 .fivem-feat-card.center {
   background-color: #ffffff;
   z-index: 2;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12); /* Sharpened, elevated shadow */
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.04), 0 20px 40px rgba(0, 0, 0, 0.12); /* Subtle top bloom + Sharpened lower shadow */
   margin: -30px -30px; /* Bleeds symmetrically top and bottom while side cards lock identically */
   padding: 60px 40px;
   display: flex;
