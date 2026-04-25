@@ -3,6 +3,7 @@ import GarrysModHero from '../components/GarrysModHero/GarrysModHero';
 import GarrysModDeployment from '../components/GarrysModDeployment/GarrysModDeployment';
 import GarrysModInstanceTiers from '../components/GarrysModInstanceTiers/GarrysModInstanceTiers';
 import GarrysModProtection from '../components/GarrysModProtection/GarrysModProtection';
+import GarrysModFAQ from '../components/GarrysModFAQ/GarrysModFAQ';
 
 const GarrysModServersPage = () => {
   return (
@@ -11,6 +12,7 @@ const GarrysModServersPage = () => {
       <GarrysModDeployment />
       <GarrysModInstanceTiers />
       <GarrysModProtection />
+      <GarrysModFAQ />
     </>
   );
 };
