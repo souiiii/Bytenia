@@ -14,20 +14,14 @@
 
 .mc-workload-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1.9fr; /* Make left slightly narrower or equal, let's use 1fr 1fr in image? The right has 3 boxes, left has 1. Actually left and right look exactly 50% / 50% width in the image */
-  gap: 20px;
-  min-height: 380px; /* Force some height so cards stretch beautifully */
-}
-
-/* Override the 1.1/1.9 above to 1fr 1fr */
-.mc-workload-grid {
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .mc-workload-card {
   background-color: #ffffff;
   border: 1px solid #f0f0f0;
-  padding: 40px;
+  padding: 35px 40px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,7 +70,7 @@
 
 .mc-workload-featured .mc-workload-card-label {
   margin-top: auto;
-  padding-top: 60px; /* ensure space if text gets long */
+  padding-top: 40px;
 }
 
 .mc-workload-right-col {
@@ -110,9 +104,8 @@
 .mc-workload-dark {
   background-color: #161616;
   border: 1px solid #161616;
-  min-height: 150px;
   justify-content: center;
-  padding: 40px;
+  padding: 24px 40px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
