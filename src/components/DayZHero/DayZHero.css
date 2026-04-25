@@ -1,0 +1,127 @@
+.dayz-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 0 100px 0;
+}
+
+.dayz-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/dayz.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.dayz-hero .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dayz-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 850px;
+}
+
+.dayz-hero-badge {
+  background-color: #ffffff;
+  color: #111;
+  padding: 6px 16px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.dayz-hero-title {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 0.95;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+.dayz-hero-desc {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+.dayz-hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.dayz-btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 18px 36px;
+  transition: background-color 0.2s ease;
+}
+
+.dayz-btn-primary:hover {
+  background-color: #222;
+}
+
+.dayz-btn-outline {
+  background-color: transparent;
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.3);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 18px 36px;
+  transition: all 0.2s ease;
+}
+
+.dayz-btn-outline:hover {
+  border-color: #000;
+  background-color: rgba(0,0,0,0.03);
+}
+
+@media (max-width: 992px) {
+  .dayz-hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dayz-hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .dayz-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .dayz-btn-primary, .dayz-btn-outline {
+    width: 100%;
+  }
+}
