@@ -1,6 +1,6 @@
 .fivem-features {
   background-color: #ffffff;
-  padding: 40px 0 120px 0; /* Not too much top padding since hero section bleeds into it */
+  padding: 0 0 60px 0; /* Stripped top padding, halved bottom padding */
   position: relative;
   z-index: 10;
 }
