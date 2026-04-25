@@ -1,0 +1,125 @@
+.palworld-deployment-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.palworld-deployment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.palworld-terminal-wrapper {
+  background-color: #fafafa;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.palworld-terminal-window {
+  background-color: transparent;
+  border: 1px solid #eaeaea;
+  padding: 24px;
+  width: 100%;
+}
+
+.term-line {
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: #888;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.term-line:last-child {
+  margin-bottom: 0;
+}
+
+.term-line.cmd {
+  color: #111;
+  font-weight: 800;
+}
+
+.term-line.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.term-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.term-line.indent {
+  padding-left: 12px;
+}
+
+.palworld-deploy-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px 0;
+}
+
+.palworld-deploy-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+}
+
+.palworld-os-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.palworld-os-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.palworld-os-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 12px 0;
+}
+
+.palworld-os-desc {
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive Constraints */
+@media (max-width: 992px) {
+  .palworld-deployment-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .palworld-os-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .palworld-terminal-wrapper {
+    padding: 20px;
+  }
+}
