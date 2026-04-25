@@ -4,6 +4,7 @@ import FiveMFeatures from '../components/FiveMFeatures/FiveMFeatures';
 import FiveMNodeConfigurations from '../components/FiveMNodeConfigurations/FiveMNodeConfigurations';
 import FiveMWorkloads from '../components/FiveMWorkloads/FiveMWorkloads';
 import FiveMNetworkStatus from '../components/FiveMNetworkStatus/FiveMNetworkStatus';
+import FiveMFAQ from '../components/FiveMFAQ/FiveMFAQ';
 
 const FiveMServersPage = () => {
   return (
@@ -13,6 +14,7 @@ const FiveMServersPage = () => {
       <FiveMNodeConfigurations />
       <FiveMWorkloads />
       <FiveMNetworkStatus />
+      <FiveMFAQ />
     </>
   );
 };
