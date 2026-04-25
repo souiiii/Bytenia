@@ -1,0 +1,235 @@
+.node-conf-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.node-conf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.node-conf-titles h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.node-conf-titles p {
+  font-family: monospace;
+  color: #888;
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.node-conf-toggles {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn {
+  padding: 15px 35px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.inactive {
+  background-color: #e5e5e5;
+  color: #888;
+}
+
+.toggle-btn.inactive:hover {
+  background-color: #d5d5d5;
+  color: #333;
+}
+
+.toggle-btn.active {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Table Architecture */
+.node-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.node-table-header, .node-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.2fr 1fr;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.node-table-header {
+  background-color: #ebebeb;
+  font-size: 0.70rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 0.05em;
+  padding: 20px 30px;
+}
+
+.node-row {
+  border-bottom: 1px solid #f2f2f2;
+  transition: background-color 0.2s ease;
+}
+
+.node-row:hover {
+  background-color: #fafafa;
+}
+
+.node-col {
+  color: #555;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.node-val {
+  font-weight: 500;
+}
+
+.config-name {
+  font-weight: 800;
+  color: #111;
+  font-size: 0.95rem;
+}
+
+.price-col {
+  display: flex;
+  align-items: baseline;
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.price-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.price-per {
+  font-size: 0.65rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.select-server-btn {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.select-server-btn:hover {
+  color: #000;
+  text-decoration-thickness: 2px;
+}
+
+.mobile-label {
+  display: none;
+}
+
+/* Responsive Mobile Table Card View */
+@media (max-width: 992px) {
+  .node-conf-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .node-conf-toggles {
+    width: 100%;
+  }
+
+  .toggle-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .node-table-header {
+    display: none; /* Hide standard headers on mobile */
+  }
+
+  .node-table-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .node-row {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eaeaea;
+    padding: 0; /* Reset since inner elements will handle padding */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+  }
+
+  .node-row:hover {
+    background-color: transparent;
+  }
+
+  .node-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%;
+  }
+
+  .node-col:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-label {
+    display: block;
+    font-weight: 800;
+    color: #999;
+    font-size: 0.75rem;
+  }
+
+  .config-name {
+    background: #f8f8f8;
+    font-size: 1.1rem;
+    color: #111;
+    justify-content: center;
+  }
+
+  .action-col {
+    background-color: #111;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .select-server-btn {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 0.85rem;
+  }
+
+  .select-server-btn:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
