@@ -108,10 +108,16 @@
     flex-direction: column;
     text-align: left;
     gap: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
   .mc-arch-content {
-    gap: 60px;
+    gap: 40px;
+  }
+  .mc-arch-header {
+    margin-bottom: 50px;
+  }
+  .mc-arch-num {
+    margin-bottom: 16px;
   }
   .mc-arch-divider {
     display: none;
