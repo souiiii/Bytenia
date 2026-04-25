@@ -36,9 +36,16 @@
 
 .mc-arch-row {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 40px;
+}
+
+.mc-arch-row:nth-child(odd) {
+  grid-template-columns: 3.5fr auto 6.5fr;
+}
+
+.mc-arch-row:nth-child(even) {
+  grid-template-columns: 6.5fr auto 3.5fr;
 }
 
 .mc-arch-divider {
@@ -58,7 +65,7 @@
   line-height: 1.6;
   color: #444;
   margin: 0;
-  max-width: 480px;
+  max-width: 520px;
   font-weight: 400;
 }
 
@@ -94,7 +101,7 @@
 
 /* Response to smaller screens */
 @media (max-width: 992px) {
-  .mc-arch-row {
+  .mc-arch-row, .mc-arch-row:nth-child(odd), .mc-arch-row:nth-child(even) {
     display: flex;
     flex-direction: column;
     text-align: left;
