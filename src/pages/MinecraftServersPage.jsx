@@ -1,11 +1,12 @@
 import React from 'react';
 import MinecraftHero from '../components/MinecraftHero/MinecraftHero';
+import MinecraftSystemSpecs from '../components/MinecraftSystemSpecs/MinecraftSystemSpecs';
 
 const MinecraftServersPage = () => {
   return (
     <>
       <MinecraftHero />
-      {/* Other sections will be added here in the future */}
+      <MinecraftSystemSpecs />
     </>
   );
 };

@@ -1,0 +1,107 @@
+.mc-system-specs {
+  background-color: var(--bg-primary);
+  padding: 100px 0;
+}
+
+.mc-system-specs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.mc-specs-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.mc-specs-subtitle {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px; /* Align with the baseline of the main title roughly */
+}
+
+.mc-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px; /* Very subtle or no rounding in the picture */
+}
+
+.mc-spec-card {
+  padding: 48px 32px;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-spec-card:last-child {
+  border-right: none;
+}
+
+.mc-spec-icon {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.mc-spec-card-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.mc-spec-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #5c6270;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .mc-specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mc-spec-card {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .mc-spec-card:nth-child(2n) {
+    border-right: none;
+  }
+  .mc-spec-card:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mc-system-specs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .mc-specs-subtitle {
+    margin-bottom: 0;
+  }
+  .mc-specs-grid {
+    grid-template-columns: 1fr;
+  }
+  .mc-spec-card {
+    border-right: none !important;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .mc-spec-card:last-child {
+    border-bottom: none;
+  }
+}
