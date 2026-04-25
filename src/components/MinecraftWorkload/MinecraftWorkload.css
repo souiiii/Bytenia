@@ -110,6 +110,7 @@
 .mc-workload-dark {
   background-color: #161616;
   border: 1px solid #161616;
+  min-height: 150px;
   justify-content: center;
   padding: 40px;
   flex-direction: row;
