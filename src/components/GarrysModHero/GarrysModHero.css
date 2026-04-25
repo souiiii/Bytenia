@@ -181,7 +181,7 @@
 @media (max-width: 500px) {
   .garrys-hero {
     padding-top: 140px;
-    padding-bottom: 250px; /* Space for the stacked stats bar */
+    padding-bottom: 300px; /* Safely clears the absolutely positioned stats bar */
   }
   
   .garrys-title {
@@ -199,6 +199,7 @@
 
   .garrys-stat-item {
     flex: 1 1 100%;
+    padding: 16px 0; /* Tighter vertical stacking */
     border-right: none !important;
     border-bottom: 1px solid rgba(0,0,0,0.05) !important;
   }
