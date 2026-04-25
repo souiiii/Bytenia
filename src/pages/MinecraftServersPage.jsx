@@ -5,6 +5,7 @@ import MinecraftWorkload from '../components/MinecraftWorkload/MinecraftWorkload
 import MinecraftInstanceTiers from '../components/MinecraftInstanceTiers/MinecraftInstanceTiers';
 import MinecraftArchitecture from '../components/MinecraftArchitecture/MinecraftArchitecture';
 import MinecraftFAQ from '../components/MinecraftFAQ/MinecraftFAQ';
+import MinecraftCTA from '../components/MinecraftCTA/MinecraftCTA';
 
 const MinecraftServersPage = () => {
   return (
@@ -15,6 +16,7 @@ const MinecraftServersPage = () => {
       <MinecraftInstanceTiers />
       <MinecraftArchitecture />
       <MinecraftFAQ />
+      <MinecraftCTA />
     </>
   );
 };
