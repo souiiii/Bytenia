@@ -1,0 +1,100 @@
+.dayz-faq-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.dayz-faq-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.dayz-faq-eyebrow {
+  display: block;
+  font-family: monospace;
+  font-size: 0.6rem;
+  color: #888;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.dayz-faq-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.dayz-faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dayz-faq-item {
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.dayz-faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dayz-faq-q-text {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.dayz-faq-icon {
+  color: #111;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.dayz-faq-icon.rotated {
+  transform: rotate(45deg);
+}
+
+.dayz-faq-answer {
+  padding: 0 30px 24px 30px;
+  /* Specifically removed fadeIn animation as per user preference */
+}
+
+.dayz-faq-answer p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Constraints */
+@media (max-width: 768px) {
+  .dayz-faq-title {
+    font-size: 2.5rem;
+  }
+  
+  .dayz-faq-question {
+    padding: 20px;
+  }
+  
+  .dayz-faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+}
