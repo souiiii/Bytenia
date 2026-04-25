@@ -1,0 +1,91 @@
+.garrys-protection-section {
+  background-color: #050505;
+  padding: 120px 0;
+  width: 100%;
+}
+
+.garrys-protection-content {
+  max-width: 800px;
+}
+
+.garrys-prot-eyebrow {
+  display: block;
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: #666;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.garrys-prot-title {
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0 0 30px 0;
+}
+
+.garrys-prot-desc {
+  font-size: 1.1rem;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 0 50px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.garrys-prot-stats {
+  display: flex;
+  gap: 80px;
+}
+
+.garrys-prot-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.prot-stat-val {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.prot-stat-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Responsive Constraints */
+@media (max-width: 992px) {
+  .garrys-prot-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .garrys-protection-section {
+    padding: 80px 0;
+  }
+  
+  .garrys-prot-title {
+    font-size: 2.8rem;
+  }
+  
+  .garrys-prot-desc {
+    font-size: 1rem;
+    margin: 0 0 40px 0;
+  }
+  
+  .garrys-prot-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
