@@ -5,6 +5,7 @@ import HytaleInstanceTiers from "../components/HytaleInstanceTiers/HytaleInstanc
 import HytaleControl from "../components/HytaleControl/HytaleControl";
 import HytaleAdvantage from "../components/HytaleAdvantage/HytaleAdvantage";
 import HytaleTechnicalFAQ from "../components/HytaleTechnicalFAQ/HytaleTechnicalFAQ";
+import HytaleCTA from "../components/HytaleCTA/HytaleCTA";
 
 const HytaleServersPage = () => {
   return (
@@ -15,6 +16,7 @@ const HytaleServersPage = () => {
       <HytaleControl />
       <HytaleAdvantage />
       <HytaleTechnicalFAQ />
+      <HytaleCTA />
     </>
   );
 };
