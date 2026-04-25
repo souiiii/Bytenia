@@ -1,0 +1,169 @@
+.palworld-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 160px 0 100px 0;
+}
+
+.palworld-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/palworld.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.palworld-hero .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.palworld-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.palworld-hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.palworld-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.eyebrow-square {
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  display: inline-block;
+}
+
+.palworld-hero-title {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 0.95;
+  margin: 16px 0 24px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+.palworld-hero-desc {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.palworld-hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.palworld-btn-primary {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 18px 36px;
+  transition: background-color 0.2s ease;
+}
+
+.palworld-btn-primary:hover {
+  background-color: #000;
+}
+
+.palworld-btn-outline {
+  background-color: transparent;
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.15);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 18px 36px;
+  transition: all 0.2s ease;
+}
+
+.palworld-btn-outline:hover {
+  border-color: #000;
+  background-color: rgba(0,0,0,0.03);
+}
+
+.palworld-hero-image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.palworld-hero-image {
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* Responsive Constraints */
+@media (max-width: 1024px) {
+  .palworld-hero-title {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .palworld-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .palworld-hero-content {
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .palworld-hero-eyebrow {
+    justify-content: center;
+  }
+  
+  .palworld-hero-title {
+    font-size: 3rem;
+  }
+  
+  .palworld-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .palworld-btn-primary, .palworld-btn-outline {
+    width: 100%;
+  }
+  
+  .palworld-hero-image-wrapper {
+    justify-content: center;
+  }
+}

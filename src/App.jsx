@@ -21,6 +21,7 @@ import MinecraftServersPage from './pages/MinecraftServersPage';
 import FiveMServersPage from './pages/FiveMServersPage';
 import GarrysModServersPage from './pages/GarrysModServersPage';
 import DayZServersPage from './pages/DayZServersPage';
+import PalworldServersPage from './pages/PalworldServersPage';
 import './App.css';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
             <Route path="/servers/fiveM" element={<FiveMServersPage />} />
             <Route path="/servers/garrys-mod" element={<GarrysModServersPage />} />
             <Route path="/servers/dayz" element={<DayZServersPage />} />
+            <Route path="/servers/palworld" element={<PalworldServersPage />} />
           </Routes>
         </PageTransition>
         <Footer />
