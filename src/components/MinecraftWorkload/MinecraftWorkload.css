@@ -1,0 +1,161 @@
+.mc-workload {
+  background-color: #ffffff;
+  padding: 120px 0;
+}
+
+.mc-workload-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+
+.mc-workload-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.9fr; /* Make left slightly narrower or equal, let's use 1fr 1fr in image? The right has 3 boxes, left has 1. Actually left and right look exactly 50% / 50% width in the image */
+  gap: 20px;
+  min-height: 380px; /* Force some height so cards stretch beautifully */
+}
+
+/* Override the 1.1/1.9 above to 1fr 1fr */
+.mc-workload-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.mc-workload-card {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mc-workload-featured {
+  height: 100%;
+}
+
+.mc-workload-plant-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: #f0f0f0;
+}
+
+.mc-workload-card-heading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.mc-workload-card-heading.large {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.mc-workload-card-desc {
+  font-size: 0.95rem;
+  color: #5c6270;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.mc-workload-card-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #a0a0a0;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.mc-workload-featured .mc-workload-card-label {
+  margin-top: auto;
+  padding-top: 60px; /* ensure space if text gets long */
+}
+
+.mc-workload-right-col {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.mc-workload-right-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mc-workload-right-top .mc-workload-card {
+  justify-content: center;
+  padding: 30px;
+}
+
+.mc-workload-right-top .mc-workload-card-heading {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.mc-workload-right-top .mc-workload-card-label {
+  font-size: 0.55rem;
+  color: #b0b0b0;
+}
+
+/* Dark Card */
+.mc-workload-dark {
+  background-color: #161616;
+  border: 1px solid #161616;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mc-workload-dark-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-workload-card-heading.light {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.mc-workload-card-desc.light {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.mc-workload-compass-icon {
+  color: #ffffff;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .mc-workload-grid {
+    grid-template-columns: 1fr;
+  }
+  .mc-workload-right-col {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mc-workload-right-top {
+    grid-template-columns: 1fr;
+  }
+  .mc-workload-dark {
+    padding: 30px 20px;
+  }
+  .mc-workload-plant-icon {
+    display: none;
+  }
+}
