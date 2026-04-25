@@ -144,7 +144,9 @@
     grid-template-columns: 1fr;
   }
   .mc-workload-right-col {
-    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
   }
 }
 

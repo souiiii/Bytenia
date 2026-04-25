@@ -113,11 +113,18 @@
     padding-top: 120px;
     padding-bottom: 100px;
   }
+  .minecraft-super-title {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    flex-wrap: wrap; 
+  }
   .minecraft-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    white-space: normal;
   }
   .minecraft-description {
     font-size: 1rem;
+    padding: 0 10px;
   }
   .minecraft-actions {
     flex-direction: column;
