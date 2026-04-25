@@ -1,0 +1,43 @@
+.hytale-advantage-section {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.hytale-advantage-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hytale-advantage-eyebrow {
+  font-family: monospace;
+  font-size: 0.65rem;
+  color: #888;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.hytale-advantage-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive Constraints */
+@media (max-width: 768px) {
+  .hytale-advantage-text {
+    font-size: 1.3rem;
+    padding: 0 20px;
+  }
+  
+  .hytale-advantage-text br {
+    display: none;
+  }
+}
