@@ -1,0 +1,130 @@
+.minecraft-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 160px 0 220px 0;
+  overflow: hidden;
+}
+
+.minecraft-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/landing.png");
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+}
+
+
+.minecraft-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.minecraft-super-title {
+  color: #5c6270;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.super-title-icon {
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+
+.minecraft-title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.05;
+  color: #111;
+  margin-bottom: 24px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.minecraft-description {
+  font-size: 1.15rem;
+  color: #4a505e;
+  line-height: 1.6;
+  margin: 0 auto 48px auto;
+  font-weight: 500;
+  max-width: 650px;
+}
+
+.minecraft-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.minecraft-btn {
+  padding: 16px 36px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-primary.minecraft-btn {
+  background-color: #0b0e18;
+  color: #ffffff;
+  border: 1px solid #0b0e18;
+}
+
+.btn-primary.minecraft-btn:hover {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-secondary.minecraft-btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #0b0e18;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.btn-secondary.minecraft-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .minecraft-hero {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  .minecraft-title {
+    font-size: 2.5rem;
+  }
+  .minecraft-description {
+    font-size: 1rem;
+  }
+  .minecraft-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .minecraft-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
