@@ -18,6 +18,7 @@ import LookingGlassPage from './pages/LookingGlassPage';
 import ConnectPage from './pages/ConnectPage';
 import ThankYouPage from './pages/ThankYouPage';
 import MinecraftServersPage from './pages/MinecraftServersPage';
+import FiveMServersPage from './pages/FiveMServersPage';
 import './App.css';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path="/connect" element={<ConnectPage />} />
             <Route path="/thankyou" element={<ThankYouPage />} />
             <Route path="/minecraft-servers" element={<MinecraftServersPage />} />
+            <Route path="/servers/fiveM" element={<FiveMServersPage />} />
           </Routes>
         </PageTransition>
         <Footer />

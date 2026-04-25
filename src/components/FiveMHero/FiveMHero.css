@@ -1,0 +1,126 @@
+.fivem-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 160px 0 100px 0;
+}
+
+.fivem-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/fivem.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.fivem-hero .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.fivem-hero-content {
+  max-width: 650px;
+}
+
+.fivem-badge {
+  display: inline-block;
+  border: 1px solid #111;
+  padding: 6px 12px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.fivem-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 1.05;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.fivem-description {
+  font-size: 1.15rem;
+  color: #111;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.fivem-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.fivem-btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0 32px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  height: 56px;
+  transition: all 0.2s ease;
+}
+
+.fivem-btn-primary:hover {
+  background-color: #222;
+}
+
+.fivem-stat-box {
+  background-color: rgba(230, 230, 230, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  height: 56px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .fivem-hero {
+    padding-top: 140px;
+  }
+  .fivem-title {
+    font-size: 3rem;
+  }
+  .fivem-actions {
+    flex-direction: column;
+  }
+  .fivem-btn-primary, .fivem-stat-box {
+    width: 100%;
+    justify-content: center;
+  }
+}
