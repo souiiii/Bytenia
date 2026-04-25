@@ -1,0 +1,110 @@
+.dayz-control-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.dayz-control-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dayz-control-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dayz-control-col.left-col {
+  border-right: 1px solid #eaeaea;
+  padding-right: 60px;
+}
+
+.dayz-control-col.right-col {
+  padding-left: 60px;
+}
+
+.dayz-control-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin: 0 0 16px 0;
+}
+
+.dayz-control-desc {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+  font-weight: 500;
+}
+
+.dayz-terminal-block {
+  background-color: #f5f5f5;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.term-cmd {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.term-output {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.term-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #aaa;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dayz-resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dayz-resource-list li {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Responsive Constraints */
+@media (max-width: 992px) {
+  .dayz-control-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .dayz-control-col.left-col {
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+  
+  .dayz-control-col.right-col {
+    padding-left: 0;
+  }
+}

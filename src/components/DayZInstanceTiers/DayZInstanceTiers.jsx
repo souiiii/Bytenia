@@ -5,7 +5,7 @@ import './DayZInstanceTiers.css';
 const tiers = [
   {
     id: 1,
-    badge: 'PREMIUM_NODE',
+    badge: 'STARTER_NODE',
     location: 'AMSTERDAM / DALLAS / MIAMI',
     cpu: 'AMD RYZEN 9 5950X',
     cores: '2 vCores',
@@ -16,25 +16,25 @@ const tiers = [
   },
   {
     id: 2,
-    badge: 'PREMIUM_NODE',
+    badge: 'ADVANCED_NODE',
     location: 'AMSTERDAM / DALLAS / MIAMI',
-    cpu: 'AMD RYZEN 9 5950X',
-    cores: '2 vCores',
-    memory: '16GB DDR4 ECC',
-    storage: '100GB NVMe',
+    cpu: 'INTEL CORE I9-13900K',
+    cores: '4 vCores',
+    memory: '32GB DDR5',
+    storage: '250GB NVMe',
     port: '1 Gbps',
-    price: '$32.00'
+    price: '$64.00'
   },
   {
     id: 3,
-    badge: 'PREMIUM_NODE',
+    badge: 'ENTERPRISE_NODE',
     location: 'AMSTERDAM / DALLAS / MIAMI',
-    cpu: 'AMD RYZEN 9 5950X',
-    cores: '2 vCores',
-    memory: '16GB DDR4 ECC',
-    storage: '100GB NVMe',
-    port: '1 Gbps',
-    price: '$32.00'
+    cpu: 'AMD RYZEN 9 7950X3D',
+    cores: '8 vCores',
+    memory: '64GB DDR5',
+    storage: '500GB Gen4 NVMe',
+    port: '10 Gbps',
+    price: '$119.00'
   }
 ];
 
