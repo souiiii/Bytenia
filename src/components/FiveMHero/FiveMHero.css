@@ -12,7 +12,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../../assets/fivem.png");
+  background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 1) 100%),
+    url("../../assets/fivem.png");
   background-size: cover;
   background-position: center;
   z-index: 0;
