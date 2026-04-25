@@ -4,6 +4,7 @@ import MinecraftSystemSpecs from '../components/MinecraftSystemSpecs/MinecraftSy
 import MinecraftWorkload from '../components/MinecraftWorkload/MinecraftWorkload';
 import MinecraftInstanceTiers from '../components/MinecraftInstanceTiers/MinecraftInstanceTiers';
 import MinecraftArchitecture from '../components/MinecraftArchitecture/MinecraftArchitecture';
+import MinecraftFAQ from '../components/MinecraftFAQ/MinecraftFAQ';
 
 const MinecraftServersPage = () => {
   return (
@@ -13,6 +14,7 @@ const MinecraftServersPage = () => {
       <MinecraftWorkload />
       <MinecraftInstanceTiers />
       <MinecraftArchitecture />
+      <MinecraftFAQ />
     </>
   );
 };
