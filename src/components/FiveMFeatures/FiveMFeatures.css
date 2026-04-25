@@ -92,10 +92,13 @@
     width: 100% !important;
   }
   .fivem-feat-card:hover {
+    background-color: #f3f3f3 !important;
+    width: 100% !important;
+    height: auto !important;
     margin: 0 !important;
     padding: 40px 30px !important;
-    transform: none;
-    box-shadow: none;
-    background-color: inherit;
+    transform: none !important;
+    box-shadow: none !important;
+    z-index: 1 !important;
   }
 }
