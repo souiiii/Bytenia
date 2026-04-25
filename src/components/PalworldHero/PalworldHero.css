@@ -27,7 +27,7 @@
 .palworld-hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 120px;
   align-items: center;
 }
 
@@ -123,6 +123,7 @@
   width: 100%;
   max-width: 600px;
   object-fit: cover;
+  border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   display: block;
 }
