@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gauge, Server, Shield, Globe } from '@phosphor-icons/react';
+import { Gauge, HardDrives, Shield, Globe } from '@phosphor-icons/react';
 import './MinecraftSystemSpecs.css';
 
 const MinecraftSystemSpecs = () => {
@@ -10,7 +10,7 @@ const MinecraftSystemSpecs = () => {
       description: "Single-thread performance optimized for 20 TPS stability even under extreme world-gen workloads."
     },
     {
-      icon: <Server size={32} weight="bold" color="#111" />,
+      icon: <HardDrives size={32} weight="bold" color="#111" />,
       title: "NVME STORAGE",
       description: "RAID 1 Enterprise NVMe arrays. Ultra-low seek times for instantaneous chunk loading and player data R/W."
     },
