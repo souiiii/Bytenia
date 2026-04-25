@@ -16,6 +16,7 @@ const MinecraftArchitecture = () => {
           <div className="mc-arch-row">
             <div className="mc-arch-half left title-half">
               <div className="mc-arch-heading-box">
+                <span className="mc-arch-num">01</span>
                 <h3 className="mc-arch-box-title">RPG NETWORKS</h3>
               </div>
             </div>
