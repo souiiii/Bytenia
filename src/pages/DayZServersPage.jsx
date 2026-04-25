@@ -3,6 +3,7 @@ import DayZHero from '../components/DayZHero/DayZHero';
 import DayZFeatures from '../components/DayZFeatures/DayZFeatures';
 import DayZInstanceTiers from '../components/DayZInstanceTiers/DayZInstanceTiers';
 import DayZWorkloads from '../components/DayZWorkloads/DayZWorkloads';
+import DayZControl from '../components/DayZControl/DayZControl';
 
 const DayZServersPage = () => {
   return (
@@ -11,6 +12,7 @@ const DayZServersPage = () => {
       <DayZFeatures />
       <DayZInstanceTiers />
       <DayZWorkloads />
+      <DayZControl />
     </>
   );
 };
