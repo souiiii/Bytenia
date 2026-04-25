@@ -29,7 +29,7 @@
   background-color: #ffffff;
   height: 340px;
   z-index: 2;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08); /* Heavy soft shadow */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12); /* Sharpened, elevated shadow */
   margin: 0 -30px; /* Pulls slightly over the left and right cards */
   padding: 60px 50px;
 }
