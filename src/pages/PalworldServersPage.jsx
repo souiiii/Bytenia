@@ -3,6 +3,8 @@ import PalworldHero from '../components/PalworldHero/PalworldHero';
 import PalworldInfrastructure from '../components/PalworldInfrastructure/PalworldInfrastructure';
 import PalworldDeployment from '../components/PalworldDeployment/PalworldDeployment';
 import PalworldInstanceTiers from '../components/PalworldInstanceTiers/PalworldInstanceTiers';
+import PalworldFAQ from '../components/PalworldFAQ/PalworldFAQ';
+import PalworldCTA from '../components/PalworldCTA/PalworldCTA';
 
 const PalworldServersPage = () => {
   return (
@@ -11,6 +13,8 @@ const PalworldServersPage = () => {
       <PalworldInfrastructure />
       <PalworldDeployment />
       <PalworldInstanceTiers />
+      <PalworldFAQ />
+      <PalworldCTA />
     </>
   );
 };

@@ -172,4 +172,8 @@
     width: 100%;
     justify-content: space-between;
   }
+  
+  .palworld-tiers-title {
+    font-size: 2rem;
+  }
 }

@@ -1,0 +1,98 @@
+.palworld-cta-section {
+  position: relative;
+  background-color: #eaeaea;
+  padding: 120px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Subtle corner accents */
+.palworld-cta-section::before,
+.palworld-cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 25%;
+  background-color: #dcdcdc;
+  z-index: 1;
+}
+
+.palworld-cta-section::before {
+  left: 0;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.palworld-cta-section::after {
+  right: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.palworld-cta-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.palworld-cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.palworld-cta-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px 0;
+}
+
+.palworld-cta-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+.palworld-cta-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.palworld-cta-btn:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+/* Responsive Constraints */
+@media (max-width: 768px) {
+  .palworld-cta-title {
+    font-size: 2.5rem;
+  }
+  
+  .palworld-cta-subtitle {
+    font-size: 0.85rem;
+    padding: 0 20px;
+  }
+  
+  .palworld-cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .palworld-cta-section::before,
+  .palworld-cta-section::after {
+    height: 10%;
+  }
+}
