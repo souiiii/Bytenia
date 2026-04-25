@@ -1,0 +1,44 @@
+.dayz-workloads-section {
+  background-color: #050505;
+  padding: 60px 0;
+}
+
+.dayz-workloads-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px; /* Very thin gap to create a border-like effect if they are flush? The screenshot shows them separated by a tiny black gap, or maybe just standard gap. Let's use 20px. Wait, the screenshot shows them perfectly adjacent with a 1px or 2px black line separating them. Let's use gap: 2px. */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dayz-wl-card {
+  background-color: #1a1a1a;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dayz-wl-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.dayz-wl-desc {
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive Constraints */
+@media (max-width: 992px) {
+  .dayz-workloads-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
