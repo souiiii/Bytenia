@@ -1,0 +1,54 @@
+.dayz-features-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.dayz-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.dayz-feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.dayz-feature-icon {
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.dayz-feature-title {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.dayz-feature-desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive Constraints */
+@media (max-width: 1024px) {
+  .dayz-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dayz-features-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
