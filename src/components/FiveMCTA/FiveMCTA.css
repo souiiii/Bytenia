@@ -1,45 +1,62 @@
 .fivem-cta-section {
   position: relative;
   width: 100%;
-  padding: 130px 0;
-  background-color: #050505;
-  overflow: hidden;
+  padding: 100px 0;
+  background-color: #ffffff; /* Clean page background */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Infinite stretching horizontal black bar */
+.fivem-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 65%; /* Shorter than the main box */
+  transform: translateY(-50%);
+  background-color: #050505;
+  z-index: 1;
+}
+
+/* The actual central CTA card */
+.fivem-cta-box {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 40px;
+  background-color: #050505;
+  z-index: 2; /* Sits above the infinite bar */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* Geometric corner cutouts mimicking the image background */
-.fivem-cta-section::before,
-.fivem-cta-section::after {
+.fivem-cta-box::before,
+.fivem-cta-box::after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 20%;
+  width: 25%;
   background-color: #181818;
   z-index: 1;
 }
 
-.fivem-cta-section::before {
+.fivem-cta-box::before {
   left: 0;
   clip-path: polygon(0 0, 100% 0, 0 50%, 100% 100%, 0 100%);
 }
 
-.fivem-cta-section::after {
+.fivem-cta-box::after {
   right: 0;
   clip-path: polygon(100% 0, 0 0, 100% 50%, 0 100%, 100% 100%);
-}
-
-.fivem-cta-container {
-  text-align: center;
-  max-width: 900px;
-  padding: 0 30px;
-  z-index: 2; /* Ensures text renders above the absolute pseudo-elements */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .fivem-cta-title {
@@ -49,6 +66,8 @@
   letter-spacing: -0.05em;
   margin: 0 0 25px 0;
   line-height: 1.1;
+  position: relative;
+  z-index: 2;
 }
 
 .fivem-cta-subtitle {
@@ -59,6 +78,8 @@
   margin: 0 0 45px 0;
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
+  z-index: 2;
 }
 
 .fivem-cta-btn {
@@ -72,6 +93,8 @@
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: all 0.2s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .fivem-cta-btn:hover {
@@ -83,22 +106,30 @@
 /* Responsive constraints */
 @media (max-width: 992px) {
   .fivem-cta-section {
-    padding: 100px 0;
+    padding: 80px 0;
+  }
+
+  .fivem-cta-box {
+    padding: 100px 30px;
   }
 
   .fivem-cta-title {
     font-size: 3rem;
   }
 
-  .fivem-cta-section::before,
-  .fivem-cta-section::after {
-    width: 15%; /* Reduce shape intrusion on smaller screens */
+  .fivem-cta-box::before,
+  .fivem-cta-box::after {
+    width: 20%; /* Reduce shape intrusion on smaller screens */
   }
 }
 
 @media (max-width: 500px) {
   .fivem-cta-section {
-    padding: 80px 0;
+    padding: 60px 0;
+  }
+  
+  .fivem-cta-box {
+    padding: 80px 20px;
   }
 
   .fivem-cta-title {
@@ -112,8 +143,8 @@
     margin-bottom: 35px;
   }
 
-  .fivem-cta-section::before,
-  .fivem-cta-section::after {
-    display: none; /* Strip out geometric background on extreme mobile for clean readability */
+  .fivem-cta-box::before,
+  .fivem-cta-box::after {
+    display: none; /* Strip out geometric background on extreme mobile */
   }
 }
