@@ -2,6 +2,7 @@ import React from 'react';
 import HytaleHero from '../components/HytaleHero/HytaleHero';
 import HytaleReliability from '../components/HytaleReliability/HytaleReliability';
 import HytaleInstanceTiers from '../components/HytaleInstanceTiers/HytaleInstanceTiers';
+import HytaleControl from '../components/HytaleControl/HytaleControl';
 
 const HytaleServersPage = () => {
   return (
@@ -9,6 +10,7 @@ const HytaleServersPage = () => {
       <HytaleHero />
       <HytaleReliability />
       <HytaleInstanceTiers />
+      <HytaleControl />
     </>
   );
 };
