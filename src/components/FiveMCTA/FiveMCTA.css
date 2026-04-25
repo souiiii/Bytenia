@@ -1,0 +1,119 @@
+.fivem-cta-section {
+  position: relative;
+  width: 100%;
+  padding: 130px 0;
+  background-color: #050505;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Geometric corner cutouts mimicking the image background */
+.fivem-cta-section::before,
+.fivem-cta-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-color: #181818;
+  z-index: 1;
+}
+
+.fivem-cta-section::before {
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 50%, 100% 100%, 0 100%);
+}
+
+.fivem-cta-section::after {
+  right: 0;
+  clip-path: polygon(100% 0, 0 0, 100% 50%, 0 100%, 100% 100%);
+}
+
+.fivem-cta-container {
+  text-align: center;
+  max-width: 900px;
+  padding: 0 30px;
+  z-index: 2; /* Ensures text renders above the absolute pseudo-elements */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fivem-cta-title {
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  margin: 0 0 25px 0;
+  line-height: 1.1;
+}
+
+.fivem-cta-subtitle {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #666666;
+  letter-spacing: 0.35em;
+  margin: 0 0 45px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.fivem-cta-btn {
+  background-color: #e5e5e5;
+  color: #000000;
+  border: none;
+  padding: 18px 45px;
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fivem-cta-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Responsive constraints */
+@media (max-width: 992px) {
+  .fivem-cta-section {
+    padding: 100px 0;
+  }
+
+  .fivem-cta-title {
+    font-size: 3rem;
+  }
+
+  .fivem-cta-section::before,
+  .fivem-cta-section::after {
+    width: 15%; /* Reduce shape intrusion on smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .fivem-cta-section {
+    padding: 80px 0;
+  }
+
+  .fivem-cta-title {
+    font-size: 2.2rem;
+  }
+
+  .fivem-cta-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+
+  .fivem-cta-section::before,
+  .fivem-cta-section::after {
+    display: none; /* Strip out geometric background on extreme mobile for clean readability */
+  }
+}
