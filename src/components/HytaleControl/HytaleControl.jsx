@@ -8,25 +8,25 @@ const HytaleControl = () => {
         <div className="hytale-control-grid">
           <div className="hytale-control-content">
             <h2 className="hytale-control-title">
-              TOTAL CONTROL.<br />
-              NO ABSTRACTIONS.
+              Total Control.<br />
+              No Abstractions.
             </h2>
             
             <div className="hytale-feature-list">
               <div className="hytale-feature-item">
-                <h4 className="hytale-feature-name">ROOT ACCESS</h4>
+                <h4 className="hytale-feature-name">Root Access</h4>
                 <p className="hytale-feature-desc">
                   Full SSH/IPMI access to your bare-metal environment. Install your preferred Linux distro or custom kernels.
                 </p>
               </div>
               <div className="hytale-feature-item">
-                <h4 className="hytale-feature-name">KVM VIRTUALIZATION</h4>
+                <h4 className="hytale-feature-name">KVM Virtualization</h4>
                 <p className="hytale-feature-desc">
                   Dedicated resources with zero overselling. Your hardware is yours alone, ensuring consistent frame rates.
                 </p>
               </div>
               <div className="hytale-feature-item">
-                <h4 className="hytale-feature-name">CUSTOM ISO SUPPORT</h4>
+                <h4 className="hytale-feature-name">Custom ISO Support</h4>
                 <p className="hytale-feature-desc">
                   Mount any operating system image via the control panel for specialized server environments.
                 </p>

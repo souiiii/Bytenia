@@ -36,8 +36,8 @@ const PalworldInstanceTiers = () => {
     <section className="palworld-tiers-section">
       <div className="container">
         <div className="palworld-tiers-header">
-          <h2 className="palworld-tiers-title">INFRASTRUCTURE TIERS</h2>
-          <p className="palworld-tiers-subtitle">SELECT YOUR HARDWARE PROFILE</p>
+          <h2 className="palworld-tiers-title">Infrastructure Tiers</h2>
+          <p className="palworld-tiers-subtitle">Select Your Hardware Profile</p>
         </div>
 
         <div className="palworld-tiers-list">
@@ -48,19 +48,19 @@ const PalworldInstanceTiers = () => {
               
               <div className="palworld-tier-specs">
                 <div className="palworld-spec-block">
-                  <span className="palworld-spec-label">PROCESSOR</span>
+                  <span className="palworld-spec-label">Processor</span>
                   <span className="palworld-spec-val">{tier.processor}</span>
                 </div>
                 <div className="palworld-spec-block">
-                  <span className="palworld-spec-label">MEMORY</span>
+                  <span className="palworld-spec-label">Memory</span>
                   <span className="palworld-spec-val">{tier.memory}</span>
                 </div>
                 <div className="palworld-spec-block">
-                  <span className="palworld-spec-label">STORAGE</span>
+                  <span className="palworld-spec-label">Storage</span>
                   <span className="palworld-spec-val">{tier.storage}</span>
                 </div>
                 <div className="palworld-spec-block">
-                  <span className="palworld-spec-label">PORT SPEED</span>
+                  <span className="palworld-spec-label">Port Speed</span>
                   <span className="palworld-spec-val">{tier.port}</span>
                 </div>
               </div>

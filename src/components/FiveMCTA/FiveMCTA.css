@@ -79,8 +79,8 @@
   color: #666666;
   letter-spacing: 0.35em;
   margin: 0 0 45px 0;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
   position: relative;
   z-index: 2;
 }

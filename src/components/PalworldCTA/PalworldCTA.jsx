@@ -6,7 +6,7 @@ const PalworldCTA = () => {
     <section className="palworld-cta-section">
       <div className="container">
         <div className="palworld-cta-content">
-          <h2 className="palworld-cta-title">READY TO DEPLOY?</h2>
+          <h2 className="palworld-cta-title">Ready to Deploy?</h2>
           <p className="palworld-cta-subtitle">
             Provision your dedicated instance in under 15 minutes. Select your location and<br />
             operating system to begin the deployment protocol.

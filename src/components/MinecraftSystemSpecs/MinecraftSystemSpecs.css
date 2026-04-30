@@ -14,7 +14,6 @@
   font-size: 2.2rem;
   font-weight: 900;
   color: #111;
-  text-transform: uppercase;
   margin: 0;
   letter-spacing: -0.02em;
 }
@@ -58,8 +57,8 @@
   font-weight: 800;
   color: #111;
   margin-bottom: 16px;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .mc-spec-card-desc {

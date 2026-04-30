@@ -10,32 +10,32 @@ const FiveMNetworkStatus = () => {
           <div className="status-left">
             <div className="status-header">
               <div className="status-indicator"></div>
-              <span>NETWORK_STATUS: OPTIMAL</span>
+              <span>Network Status: Optimal</span>
             </div>
             
             <div className="status-metrics">
               <div className="metric">
-                <span className="metric-label">UPTIME</span>
+                <span className="metric-label">Uptime</span>
                 <span className="metric-value">99.99%</span>
               </div>
               <div className="metric">
-                <span className="metric-label">GLOBAL LATENCY</span>
+                <span className="metric-label">Global Latency</span>
                 <span className="metric-value">&lt; 20ms</span>
               </div>
               <div className="metric">
-                <span className="metric-label">INCIDENT-FREE</span>
+                <span className="metric-label">Incident-Free</span>
                 <span className="metric-value">412d</span>
               </div>
               <div className="metric">
-                <span className="metric-label">NETWORK STATUS</span>
-                <span className="metric-value">STABLE</span>
+                <span className="metric-label">Network Status</span>
+                <span className="metric-value">Stable</span>
               </div>
             </div>
           </div>
 
           <div className="status-right">
             <div className="recent-activity-box">
-              <span className="activity-title">RECENT ACTIVITY</span>
+              <span className="activity-title">Recent Activity</span>
               <ul className="activity-log">
                 <li>[12:48] Network stable across all regions</li>
                 <li>[12:32] Traffic optimized successfully</li>

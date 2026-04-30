@@ -6,10 +6,10 @@ const HytaleCTA = () => {
     <section className="hytale-cta-section">
       <div className="container">
         <div className="hytale-cta-content">
-          <h2 className="hytale-cta-title">PROVISION YOUR INFRASTRUCTURE</h2>
-          <button className="hytale-cta-btn">START DEPLOYMENT</button>
+          <h2 className="hytale-cta-title">Provision Your Infrastructure</h2>
+          <button className="hytale-cta-btn">Start Deployment</button>
           <p className="hytale-cta-subtext">
-            AVG. PROVISIONING TIME: 14M 22S ACROSS ALL REGIONS.
+            Avg. Provisioning Time: 14m 22s across all regions.
           </p>
         </div>
       </div>

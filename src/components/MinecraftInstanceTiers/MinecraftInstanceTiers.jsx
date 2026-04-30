@@ -6,47 +6,47 @@ const MinecraftInstanceTiers = () => {
   const tiers = [
     {
       id: 1,
-      name: 'AMD RYZEN 9 5950X',
-      specs: '16C / 32T @ 3.4GHZ / 4.9GHZ',
+      name: 'AMD Ryzen 9 5950X',
+      specs: '16C / 32T @ 3.4GHz / 4.9GHz',
       score: 'Scored 45,900 on a CPU benchmark',
-      location: 'AMSTERDAM',
-      locationSub: 'NETHERLANDS',
+      location: 'Amsterdam',
+      locationSub: 'Netherlands',
       memory: '64GB DDR4',
-      memorySub: 'MEMORY',
-      storage: '2X 2TB NVME SSD',
-      storageSub: 'STORAGE',
-      network: '1 GBIT',
-      networkSub: 'PORT SPEED',
+      memorySub: 'Memory',
+      storage: '2x 2TB NVMe SSD',
+      storageSub: 'Storage',
+      network: '1 Gbit',
+      networkSub: 'Port Speed',
       price: '$79.99'
     },
     {
       id: 2,
-      name: 'INTEL CORE I9-13900K',
-      specs: '24C / 32T @ 3.0GHZ / 5.8GHZ',
+      name: 'Intel Core i9-13900K',
+      specs: '24C / 32T @ 3.0GHz / 5.8GHz',
       score: 'Scored 60,000 on a CPU benchmark',
-      location: 'FRANKFURT',
-      locationSub: 'GERMANY',
+      location: 'Frankfurt',
+      locationSub: 'Germany',
       memory: '128GB DDR5',
-      memorySub: 'MEMORY',
-      storage: '2X 4TB NVME SSD',
-      storageSub: 'STORAGE',
-      network: '10 GBIT',
-      networkSub: 'PORT SPEED',
+      memorySub: 'Memory',
+      storage: '2x 4TB NVMe SSD',
+      storageSub: 'Storage',
+      network: '10 Gbit',
+      networkSub: 'Port Speed',
       price: '$129.99'
     },
     {
       id: 3,
-      name: 'AMD RYZEN 7 5800X3D',
-      specs: '8C / 16T @ 3.4GHZ / 4.5GHZ',
+      name: 'AMD Ryzen 7 5800X3D',
+      specs: '8C / 16T @ 3.4GHz / 4.5GHz',
       score: 'Scored 32,500 on a CPU benchmark',
-      location: 'LONDON',
-      locationSub: 'UNITED KINGDOM',
+      location: 'London',
+      locationSub: 'United Kingdom',
       memory: '32GB DDR4',
-      memorySub: 'MEMORY',
-      storage: '1TB NVME SSD',
-      storageSub: 'STORAGE',
-      network: '1 GBIT',
-      networkSub: 'PORT SPEED',
+      memorySub: 'Memory',
+      storage: '1TB NVMe SSD',
+      storageSub: 'Storage',
+      network: '1 Gbit',
+      networkSub: 'Port Speed',
       price: '$49.99'
     }
   ];
@@ -55,8 +55,8 @@ const MinecraftInstanceTiers = () => {
     <section className="mc-tiers section">
       <div className="container">
         <div className="mc-tiers-header">
-          <h2 className="mc-tiers-title">INSTANCE TIERS</h2>
-          <span className="mc-tiers-subtitle">FIXED MONTHLY RATES // NO HIDDEN EGRESS COSTS</span>
+          <h2 className="mc-tiers-title">Instance Tiers</h2>
+          <span className="mc-tiers-subtitle">Fixed Monthly Rates // No Hidden Egress Costs</span>
         </div>
 
         <div className="mc-tiers-list">
@@ -105,9 +105,9 @@ const MinecraftInstanceTiers = () => {
               <div className="mc-tier-pricing">
                 <div className="mc-tier-price">
                   <span className="price-amount">{tier.price}</span>
-                  <span className="price-period">/ MONTH</span>
+                  <span className="price-period">/ Month</span>
                 </div>
-                <button className="mc-tier-btn">CONFIGURE SERVER</button>
+                <button className="mc-tier-btn">Configure Server</button>
               </div>
             </div>
           ))}

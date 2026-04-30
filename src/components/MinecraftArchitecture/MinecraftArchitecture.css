@@ -14,7 +14,6 @@
   font-size: 0.65rem;
   color: rgba(0, 0, 0, 0.4);
   letter-spacing: 0.25em;
-  text-transform: uppercase;
   font-weight: 700;
   display: block;
   margin-bottom: 8px;
@@ -94,7 +93,6 @@
   font-weight: 900;
   color: #111;
   margin: 0;
-  text-transform: uppercase;
   letter-spacing: -0.02em;
 }
 

@@ -8,7 +8,7 @@ const DayZControl = () => {
         <div className="dayz-control-grid">
           
           <div className="dayz-control-col left-col">
-            <h2 className="dayz-control-title">ROOT LEVEL ACCESS</h2>
+            <h2 className="dayz-control-title">Root Level Access</h2>
             <p className="dayz-control-desc">
               Full administrative control with no restrictions. Manage your server via SSH, SFTP, or terminal access, and customize your environment to fit your exact requirements.
             </p>
@@ -24,15 +24,15 @@ const DayZControl = () => {
           </div>
 
           <div className="dayz-control-col right-col">
-            <h2 className="dayz-control-title">DEDICATED RESOURCES</h2>
+            <h2 className="dayz-control-title">Dedicated Resources</h2>
             <p className="dayz-control-desc">
               All resources are fully dedicated to your server, ensuring consistent performance with no shared environments or resource contention.
             </p>
             
             <ul className="dayz-resource-list">
-              <li>— NO_OS_RESTRICTIONS</li>
-              <li>— VIRTIO_DRIVER_SUPPORT</li>
-              <li>— CUSTOM_MOUNT_POINTS</li>
+              <li>— No OS Restrictions</li>
+              <li>— VirtIO Driver Support</li>
+              <li>— Custom Mount Points</li>
             </ul>
           </div>
 

@@ -33,7 +33,7 @@ const HytaleInstanceTiers = () => {
     <section className="hytale-tiers-section">
       <div className="container">
         <div className="hytale-tiers-header">
-          <h2 className="hytale-tiers-title">INFRASTRUCTURE TIERS</h2>
+          <h2 className="hytale-tiers-title">Infrastructure Tiers</h2>
         </div>
 
         <div className="hytale-tiers-list">
@@ -41,19 +41,19 @@ const HytaleInstanceTiers = () => {
             <div className="hytale-tier-card" key={tier.id}>
               <div className="hytale-tier-specs">
                 <div className="hytale-spec-block">
-                  <span className="hytale-spec-label">CPU SPECS</span>
+                  <span className="hytale-spec-label">CPU Specs</span>
                   <span className="hytale-spec-val">{tier.cpu}</span>
                 </div>
                 <div className="hytale-spec-block">
-                  <span className="hytale-spec-label">LOCATION</span>
+                  <span className="hytale-spec-label">Location</span>
                   <span className="hytale-spec-val">{tier.location}</span>
                 </div>
                 <div className="hytale-spec-block">
-                  <span className="hytale-spec-label">RAM / STORAGE</span>
+                  <span className="hytale-spec-label">RAM / Storage</span>
                   <span className="hytale-spec-val">{tier.ramStorage}</span>
                 </div>
                 <div className="hytale-spec-block">
-                  <span className="hytale-spec-label">PORT SPEED</span>
+                  <span className="hytale-spec-label">Port Speed</span>
                   <span className="hytale-spec-val">{tier.port}</span>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const HytaleInstanceTiers = () => {
                   <span className="hytale-price-val">{tier.price}</span>
                   <span className="hytale-price-period">/mo</span>
                 </div>
-                <button className="hytale-deploy-btn">CONFIGURE</button>
+                <button className="hytale-deploy-btn">Configure</button>
               </div>
             </div>
           ))}

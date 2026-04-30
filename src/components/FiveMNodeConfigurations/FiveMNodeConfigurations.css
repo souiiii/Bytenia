@@ -15,7 +15,6 @@
   font-weight: 900;
   letter-spacing: -0.05em;
   margin: 0 0 8px 0;
-  text-transform: uppercase;
   color: #111;
 }
 
@@ -24,7 +23,6 @@
   color: #888;
   margin: 0;
   font-size: 0.8rem;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
@@ -39,7 +37,6 @@
   font-size: 0.8rem;
   border: none;
   cursor: pointer;
-  text-transform: uppercase;
   transition: all 0.2s ease;
 }
 
@@ -93,7 +90,6 @@
 .node-col {
   color: #555;
   font-size: 0.85rem;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
 }

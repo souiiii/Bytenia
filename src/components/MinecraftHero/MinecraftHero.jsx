@@ -16,7 +16,7 @@ const MinecraftHero = () => {
           </div>
           
           <h1 className="minecraft-title">
-            THE ULTIMATE<br />SERVERS FOR MINECRAFT
+            The Ultimate<br />Servers for Minecraft
           </h1>
           
           <p className="minecraft-description">

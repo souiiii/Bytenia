@@ -25,7 +25,6 @@
   line-height: 1;
   margin: 0;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
 }
 
 .mc-cta-subtitle {
@@ -42,7 +41,6 @@
   padding: 22px 48px;
   font-size: 0.85rem;
   font-weight: 800;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: all 0.2s ease;
