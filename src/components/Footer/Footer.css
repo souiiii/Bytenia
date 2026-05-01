@@ -97,7 +97,7 @@
   color: var(--text-muted);
 }
 
-.footer-badges {
+/* .footer-badges {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -105,9 +105,9 @@
 
 .mobile-only-badges {
   display: none;
-}
+} */
 
-.cert-box {
+/* .cert-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,7 +125,7 @@
 .iso-badges-img {
   height: 80px;
   object-fit: contain;
-}
+} */
 
 @media (max-width: 900px) {
   .footer-top {
@@ -139,7 +139,7 @@
     margin-bottom: 60px;
   }
 
-  .mobile-only-badges {
+/*   .mobile-only-badges {
     display: flex;
     justify-content: space-between;
     gap: 8px;
@@ -154,7 +154,7 @@
     max-width: 65px;
     height: auto;
     object-fit: contain;
-  }
+  } */
 
   .footer-bottom {
     align-items: flex-start;
