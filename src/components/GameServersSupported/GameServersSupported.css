@@ -5,7 +5,9 @@
     #f1f3f6 0%,
     #f1f3f6 165px,
     #ffffff 165px,
-    #ffffff 100%
+    #ffffff calc(100% - 205px),
+    #f8f8fa calc(100% - 205px),
+    #f8f8fa 100%
   );
 }
 
@@ -76,7 +78,15 @@
 
 @media (max-width: 768px) {
   .game-servers-supported-section {
-    background: linear-gradient(to bottom, #f1f3f6 0%, #f1f3f6 112px, #ffffff 112px, #ffffff 100%);
+    background: linear-gradient(
+      to bottom,
+      #f1f3f6 0%,
+      #f1f3f6 112px,
+      #ffffff 112px,
+      #ffffff calc(100% - 152px),
+      #f1f3f6 calc(100% - 152px),
+      #f1f3f6 100%
+    );
   }
 
   .game-servers-supported-card {
@@ -94,7 +104,7 @@
   }
 
   .game-servers-logo-item img {
-    max-width: 100px; 
+    max-width: 100px;
   }
 
   .game-servers-supported-footer {
