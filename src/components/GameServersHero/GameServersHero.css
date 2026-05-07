@@ -1,0 +1,58 @@
+.game-servers-hero-section {
+  position: relative;
+  padding: 80px 0 60px 0;
+  background: linear-gradient(to bottom, #fbfcfd 0%, #fbfcfd 75%, #f1f3f6 75%, #f1f3f6 100%);
+  text-align: center;
+}
+
+.game-servers-hero-card {
+  background-color: #0f1115;
+  border-radius: 48px;
+  padding: 120px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.08);
+}
+
+.game-servers-hero-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+}
+
+.game-servers-hero-subtitle {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #a0aab5;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .game-servers-hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-servers-hero-card {
+    border-radius: 32px;
+    padding: 80px 20px;
+  }
+  
+  .game-servers-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .game-servers-hero-subtitle {
+    font-size: 0.95rem;
+  }
+}
