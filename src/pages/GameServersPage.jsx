@@ -3,6 +3,7 @@ import GameServersHero from '../components/GameServersHero/GameServersHero';
 import GameServersBenefits from '../components/GameServersBenefits/GameServersBenefits';
 import GameServersSupported from '../components/GameServersSupported/GameServersSupported';
 import GameServersList from '../components/GameServersList/GameServersList';
+import VdsSupportBanner from '../components/VdsSupportBanner/VdsSupportBanner';
 
 const GameServersPage = () => {
   return (
@@ -11,6 +12,7 @@ const GameServersPage = () => {
       <GameServersBenefits />
       <GameServersSupported />
       <GameServersList />
+      <VdsSupportBanner />
     </>
   );
 };

@@ -75,22 +75,26 @@
 }
 
 @media (max-width: 768px) {
+  .game-servers-supported-section {
+    background: linear-gradient(to bottom, #f1f3f6 0%, #f1f3f6 112px, #ffffff 112px, #ffffff 100%);
+  }
+
   .game-servers-supported-card {
     border-radius: 32px;
     padding: 60px 20px;
   }
 
   .game-servers-supported-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin-bottom: 40px;
   }
 
   .game-servers-supported-grid {
-    gap: 12px;
+    gap: 16px;
   }
 
   .game-servers-logo-item img {
-    max-width: 130px; /* Scaled up for mobile as well */
+    max-width: 100px; 
   }
 
   .game-servers-supported-footer {
