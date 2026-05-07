@@ -1,6 +1,12 @@
 .game-servers-supported-section {
-  padding: 0 0 120px 0;
-  background-color: #f1f3f6; /* Continue from previous section */
+  padding: 80px 0 120px 0;
+  background: linear-gradient(
+    to bottom,
+    #f1f3f6 0%,
+    #f1f3f6 165px,
+    #ffffff 165px,
+    #ffffff 100%
+  );
 }
 
 .game-servers-supported-card {
@@ -14,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
 }
 
 .game-servers-supported-title {
@@ -35,7 +41,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  max-width: 650px;
+  max-width: 750px;
   margin: 0 auto 50px auto;
 }
 
@@ -45,7 +51,7 @@
 
 .game-servers-logo-item img {
   display: block;
-  max-width: 130px; /* Adjust this value to match the exact size in design */
+  max-width: 155px; /* Increased size */
   height: auto;
 }
 
@@ -73,20 +79,20 @@
     border-radius: 32px;
     padding: 60px 20px;
   }
-  
+
   .game-servers-supported-title {
     font-size: 2.2rem;
     margin-bottom: 40px;
   }
-  
+
   .game-servers-supported-grid {
     gap: 12px;
   }
-  
+
   .game-servers-logo-item img {
-    max-width: 110px;
+    max-width: 130px; /* Scaled up for mobile as well */
   }
-  
+
   .game-servers-supported-footer {
     font-size: 1.2rem;
   }
