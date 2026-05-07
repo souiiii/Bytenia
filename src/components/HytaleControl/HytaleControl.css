@@ -14,7 +14,6 @@
   font-size: 3.5rem;
   font-weight: 900;
   color: #111;
-  text-transform: uppercase;
   letter-spacing: -0.04em;
   margin: 0 0 40px 0;
   line-height: 1.05;
@@ -38,7 +37,6 @@
   font-size: 0.75rem;
   font-weight: 800;
   color: #333;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 0 0 12px 0;
 }

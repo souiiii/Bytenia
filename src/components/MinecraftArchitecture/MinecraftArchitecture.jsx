@@ -6,8 +6,8 @@ const MinecraftArchitecture = () => {
     <section className="mc-arch section">
       <div className="container">
         <div className="mc-arch-header">
-          <span className="mc-arch-super">OPERATIONAL_MODES</span>
-          <h2 className="mc-arch-title">ARCHITECTURE ALIGNMENT.</h2>
+          <span className="mc-arch-super">OPERATIONAL MODES</span>
+          <h2 className="mc-arch-title">Architecture Alignment.</h2>
         </div>
 
         <div className="mc-arch-content">
@@ -17,7 +17,7 @@ const MinecraftArchitecture = () => {
             <div className="mc-arch-half left title-half">
               <div className="mc-arch-heading-box">
                 <span className="mc-arch-num">01</span>
-                <h3 className="mc-arch-box-title">RPG NETWORKS</h3>
+                <h3 className="mc-arch-box-title">RPG Networks</h3>
               </div>
             </div>
             <div className="mc-arch-divider"></div>
@@ -39,7 +39,7 @@ const MinecraftArchitecture = () => {
             <div className="mc-arch-half right title-half">
               <div className="mc-arch-heading-box">
                 <span className="mc-arch-num">02</span>
-                <h3 className="mc-arch-box-title">COMPUTE CLUSTERS</h3>
+                <h3 className="mc-arch-box-title">Compute Clusters</h3>
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@ const MinecraftArchitecture = () => {
             <div className="mc-arch-half left title-half">
               <div className="mc-arch-heading-box">
                 <span className="mc-arch-num">03</span>
-                <h3 className="mc-arch-box-title">GLOBAL PROXIES</h3>
+                <h3 className="mc-arch-box-title">Global Proxies</h3>
               </div>
             </div>
             <div className="mc-arch-divider"></div>

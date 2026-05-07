@@ -15,9 +15,9 @@ const PalworldHero = () => {
               ARCHITECTURAL SCALE DEPLOYMENT
             </div>
             <h1 className="palworld-hero-title">
-              ENTERPRISE<br />
-              INFRASTRUCTURE<br />
-              FOR PALWORLD
+              Enterprise<br />
+              Infrastructure<br />
+              for Palworld
             </h1>
             <p className="palworld-hero-desc">
               Precision-engineered bare metal infrastructure designed for massive world persistence, low-latency node synchronization, and total administrative control.

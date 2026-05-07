@@ -28,7 +28,6 @@
   letter-spacing: 0.05em;
   font-weight: 700;
   color: #d0d0d0;
-  text-transform: uppercase;
 }
 
 .status-indicator {
@@ -54,7 +53,6 @@
   color: #666;
   font-weight: 800;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .metric-value {
@@ -85,7 +83,6 @@
   font-weight: 800;
   margin-bottom: 15px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .activity-log {

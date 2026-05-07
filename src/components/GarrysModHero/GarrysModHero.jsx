@@ -10,13 +10,13 @@ const GarrysModHero = () => {
       <div className="container">
         <div className="garrys-hero-content">
           <div className="garrys-badge">
-            <span className="garrys-badge-bullet">■</span> ARCHITECTURAL SCALE DEPLOYMENT
+            <span className="garrys-badge-bullet">■</span> Architectural Scale Deployment
           </div>
           
           <h1 className="garrys-title">
-            ENTERPRISE SERVERS<br />
-            FOR GARRY'S MOD<br />
-            WORKLOADS
+            Enterprise Servers<br />
+            for Garry's Mod<br />
+            Workloads
           </h1>
           
           <p className="garrys-description">
@@ -25,10 +25,10 @@ const GarrysModHero = () => {
           
           <div className="garrys-actions">
             <button className="garrys-btn-text">
-              INITIALIZE<br />INSTANCE
+              Initialize<br />Instance
             </button>
             <button className="garrys-btn-outline">
-              VIEW HARDWARE<br />SPECS
+              View Hardware<br />Specs
             </button>
           </div>
         </div>

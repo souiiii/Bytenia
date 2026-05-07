@@ -5,22 +5,22 @@ import './DayZFAQ.css';
 const faqs = [
   {
     id: 1,
-    question: "HOW IS THE HARDWARE ISOLATED?",
+    question: "How is the hardware isolated?",
     answer: "We use KVM (Kernel-based Virtual Machine) which provides full hardware virtualization. Each instance has its own kernel, disk space, and allocated CPU/RAM that cannot be accessed or affected by other users on the same physical host."
   },
   {
     id: 2,
-    question: "DO YOU OFFER MANAGED SERVICES?",
+    question: "Do you offer managed services?",
     answer: "While we provide full root access for self-management, our enterprise support team is available 24/7 to assist with infrastructure-level troubleshooting and initial server deployments upon request."
   },
   {
     id: 3,
-    question: "WHAT IS THE DDOS MITIGATION LIMIT?",
+    question: "What is the DDoS mitigation limit?",
     answer: "Our L7 filtering scrubbers are capable of mitigating multi-terabit attacks globally, ensuring your DayZ servers remain online during volumetric floods or Source Engine specific query attacks."
   },
   {
     id: 4,
-    question: "CAN I UPGRADE RESOURCES ON-THE-FLY?",
+    question: "Can I upgrade resources on-the-fly?",
     answer: "Yes, our control panel allows for instant horizontal and vertical scaling. You can hot-swap CPU and RAM allocations without needing to migrate your core server files."
   }
 ];
@@ -36,8 +36,8 @@ const DayZFAQ = () => {
     <section className="dayz-faq-section section">
       <div className="container">
         <div className="dayz-faq-header">
-          <span className="dayz-faq-eyebrow">KNOWLEDGE_BASE</span>
-          <h2 className="dayz-faq-title">QUERY RESPONSES.</h2>
+          <span className="dayz-faq-eyebrow">Knowledge Base</span>
+          <h2 className="dayz-faq-title">Query Responses.</h2>
         </div>
 
         <div className="dayz-faq-list">

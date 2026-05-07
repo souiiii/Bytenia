@@ -28,7 +28,7 @@ const DayZFeatures = () => {
             <Shield size={32} weight="regular" className="dayz-feature-icon" />
             <h3 className="dayz-feature-title">DDOS PROTECTION</h3>
             <p className="dayz-feature-desc">
-              Multi-layered 12Tbps anycast mitigation specifically tuned for Minecraft's UDP and TCP protocol signatures.
+              Multi-layered 12Tbps anycast mitigation specifically tuned for DayZ's UDP and TCP protocol signatures.
             </p>
           </div>
 

@@ -10,12 +10,12 @@ const GarrysModDeployment = () => {
           {/* Left Column */}
           <div className="garrys-deploy-col left-col">
             <h2 className="garrys-deploy-title">
-              DEPLOYMENT<br />FLEXIBILITY
+              Deployment<br />Flexibility
             </h2>
 
             <div className="garrys-deploy-feature">
               <span className="garrys-feat-eyebrow">01 / HIGH PERFORMANCE COMPUTE</span>
-              <h3 className="garrys-feat-title">CONSISTENT PROCESSING POWER</h3>
+              <h3 className="garrys-feat-title">Consistent Processing Power</h3>
               <p className="garrys-feat-desc">
                 High-frequency CPUs designed for stable performance under demanding workloads and sustained usage.
               </p>
@@ -23,7 +23,7 @@ const GarrysModDeployment = () => {
 
             <div className="garrys-deploy-feature">
               <span className="garrys-feat-eyebrow">02 / RELIABLE STORAGE</span>
-              <h3 className="garrys-feat-title">HIGH SPEED DATA ACCESS</h3>
+              <h3 className="garrys-feat-title">High Speed Data Access</h3>
               <p className="garrys-feat-desc">
                 NVMe storage ensures fast data access, low latency, and consistent performance for any workload.
               </p>
@@ -34,7 +34,7 @@ const GarrysModDeployment = () => {
           <div className="garrys-deploy-col right-col">
             <div className="garrys-deploy-feature">
               <span className="garrys-feat-eyebrow">03 / FULL CONTROL</span>
-              <h3 className="garrys-feat-title">CUSTOM SERVER ENVIRONMENT</h3>
+              <h3 className="garrys-feat-title">Custom Server Environment</h3>
               <p className="garrys-feat-desc">
                 Configure your server exactly how you need with full root access and complete flexibility.
               </p>

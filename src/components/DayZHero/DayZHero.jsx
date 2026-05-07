@@ -9,9 +9,9 @@ const DayZHero = () => {
         <div className="dayz-hero-content">
           <div className="dayz-hero-badge">HIGH PERFORMANCE DAYZ SERVERS</div>
           <h1 className="dayz-hero-title">
-            HIGH PERFORMANCE<br />
-            DEDICATED SERVERS<br />
-            FOR DAYZ
+            High Performance<br />
+            Dedicated Servers<br />
+            for DayZ
           </h1>
           <p className="dayz-hero-desc">
             Run your DayZ servers on high-performance dedicated infrastructure with full control, low latency, and reliable performance.

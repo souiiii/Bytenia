@@ -8,7 +8,7 @@ const PalworldInfrastructure = () => {
       <div className="palworld-infra-top">
         <div className="container">
           <div className="palworld-infra-header">
-            <h2 className="palworld-infra-title">CORE INFRASTRUCTURE</h2>
+            <h2 className="palworld-infra-title">Core Infrastructure</h2>
             <p className="palworld-infra-subtitle">
               HARDWARE LEVEL ABSTRACTION AND NETWORK<br />SECURITY PROTOCOLS.
             </p>

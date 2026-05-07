@@ -28,7 +28,6 @@
   font-size: 2.2rem;
   font-weight: 900;
   color: #111;
-  text-transform: uppercase;
   letter-spacing: -0.04em;
   margin: 0 0 16px 0;
 }
@@ -87,7 +86,6 @@
   font-weight: 800;
   color: #111;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 /* Responsive Constraints */

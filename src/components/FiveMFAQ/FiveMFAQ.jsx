@@ -5,17 +5,17 @@ import './FiveMFAQ.css';
 const faqs = [
   {
     id: 1,
-    question: "DO I GET A DEDICATED IP ADDRESS?",
+    question: "Do I get a dedicated IP address?",
     answer: "Yes, every FiveM server deployment includes a dedicated IPv4 address to ensure reliable connectivity and standard port (30120) availability without conflicts."
   },
   {
     id: 2,
-    question: "WHAT OPERATING SYSTEMS ARE SUPPORTED?",
+    question: "What operating systems are supported?",
     answer: "We currently support the latest stable releases of Windows Server 2022 and Ubuntu 22.04 LTS. Both environments are highly optimized for running the FXServer runtime."
   },
   {
     id: 3,
-    question: "IS DDOS PROTECTION INCLUDED?",
+    question: "Is DDoS protection included?",
     answer: "Absolutely. All our FiveM nodes are backed by multi-terabit layer 4/7 DDoS mitigation specifically tuned to filter out malicious game-server traffic while letting legitimate players through."
   }
 ];
@@ -31,7 +31,7 @@ const FiveMFAQ = () => {
     <section className="fivem-faq section">
       <div className="container">
         <div className="fivem-faq-header">
-          <h2 className="fivem-faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+          <h2 className="fivem-faq-title">Frequently Asked Questions</h2>
         </div>
 
         <div className="fivem-faq-list">

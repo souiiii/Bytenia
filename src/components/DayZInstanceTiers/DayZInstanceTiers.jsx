@@ -5,9 +5,9 @@ import './DayZInstanceTiers.css';
 const tiers = [
   {
     id: 1,
-    badge: 'STARTER_NODE',
-    location: 'AMSTERDAM / DALLAS / MIAMI',
-    cpu: 'AMD RYZEN 9 5950X',
+    badge: 'Starter Node',
+    location: 'Amsterdam / Dallas / Miami',
+    cpu: 'AMD Ryzen 9 5950X',
     cores: '2 vCores',
     memory: '16GB DDR4 ECC',
     storage: '100GB NVMe',
@@ -16,9 +16,9 @@ const tiers = [
   },
   {
     id: 2,
-    badge: 'ADVANCED_NODE',
-    location: 'AMSTERDAM / DALLAS / MIAMI',
-    cpu: 'INTEL CORE I9-13900K',
+    badge: 'Advanced Node',
+    location: 'Amsterdam / Dallas / Miami',
+    cpu: 'Intel Core i9-13900K',
     cores: '4 vCores',
     memory: '32GB DDR5',
     storage: '250GB NVMe',
@@ -27,9 +27,9 @@ const tiers = [
   },
   {
     id: 3,
-    badge: 'ENTERPRISE_NODE',
-    location: 'AMSTERDAM / DALLAS / MIAMI',
-    cpu: 'AMD RYZEN 9 7950X3D',
+    badge: 'Enterprise Node',
+    location: 'Amsterdam / Dallas / Miami',
+    cpu: 'AMD Ryzen 9 7950X3D',
     cores: '8 vCores',
     memory: '64GB DDR5',
     storage: '500GB Gen4 NVMe',
@@ -43,8 +43,8 @@ const DayZInstanceTiers = () => {
     <section className="dayz-tiers-section">
       <div className="container">
         <div className="dayz-tiers-header">
-          <h2 className="dayz-tiers-title">INSTANCE_TIERS</h2>
-          <p className="dayz-tiers-subtitle">SELECTED CONFIGURATIONS FOR OPTIMAL WORKLOADS</p>
+          <h2 className="dayz-tiers-title">Instance Tiers</h2>
+          <p className="dayz-tiers-subtitle">Selected Configurations for Optimal Workloads</p>
         </div>
 
         <div className="dayz-tiers-list">
@@ -64,26 +64,26 @@ const DayZInstanceTiers = () => {
                 
                 <div className="dayz-tier-specs">
                   <div className="dayz-spec">
-                    <span className="dayz-spec-label">CORES</span>
+                    <span className="dayz-spec-label">Cores</span>
                     <span className="dayz-spec-val">{tier.cores}</span>
                   </div>
                   <div className="dayz-spec">
-                    <span className="dayz-spec-label">MEMORY</span>
+                    <span className="dayz-spec-label">Memory</span>
                     <span className="dayz-spec-val">{tier.memory}</span>
                   </div>
                   <div className="dayz-spec">
-                    <span className="dayz-spec-label">STORAGE</span>
+                    <span className="dayz-spec-label">Storage</span>
                     <span className="dayz-spec-val">{tier.storage}</span>
                   </div>
                   <div className="dayz-spec">
-                    <span className="dayz-spec-label">PORT SPEED</span>
+                    <span className="dayz-spec-label">Port Speed</span>
                     <span className="dayz-spec-val">{tier.port}</span>
                   </div>
                 </div>
               </div>
 
               <div className="dayz-tier-pricing">
-                <span className="dayz-pricing-label">MONTHLY BILLING</span>
+                <span className="dayz-pricing-label">Monthly Billing</span>
                 <span className="dayz-pricing-val">{tier.price}</span>
                 <button className="dayz-tier-btn">CONFIGURE SERVER</button>
               </div>

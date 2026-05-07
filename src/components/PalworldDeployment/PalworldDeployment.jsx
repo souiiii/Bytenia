@@ -26,20 +26,20 @@ const PalworldDeployment = () => {
           </div>
 
           <div className="palworld-deploy-col right-col">
-            <h2 className="palworld-deploy-title">DEPLOYMENT FLEXIBILITY</h2>
+            <h2 className="palworld-deploy-title">Deployment Flexibility</h2>
             <p className="palworld-deploy-desc">
               Whether you're running standard applications or complex, high-demand workloads, our infrastructure adapts to your exact requirements with full flexibility.
             </p>
             
             <div className="palworld-os-grid">
               <div className="palworld-os-block">
-                <h3 className="palworld-os-title">LINUX NATIVE</h3>
+                <h3 className="palworld-os-title">Linux Native</h3>
                 <p className="palworld-os-desc">
                   Support for Ubuntu, Debian, and CentOS, optimized for performance, stability, and minimal overhead.
                 </p>
               </div>
               <div className="palworld-os-block">
-                <h3 className="palworld-os-title">WINDOWS SERVER</h3>
+                <h3 className="palworld-os-title">Windows Server</h3>
                 <p className="palworld-os-desc">
                   Dedicated environments for applications requiring Windows-based systems, tools, or specific dependencies.
                 </p>
