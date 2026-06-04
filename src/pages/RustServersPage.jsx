@@ -4,6 +4,7 @@ import './RustServersPage.css';
 import rustBg from '../assets/Rust.png';
 import shapeSvg from '../assets/shape.svg';
 import RustServersList from '../components/RustServersList/RustServersList';
+import RustAdvancedFeatures from '../components/RustAdvancedFeatures/RustAdvancedFeatures';
 
 const RustServersPage = () => {
   return (
@@ -87,6 +88,7 @@ const RustServersPage = () => {
       </section>
 
       <RustServersList />
+      <RustAdvancedFeatures />
     </div>
   );
 };
