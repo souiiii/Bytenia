@@ -24,6 +24,7 @@ import DayZServersPage from './pages/DayZServersPage';
 import PalworldServersPage from './pages/PalworldServersPage';
 import HytaleServersPage from './pages/HytaleServersPage';
 import GameServersPage from './pages/GameServersPage';
+import RustServersPage from './pages/RustServersPage';
 import './App.css';
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
             <Route path="/servers/dayz" element={<DayZServersPage />} />
             <Route path="/servers/palworld" element={<PalworldServersPage />} />
             <Route path="/servers/hytale" element={<HytaleServersPage />} />
+            <Route path="/servers/rust" element={<RustServersPage />} />
             <Route path="/game-servers" element={<GameServersPage />} />
           </Routes>
         </PageTransition>
