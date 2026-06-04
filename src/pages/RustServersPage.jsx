@@ -31,6 +31,59 @@ const RustServersPage = () => {
           </div>
         </div>
       </section>
+
+      <section className="rust-features-section">
+        <div className="rust-features-header">
+          <h2 className="rust-features-title">Boost your business with a high-performance dedicated server.</h2>
+          <p className="rust-features-subtitle">Power up your server with Tempest, specialists in dedicated servers for game servers.</p>
+        </div>
+        
+        <div className="rust-features-grid">
+          <div className="rust-feature-card">
+            <h3 className="rust-feature-card-title">Low Latency Network</h3>
+            <div className="rust-feature-card-value">
+              <span className="value-large">01</span>
+              <span className="value-small">/ms</span>
+            </div>
+            <p className="rust-feature-card-desc">
+              Optimized connectivity designed to deliver fast response times and a smooth experience.
+            </p>
+          </div>
+
+          <div className="rust-feature-card">
+            <h3 className="rust-feature-card-title">Expert Support</h3>
+            <div className="rust-feature-card-value">
+              <span className="value-large">24/7</span>
+              <span className="value-small">SUP</span>
+            </div>
+            <p className="rust-feature-card-desc">
+              A specialized team ready to help you with setup, management, and optimization.
+            </p>
+          </div>
+
+          <div className="rust-feature-card">
+            <h3 className="rust-feature-card-title">Advanced Protection</h3>
+            <div className="rust-feature-card-value">
+              <span className="value-large">24</span>
+              <span className="value-small">Hours</span>
+            </div>
+            <p className="rust-feature-card-desc">
+              Enterprise-grade security and DDoS protection to keep your project online at all times.
+            </p>
+          </div>
+
+          <div className="rust-feature-card">
+            <h3 className="rust-feature-card-title">High-End Hardware</h3>
+            <div className="rust-feature-card-value">
+              <span className="value-large">Ryzen</span>
+              <span className="value-small">9</span>
+            </div>
+            <p className="rust-feature-card-desc">
+              Powerful processors, NVMe storage, and optimized networking for maximum performance.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
