@@ -217,11 +217,18 @@
   .rust-advanced-cards {
     grid-template-columns: 1fr;
   }
+  .rust-tech-block {
+    padding: 16px;
+    gap: 16px;
+  }
+  .rust-tech-left {
+    border-radius: 12px;
+  }
   .rust-tech-box {
-    padding: 24px;
+    padding: 24px 20px;
   }
   .rust-metric-box {
-    padding: 24px;
+    padding: 24px 20px;
   }
   .rust-tech-metrics {
     grid-template-columns: 1fr;
