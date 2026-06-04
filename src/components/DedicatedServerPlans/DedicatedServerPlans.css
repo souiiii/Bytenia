@@ -1,0 +1,313 @@
+.ds-servers {
+  background-color: var(--bg-primary); 
+  padding: 40px 0;
+}
+
+.ds-servers-header {
+  font-size: 2.75rem;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.ds-servers-header strong {
+  font-weight: 800;
+  color: #111827;
+}
+
+.ds-servers-header span {
+  font-weight: 300;
+  color: #4b5563;
+}
+
+.ds-servers-sub {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 auto;
+}
+
+.ds-servers-sub strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+.ds-location-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.ds-loc-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background-color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #111827;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  transition: all 0.2s;
+}
+
+.ds-loc-pill.active {
+  background-color: #111827;
+  color: #fff;
+}
+
+.ds-flag-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ds-selectors-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.ds-selectors-group {
+  display: flex;
+  gap: 16px;
+}
+
+.ds-select-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ds-select-box label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #374151;
+  text-transform: uppercase;
+  padding-left: 4px;
+}
+
+.ds-select-box select {
+  padding: 8px 32px 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  appearance: none;
+  background: #fff url('data:image/svg+xml;utf8,<svg fill="none" stroke="%234b5563" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6"></path></svg>') no-repeat right 8px center;
+  background-size: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  min-width: 120px;
+  outline: none;
+  cursor: pointer;
+}
+
+.ds-sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.ds-sort-box strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.ds-server-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ds-server-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.ds-server-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);
+}
+
+.ds-card-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 30px;
+}
+
+.ds-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ds-cpu-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.01em;
+}
+
+.ds-cpu-title span {
+  font-weight: 400;
+  color: #4b5563;
+}
+
+.ds-benchmark {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.ds-card-metrics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.ds-metric-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ds-metric-flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ds-metric-icon {
+  color: #6b7280;
+}
+
+.ds-metric-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ds-metric-text strong {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.ds-metric-text span {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.ds-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-price-pill {
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.ds-price-val {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.ds-price-val span {
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.ds-configure-btn {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 50px;
+  padding: 10px 24px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.ds-configure-btn:hover {
+  opacity: 0.9;
+}
+
+.ds-show-more {
+  padding: 10px 32px;
+  border-radius: 50px;
+  border-color: #d1d5db;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .ds-server-card {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ds-card-left {
+    padding-right: 0;
+  }
+  .ds-price-pill {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ds-selectors-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+  .ds-selectors-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+  .ds-select-box {
+    width: 100%;
+  }
+  .ds-select-box select {
+    width: 100%;
+  }
+  .ds-card-metrics {
+    flex-wrap: wrap;
+    row-gap: 24px;
+  }
+  .ds-metric-item {
+    width: calc(50% - 10px);
+  }
+}

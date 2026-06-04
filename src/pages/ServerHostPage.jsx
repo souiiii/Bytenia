@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ServerHostPage.css';
 import ServerHostFeatures from '../components/ServerHostFeatures/ServerHostFeatures';
+import ServerHostResilience from '../components/ServerHostResilience/ServerHostResilience';
+import DedicatedServerPlans from '../components/DedicatedServerPlans/DedicatedServerPlans';
+import ServerHostSpecs from '../components/ServerHostSpecs/ServerHostSpecs';
+import ServerHostFAQ from '../components/ServerHostFAQ/ServerHostFAQ';
+import ServerHostCTA from '../components/ServerHostCTA/ServerHostCTA';
 
 const ServerHostPage = () => {
   return (
@@ -26,6 +31,11 @@ const ServerHostPage = () => {
       </div>
 
       <ServerHostFeatures />
+      <ServerHostResilience />
+      <DedicatedServerPlans />
+      <ServerHostSpecs />
+      <ServerHostFAQ />
+      <ServerHostCTA />
     </div>
   );
 };

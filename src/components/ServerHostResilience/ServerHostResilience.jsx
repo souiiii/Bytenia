@@ -49,7 +49,17 @@ const ServerHostResilience = () => {
           </div>
 
           <div className="sh-resilience-image">
-            <img src={tempestControllerImg} alt="Tempest Controller Dashboard" />
+            <div className="mac-window">
+              <div className="mac-window-header">
+                <div className="mac-dots">
+                  <span className="mac-dot red"></span>
+                  <span className="mac-dot yellow"></span>
+                  <span className="mac-dot green"></span>
+                </div>
+                <div className="mac-title">TEMPEST CONTROLLER V2.4</div>
+              </div>
+              <img src={tempestControllerImg} alt="Tempest Controller Dashboard" />
+            </div>
           </div>
 
         </div>
