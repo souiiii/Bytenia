@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './RustServersPage.css';
 import rustBg from '../assets/Rust.png';
 import shapeSvg from '../assets/shape.svg';
+import RustServersList from '../components/RustServersList/RustServersList';
 
 const RustServersPage = () => {
   return (
@@ -84,6 +85,8 @@ const RustServersPage = () => {
           </div>
         </div>
       </section>
+
+      <RustServersList />
     </div>
   );
 };
