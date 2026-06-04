@@ -25,6 +25,7 @@ import PalworldServersPage from './pages/PalworldServersPage';
 import HytaleServersPage from './pages/HytaleServersPage';
 import GameServersPage from './pages/GameServersPage';
 import RustServersPage from './pages/RustServersPage';
+import ServerHostPage from './pages/ServerHostPage';
 import './App.css';
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
             <Route path="/servers/hytale" element={<HytaleServersPage />} />
             <Route path="/servers/rust" element={<RustServersPage />} />
             <Route path="/game-servers" element={<GameServersPage />} />
+            <Route path="/server-host" element={<ServerHostPage />} />
           </Routes>
         </PageTransition>
         <Footer />
