@@ -27,6 +27,7 @@ import GameServersPage from './pages/GameServersPage';
 import RustServersPage from './pages/RustServersPage';
 import ServerHostPage from './pages/ServerHostPage';
 import BusinessApplicationsPage from './pages/BusinessApplicationsPage';
+import WebAndEmailPage from './pages/WebAndEmailPage';
 import './App.css';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/enterprise" element={<EnterprisePage />} />
             <Route path="/business-applications" element={<BusinessApplicationsPage />} />
+            <Route path="/web-and-email" element={<WebAndEmailPage />} />
             <Route path="/cost-optimized" element={<CostOptimizedPage />} />
             <Route path="/vds" element={<VdsPage />} />
             <Route path="/locations" element={<LocationsPage />} />

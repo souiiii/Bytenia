@@ -1,0 +1,130 @@
+.web-email-why-choose {
+  padding: 120px 0;
+  background-color: #f8f8fa;
+}
+
+.why-choose-header {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto 80px auto;
+}
+
+.why-choose-title {
+  font-size: 48px;
+  color: #111827;
+  font-weight: 300;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+  text-shadow: none !important;
+}
+
+.why-choose-title strong {
+  font-weight: 700;
+}
+
+.why-choose-subtitle {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.why-choose-subtitle strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.why-choose-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 40px 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.why-choose-icon {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.why-choose-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.why-choose-card-desc {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.why-choose-card-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: auto; /* push bullets to the bottom if cards have different heights */
+}
+
+.why-choose-card-bullets li {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.why-choose-card-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.why-choose-card-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+@media (max-width: 992px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .web-email-why-choose {
+    padding: 80px 0;
+  }
+
+  .why-choose-title {
+    font-size: 32px;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+  }
+}
