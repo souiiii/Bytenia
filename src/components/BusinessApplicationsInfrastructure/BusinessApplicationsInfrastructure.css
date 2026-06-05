@@ -1,0 +1,93 @@
+.biz-app-infrastructure {
+  padding: 40px 0;
+}
+
+.infrastructure-wrapper {
+  background-color: #000000;
+  border-radius: 40px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infrastructure-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.infrastructure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.infrastructure-card {
+  background-color: #171717; /* Very dark grey, slightly lighter than black */
+  border-radius: 8px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.infrastructure-card:hover {
+  background-color: #1f1f1f;
+}
+
+.infrastructure-icon {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.infrastructure-card-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.infrastructure-card-desc {
+  color: #a1a1aa;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .infrastructure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .infrastructure-wrapper {
+    padding: 60px 24px;
+    border-radius: 24px;
+  }
+  
+  .infrastructure-title {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .infrastructure-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .infrastructure-wrapper {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+}
