@@ -34,11 +34,11 @@ const RustAdvancedFeatures = () => {
             <div className="rust-adv-icon-wrapper icon-green">
               <CheckCircle size={24} strokeWidth={2} />
             </div>
-            <h3>Automated Backups</h3>
+            <h3>24/7 Support</h3>
             <p>
-              Protect your infrastructure with<br/>
-              scheduled backups and<br/>
-              fast recovery options.
+              Get direct help when issues hit,<br/>
+              from our expert support team.<br/>
+              Anytime. Day or night.
             </p>
           </div>
 

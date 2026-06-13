@@ -17,20 +17,15 @@ const RustServersPage = () => {
           
           <div className="rust-hero-content">
             <h1 className="rust-hero-title">
-              POWERING NEXT-GEN RUST<br />COMMUNITIES
+              POWERING NEXT-GEN<br />RUST COMMUNITIES
             </h1>
             <p className="rust-hero-description">
-              High-performance dedicated servers engineered for demanding Rust environments. Large player<br />
-              bases and hosting providers requiring reliable infrastructure and premium global connectivity.
+              High-performance dedicated servers engineered for demanding Rust environments, player bases and hosting providers requiring reliable infrastructure and premium global connectivity.
             </p>
             <div className="rust-hero-buttons">
-              <button className="btn-primary">Start project</button>
-              <Link to="/connect" className="btn-secondary" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>Talk to Sales</Link>
+              <button className="btn-primary">START PROJECT</button>
+              <Link to="/connect" className="btn-secondary">CONTACT SALES</Link>
             </div>
-          </div>
-
-          <div className="rust-hero-graphic">
-            <img src={shapeSvg} alt="Tempest Shape" className="rust-hero-logo-graphic" />
           </div>
         </div>
       </section>
