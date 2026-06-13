@@ -132,7 +132,7 @@
   margin-top: 40px;
 }
 
-.why-choose-title {
+.server-why-choose-title {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 500;
@@ -181,6 +181,7 @@
   border-radius: 50px; 
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn-view-servers:hover {

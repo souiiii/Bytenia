@@ -158,7 +158,7 @@ const ServerSelection = () => {
 
                     <div className="expanded-footer">
                       <div className="why-choose-box">
-                        <h5 className="why-choose-title">
+                        <h5 className="server-why-choose-title">
                           WHY CHOOSE THIS SERVER
                         </h5>
                         <ul className="why-choose-list">
